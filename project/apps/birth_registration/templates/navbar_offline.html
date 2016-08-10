@@ -1,0 +1,14 @@
+{% load tags %}
+{% load bootstrap3 %}
+{% load i18n %}
+<ul class="nav navbar-nav">
+    <li {% active "F101CreateOffline" %}><a
+            href="{% url "F101CreateOffline" %}">{% bootstrap_icon "plus-sign" %}{% trans "Save new F101 locally" %}</a>
+    </li>
+
+
+    <li {% active "F201CreateOffline" %}><a
+                href="{% url "F201CreateOffline" %}">{% bootstrap_icon "plus-sign" %} {% trans "Save new F201 locally" %}</a>
+    </li>
+
+</ul>

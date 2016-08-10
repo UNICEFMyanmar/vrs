@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% load bootstrap3 %}
+{% load tags %}
+
+
+{% block content %}
+    {% if form|name == "101" %}
+        {% url 'F101Detail' object.pk as detailUrl %}
+        {% url 'F101Delete' object.pk as deleteUrl %}
+        {% url 'F101Restore' object.pk as restoreUrl %}
+    {% elif form|name == "201" %}
+        {% url 'F201Detail' object.pk as detailUrl %}
+        {% url 'F201Delete' object.pk as deleteUrl %}
+        {% url 'F201Restore' object.pk as restoreUrl%}
+    {% endif %}
+    <h1>{% block title %}{% trans "Edit form " %} {{ form|name }}/{{ object.pk }}{% endblock %}</h1>
+    <div class="col-lg-8">
+        <form id="f{{ form|name }}_form" method="post" enctype="multipart/form-data">
+            {% include "form.html" %}
+            {% bootstrap_form_errors form %}
+            {% buttons %}
+                {% if not object.deleted %}
+                <button type="submit" class="btn btn-primary">
+                    {% bootstrap_icon "save" %} {% trans "Save changes" %}
+                </button>
+                <a href="{{ detailUrl }}" class="btn btn-default">
+                    {% trans "Cancel" %}
+                </a>
+                {% endif %}
+
+            {% endbuttons %}
+        </form>
+
+        <hr/>
+
+        {% if user_can_delete %}
+            {% if object.deleted == False %}
+                <a href="{{ deleteUrl }}" class="btn btn-danger">
+                    {% bootstrap_icon "trash" %} {% trans "Delete" %}
+                </a>
+            {% else %}
+                <a href="{{ restoreUrl }}" class="btn btn-danger">
+                    {% bootstrap_icon "floppy-open" %} {% trans "Restore" %}
+                </a>
+            {% endif %}
+                <hr/>
+        {% endif %}
+    </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    {% include "inlcude_form_logic.html" %}
+{% endblock %}

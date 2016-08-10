@@ -1,0 +1,167 @@
+{% load static tags bootstrap3 i18n django_select2_tags tz %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+{% trans "Vital registration DB" as PROJECT_NAME %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}{% endblock %} — {{ PROJECT_NAME }}</title>
+
+    <link rel="icon" href="{% static "favicon.ico" %}" type="image/x-icon"/>
+
+    <link href={% static "vendor/bootstrap.min.css" %} media="screen" rel="stylesheet">
+    <script src="{% static "vendor/jquery.min.js" %}"></script>
+    <script src="{% static "vendor/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/js.cookie.js"></script>
+    <script src="{{ STATIC_URL }}vendor/jquery.maskedinput.min.js" type="text/javascript"></script>
+    {% import_django_select2_js_css %}
+    <link href={% static "css/default.css" %} rel="stylesheet">
+    {% if 'raven.contrib.django.raven_compat' in INSTALLED_APPS %}
+        {% include "include_raven.html" %}
+    {% endif %}
+</head>
+<body>
+{% if request.COOKIES.offline_mode_enabled == "enable" or request.COOKIES.offline_mode_enabled == "disable" %}
+<iframe id="webapp2_appcache" style="visibility:hidden;display:none" height="0" width="0" src="{% static "index.html" %}?{{ request.COOKIES.offline_mode_enabled }}"></iframe>
+{% endif %}
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url "home" %}">{{ PROJECT_NAME }}</a>
+        </div>
+        <div class="collapse navbar-collapse">
+
+            {% block navbar-nav %}
+                <ul class="nav navbar-nav">
+
+                    {% if perms.birth_registration.view_f101 %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "F101" %} <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% if perms.birth_registration.add_f101 %}
+                            <li {% active "F101Create" %}><a
+                                    href="{% url "F101Create" %}">{% bootstrap_icon "plus-sign" %} {% trans "New F101" %}</a>
+                            </li>
+                            {% endif %}
+                            <li {% active "F101List" %}><a
+                                    href="{% url "F101List" %}">{% bootstrap_icon "list" %} {% trans "Browse" %}</a>
+                            </li>
+                            <li {% active "F101Deleted" %}><a
+                                    href="{% url "F101Deleted" %}">{% bootstrap_icon "list-alt" %} {% trans "Deleted" %}</a>
+                            </li>
+                        </ul>
+                    {% endif %}
+
+                    {% if perms.birth_registration.view_f201 %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "F201" %} <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% if perms.birth_registration.add_f201 %}
+                            <li {% active "F201Create" %}><a
+                                    href="{% url "F201Create" %}">{% bootstrap_icon "plus-sign" %} {% trans "New F201" %}</a>
+                            </li>
+                            {% endif %}
+                            <li {% active "F201List" %}><a
+                                    href="{% url "F201List" %}">{% bootstrap_icon "list" %} {% trans "Browse" %}</a>
+                            </li>
+                            <li {% active "F201Deleted" %}><a
+                                    href="{% url "F201Deleted" %}">{% bootstrap_icon "list-alt" %} {% trans "Deleted" %}</a>
+                            </li>
+                        </ul>
+                    {% endif %}
+
+                    {% if perms.certification.view_f103 %}
+                            <li {% active 'F103ListView' %}><a
+                                    href="{% url "F103ListView" %}">{% bootstrap_icon "list" %} {% trans "F103" %}</a>
+                            </li>
+                     {% endif %}
+
+                    {% if perms.certification.view_f203 %}
+
+                            <li {% active 'F203ListView' %}><a
+                                    href="{% url "F203ListView" %}">{% bootstrap_icon "list" %} {% trans "F203" %}</a>
+                            </li>
+
+                     {% endif %}
+
+                </ul>
+            {% endblock %}
+            {%  block navbar-right %}
+            <ul class="nav navbar-nav navbar-right">
+                <li {% active 'dox' %}><a href="{% url "dox" %}">{% bootstrap_icon "info-sign" %} {% trans "About" %}</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% bootstrap_icon "globe" %} {% trans "Language" %} <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <li{% if language.code == LANGUAGE_CODE %} class="active" {% endif %}>
+                                <a href="#"
+                                   rel="nofollow"
+                                   lang="{{ language.code }}"
+                                   hreflang="{{ language.code }}"
+                                        {% if language.code == LANGUAGE_CODE %}
+                                   onclick="return false;"
+                                        {% else %}
+                                   onclick="document.setlang.language.value='{{ language.code }}';document.setlang.submit();return false;"
+                                        {% endif %}>{{ language.name_local }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        {% endblock %}
+
+            {% block nav_user %}
+                {% if user.is_authenticated %}
+                    <div class="navbar-form navbar-right">
+                        <a href="{% url 'profile' %}" class="btn btn-default">
+                            <span class="glyphicon glyphicon-user"></span> {{ user.get_username }}
+                        </a>
+                        {% if request.COOKIES.offline_mode_enabled == "enable" or request.COOKIES.offline_mode_enabled == "enabled" %}
+                            <a href="{% url 'profile' %}#offline" class="btn btn-default">
+                                <span class="glyphicon glyphicon-save"></span>
+                            </a>
+                        {% endif %}
+
+                        <a href="{% url 'django.contrib.auth.views.logout' %}" class="btn btn-default">
+                            {% bootstrap_icon "log-out" %} {% trans "Sign out" %}
+                        </a>
+                    </div>
+                {% endif %}
+            {% endblock %}
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<form name="setlang" action="{% url 'set_language' %}" method="POST">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ request.path }}"/>
+    <input name="language" type="hidden" value="{{ language.code }}"/>
+</form>
+<div class="container">
+    <div class="starter-template">
+    {% bootstrap_messages %}
+        {% block content %}{% endblock %}
+    </div>
+</div>
+<!-- /.container -->
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% load i18n %}
+<h3>{% trans "The database is administered<br/>by the Central Statistical Organization" %}</h3>
+<p>
+    {% blocktrans %}
+        Access to the data is only available for authorised users and authorised purposes.
+    {% endblocktrans %}
+    <br/>
+    {% blocktrans %}
+        Please log in using your assigned username and password.
+    {% endblocktrans %}
+</p>
+<p>
+    {% blocktrans %}
+        For information about vital registration and this database, please contact:
+    {% endblocktrans %}
+</p>
+
+<address>
+    <strong>{% trans "Central Statistical Organization" %}</strong><br>
+        {% blocktrans %}
+            Building(32), Nay Pyi Taw ,<br/>
+            Myanmar <br/>
+            <abbr title="Phone">Tel:</abbr> 095-067-406325, 406328, 406326<br/>
+            <abbr title="Fax">Fax:</abbr> 095-067-406151<br/>
+            Email: <a href="mailto:dg-cso@mptmail.com.mm">dg-cso@mptmail.com.mm</a>
+        {% endblocktrans %}
+
+</address>
+<hr/>

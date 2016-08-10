@@ -1,0 +1,59 @@
+CACHE MANIFEST
+# v. 1.27
+
+/offline
+/offline/101/add
+/offline/201/add
+/offline/error
+
+CACHE:
+/jsi18n/
+/static/js/form_validation.js
+/static/js/app.js
+#
+# vendors' JSs
+#
+/static/vendor/backbone.js
+/static/vendor/backbone.localStorage.js
+/static/vendor/jquery.stickytabs.js
+/static/vendor/jquery.validate.js
+/static/vendor/moment/min/moment.min.js
+/static/vendor/moment/locale/my.js
+/static/vendor/underscore.js
+/static/vendor/bootstrap.min.css
+/static/vendor/bootstrap.min.js
+/static/vendor/jquery.min.js
+/static/vendor/js.cookie.js
+#
+# fonts
+#
+/static/fonts/glyphicons-halflings-regular.eot
+/static/fonts/glyphicons-halflings-regular.svg
+/static/fonts/glyphicons-halflings-regular.ttf
+/static/fonts/glyphicons-halflings-regular.woff
+/static/fonts/glyphicons-halflings-regular.woff2
+#
+# default CSS
+#
+/static/css/bootstrap-tables2.css
+/static/css/default.css
+/static/css/myanmar.css
+#
+# django-select2
+#
+/static/django_select2/css/all.min.css
+/static/django_select2/js/select2.min.js
+/static/django_select2/js/heavy_data.min.js
+/static/django_select2/css/select2.css
+/static/django_select2/css/extra.css
+/static/django_select2/js/select2.js
+/static/django_select2/js/heavy_data.js
+
+NETWORK:
+*
+
+FALLBACK:
+/static/online.js /static/offline.js
+/ /offline
+/101/add /offline/101/add
+/201/add /offline/201/add

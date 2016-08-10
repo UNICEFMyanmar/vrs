@@ -1,0 +1,324 @@
+{% load static %}
+{% load bootstrap3 %}
+{% load i18n %}
+{% load l10n %}
+{% load tags %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as languages %}
+{% trans "Vital registration DB" as PROJECT_NAME %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}{% trans "BIRTH CERTIFICATE" %} {{ object.NR_SNO }}{% endblock %} — {{ PROJECT_NAME }}</title>
+
+    <link rel="icon" href="{% static "favicon.ico" %}" type="image/x-icon"/>
+
+    <script src="{% static "vendor/jquery.min.js" %}"></script>
+    <link href={% static "vendor/bootstrap.min.css" %} media="screen" rel="stylesheet">
+    <link href={% static "css/default.css" %} rel="stylesheet">
+    <link href={% static "css/bootstrap-print.css" %} media="print" rel="stylesheet">
+    <style>
+        .red_text {
+            color: red !important;
+        }
+
+        .red_text u {
+             border-bottom: 1px dotted red;
+        }
+
+
+        .signature_label {
+            white-space: nowrap;
+            display: table-cell;
+            width: 1px;
+        }
+
+        .signature {
+            border-bottom: solid 1px;
+            width: 100%;
+            text-align: center;
+            margin-left: 10px;
+            white-space: nowrap;
+            display: table-cell;
+        }
+
+        #data-table td {
+            padding: .26667em;
+            padding-left: 1em;
+            vertical-align: top;
+        }
+
+        @media print {
+            body {
+                padding-top: 0 !important;
+            }
+            .hidden-print {
+                display: none !important;
+            }
+            [class*="col-sm-"] {
+                float: left;
+            }
+        }
+
+        u {
+            border-bottom: 1px dotted #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="pull-right hidden-print">
+        {% buttons %}
+            {% block buttons %}
+                <a href="{% url 'F103DetailView' pk=object.pk %}" class="btn btn-default">
+                    {% bootstrap_icon "file" %}
+                    {% trans "Form" %}
+                </a>
+
+                <a href="{% url 'F103ListView' %}" class="btn btn-default">
+                    {% bootstrap_icon "list" %}
+                    {% trans "Browse" %}
+                </a>
+
+            {% endblock %}
+            <a href="#" class="btn btn-default" onclick="$('table').toggleClass('red_text');">
+                {% bootstrap_icon "adjust" %}
+                {% trans "Toggle color" %}
+            </a>
+
+            <a href="javascript:window.print()" class="btn btn-primary">
+                {% bootstrap_icon "print" %}
+                {% trans "Print" %}
+            </a>
+
+
+        {% endbuttons %}
+    </div>
+
+    <ul class="list-unstyled hidden-print" style="padding: 1em">
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+        <li{% if language.code == LANGUAGE_CODE %} class="active" {% endif %}>
+            <a href="#"
+               rel="nofollow"
+               lang="{{ language.code }}"
+               hreflang="{{ language.code }}"
+                    {% if language.code == LANGUAGE_CODE %}
+               onclick="return false;"
+                    {% else %}
+               onclick="document.setlang.language.value='{{ language.code }}';document.setlang.submit();return false;"
+                    {% endif %}>{{ language.name_local }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form name="setlang" action="{% url 'set_language' %}" method="POST">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ request.path }}"/>
+        <input name="language" type="hidden" value="{{ language.code }}"/>
+    </form>
+    </div>
+    {% block table %}
+        <div class="row">
+            <table>
+        <tr>
+            <td style="vertical-align: top; padding-right: 1em" width="20%">
+                <p><strong
+                        style="white-space: nowrap">{% trans "Birth Certificate Counterfoil" %}</strong><br/>{% trans "V.R. Form 103" %}
+                </p>
+                <ul class="list-unstyled" style="white-space: nowrap">
+                    <li>{% trans "Book number:" %} {{ " " | ljust_n }}</li>
+                    <li>{% trans "Page number:" %} {{ " " | ljust_n }}</li>
+                    <li>{% trans "Entry number:" %} {{ object.NR_SNO | num_to_mm | ljust_n }}</li>
+                    <li>{% trans "Registration date:" %}
+                        {{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm | ljust_n }}</li>
+                </ul>
+
+                <ul class="list-unstyled">
+                    <li>{% trans "Name of child:" %} {{ object.Name_of_child | ljust_n }}</li>
+                    <li>{% trans "Gender:" %} {{ object.get_NSEX_display | strip_before_delimiter | ljust_n }}</li>
+                    <li>{% trans "Date of birth:" %} {{ object.Date_of_Birth | date:'d-m-Y' |num_to_mm | ljust_n}}</li>
+                    <li>{% trans "Place of birth:" %}
+                        {% if object.Hospital %}
+                            {{ object.Hospital.name | ljust_n }}
+                        {% elif object.governmental_hospital %}
+                            {{ object.governmental_hospital | ljust_n }}
+                        {% elif object.private_hospital %}
+                            {{ object.private_hospital | ljust_n }}
+                        {% else %}
+                            {{ object.get_CIR_display | strip_before_delimiter | ljust_n }}
+                        {% endif %}
+                    </li>
+                    <li>{% trans "Name of father:" %} {{ object.Father_name | ljust_n}}</li>
+                    <li>{% trans "Name of Mather:" %} {{ object.Mother_name | ljust_n}}</li>
+                    <li>{% trans "Permanent address:" %} {{ object.RCIR | ljust_n}}</li>
+                    <li>{% trans "Signature of issuing person:" %} {{ " " | ljust_n:"10" }}</li>
+                    <li>{% trans "Name of issuing person:" %}<br/>{{ object.NOPR.get_full_name | ljust_n}}</li>
+                    <li>{% trans "Date of issue:" %} {{ object.created_at | date:'d-m-Y' | num_to_mm | ljust_n}}</li>
+                </ul>
+            </td>
+            <td style="border-left: thin dashed; vertical-align: top;padding-left: 1em;">
+                <p align="center"><strong>{% trans "BIRTH CERTIFICATE" %} </strong></p>
+                    <p>{% trans "V.R. Form 103" %}</p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <ul class="list-unstyled">
+                            <li>{% trans "State/Division:" %} <u>{{ object.get_ST_DV_display | strip_before_delimiter }}</u></li>
+                            <li>{% trans "District:" %} <u>{{ object.get_DIS_display | strip_before_delimiter }}</u>
+                                {% trans "Township" %} <u>{{ object.get_TWN_display | strip_before_delimiter }}</u></li>
+                            <li>{% trans "Ward/Village tract:" %} <u>{{ object.get_NR_AREA_display | strip_before_delimiter }} {{ object.RHC | strip_before_delimiter }}</u></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li>{% trans "Book number:" %} {{ " " | ljust_n }}</li>
+                            <li>{% trans "Page number:" %} {{ " " | ljust_n }}</li>
+                            <li>{% trans "Entry number:" %} {{ object.NR_SNO | num_to_mm | ljust_n}}</li>
+                            <li>{% trans "Registration date:" %} {{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm | ljust_n}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <table id="data-table" class="table"
+                           style="width:100%;border-spacing: 0; border-collapse: separate;">
+                        <tr>
+                            <td rowspan="2"
+                                style="border-top: solid; border-right: solid">{% trans "Particulars of the child" %}</td>
+                            <td style="border-top:solid;border-bottom: dotted thin;">
+                                {% trans "1. Name:" %} {{ object.Name_of_child | ljust_n}}</td>
+                            <td style="border-top:solid;border-bottom: dotted thin;">
+                                {% trans "3. Date of birth:" %} {{ object.Date_of_Birth | date:'d-m-Y' | num_to_mm | ljust_n}}</td>
+                        </tr>
+                        <tr>
+                            <td>{% trans "2. Gender:" %} {{ object.get_NSEX_display | strip_before_delimiter | ljust_n}}</td>
+                            <td>{% trans "4. Place of birth:" %}
+
+                                    {% if object.Hospital %}
+                                        {{ object.Hospital.name | ljust_n }}
+                                    {% elif object.governmental_hospital %}
+                                        {{ object.governmental_hospital | ljust_n }}
+                                    {% elif object.private_hospital %}
+                                        {{ object.private_hospital | ljust_n }}
+                                    {% else %}
+                                        {{ object.get_CIR_display | strip_before_delimiter | ljust_n }}
+                                    {% endif %}
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"
+                                style="border-top:solid; border-right: solid;">{% trans "Particulars of Father" %}</td>
+                            <td style="border-top:solid;border-bottom: dotted thin;">
+                                {% trans "5. Name:" %} {{ object.Father_name | ljust_n}}</td>
+                            <td style="border-top:solid;border-bottom: dotted thin;">
+                                {% trans "8. Religion:" %} {{ object.get_NREL_F_display | strip_before_delimiter | ljust_n}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">{% trans "6. Race:" %} {{ object.get_NRACE_F_display  | strip_before_delimiter | ljust_n}}</td>
+                            <td style="border-bottom: dotted thin;">{% trans "9. Occupation:" %} {% if object.Occupation_F %}{{ object.Occupation_F | ljust_n}}{% else %}{{ object.get_NOCC_F_display | strip_before_delimiter | ljust_n}}{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td style="white-space: nowrap;">
+                                {% trans "7. Citizenship:" %} {{ object.get_NCZN_F_display | strip_before_delimiter | ljust_n}}</td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="3"
+                                style="border-top: solid;border-right: solid">{% trans "Particulars of Mother" %}
+                            </td>
+                            <td style="border-top: solid;border-bottom: dotted thin;">
+                                {% trans "10. Name:" %} {{ object.Mother_name | ljust_n}}</td>
+                            <td style="border-top: solid;border-bottom: dotted thin;">{% trans "13. Religion:" %} {{ object.get_NREL_M_display | strip_before_delimiter | ljust_n}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">
+                                {% trans "11. Race:" %} {{ object.get_NRACE_M_display  | strip_before_delimiter | ljust_n}}</td>
+                            <td style="border-bottom: dotted thin;">{% trans "14. Occupation:" %} {% if object.Occupation_M %}{{ object.Occupation_M | ljust_n}}{% else %}{{ object.get_NOCC_M_display | strip_before_delimiter | ljust_n}}{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td>{% trans "12. Citizenship:" %} {{ object.get_NCZN_M_display | strip_before_delimiter | ljust_n}}</td>
+                            <td>{% trans "15. Permanent address:" %} {{ object.RCIR | ljust_n}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: solid; border-right: solid; border-bottom: solid">
+                                {% trans "Particulars of Informant" %}
+                            </td>
+                            <td colspan="2" style="border-top: solid; border-bottom: solid">
+                                {% trans "Name, Address, Relation to the child:" %}<br/>
+                                {{ object.Informer | ljust_n}}<br/>
+                                <br/>
+                                {% trans "Signature" %} {{ " " | ljust_n }}
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="small" style="margin-left: 1.67em">{% blocktrans %}I, the undersigned, do hereby certify that the above
+                        mentioned child was
+                        born
+                        alive at the time and place
+                        mentioned above and registered with the Entry No.
+                        {% endblocktrans %}
+                        {{ object.NR_SNO | num_to_mm | ljust_n}}
+                        {% blocktrans %}
+                        in the Birth
+                        Register which
+                        is
+                        in my
+                        legal custody.{% endblocktrans %}<br/>
+
+                        {% blocktrans %}Any person who (I) falsifies any of the particulars on this certificate or (2)
+                            uses it as true,
+                            knowing
+                            it to be false is liable to prosecution.{% endblocktrans %}
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="pull-right">
+                        <table>
+                            <tr>
+                                <td style="padding-right: 1em; vertical-align: middle;">{% trans "Registration Officer's" %}</td>
+                                <td style="padding-left: 1em; border-left: solid thin;">
+                                    <ul class="list-unstyled">
+                                        <li>{% trans "Signature:" %} {{ " " | ljust_n }}</li>
+                                        <li>{% trans "Name:" %} {{ object.NOPR.get_full_name| ljust_n }}</li>
+                                        <li>{% trans "Designation:" %}
+
+                                                {{ object.NOPR.profile.position | ljust_n}}
+
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="small"  style="margin-left: 1.67em">
+
+                        {% blocktrans %}
+                        A name given to the child before the expiry of 12 months from the date of registration of it,
+                        birth must be  reported to the registration officer having the custody of the Birth Register.
+                        by the parents or guardians concerned.
+                        {% endblocktrans %}
+
+                        <br/><br/>{{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm | ljust_n }}
+                    </p>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+        </div>
+    {% endblock %}
+</div>
+</body>
+</html>
+

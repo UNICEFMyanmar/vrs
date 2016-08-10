@@ -1,0 +1,228 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>{% trans "Birth registration real time monitoring and stats" %}</title>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}vendor/leaflet/leaflet.css"/>
+    <script src="{{ STATIC_URL }}vendor/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}vendor/Font-Awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet"
+          href="{{ STATIC_URL }}vendor/leaflet.easy-button/easy-button.css"/>
+    <script src="{{ STATIC_URL }}vendor/leaflet.easy-button/easy-button.js"></script>
+
+    <link rel="stylesheet"
+          href="{{ STATIC_URL }}vendor/leaflet.awesome-markers/leaflet.awesome-markers.css">
+    <script src="{{ STATIC_URL }}vendor/leaflet.awesome-markers/leaflet.awesome-markers.min.js"></script>
+
+    <script src="{{ STATIC_URL }}vendor/leaflet.smoothmarkerbouncing.js"></script>
+
+    <script src="{{ STATIC_URL }}vendor/jquery.min.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/moment/locale/my.js"></script>
+
+    <script src='{{ STATIC_URL }}vendor/leaflet-fullscreen/Leaflet.fullscreen.min.js'></script>
+    <link href='{{ STATIC_URL }}vendor/leaflet-fullscreen/leaflet.fullscreen.css'
+          rel='stylesheet'/>
+
+    <script src="{{ STATIC_URL }}vendor/Chart.js/src/Chart.Core.js"></script>
+    <script src="{{ STATIC_URL }}vendor/Chart.js/src/Chart.Line.js"></script>
+
+    <script src="{{ STATIC_URL }}vendor/oms.min.js"></script>
+    <script src="{{ STATIC_URL }}vendor/Control.TouchHover.js"></script>
+
+    <script src="{{ STATIC_URL }}js/maps.js"></script>
+
+    <style>
+
+        .info {
+            padding: 6px 10px;
+            font: 14px/16px Damascus, Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .info h3 {
+            margin-bottom: 0.33em;
+        }
+
+        .info h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+        .legend {
+            line-height: 18px;
+            color: #555;
+        }
+
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        .highlight {
+            text-decoration: underline;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .easy-button-button {
+            padding-top: 0 !important;
+        }
+
+        .myClass {
+            padding-top: 50%;
+            padding-left: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    var JSON1;
+    var JSON3;
+
+    var s_map;
+    var r_map;
+
+    var buttons = [];
+
+    var map = L.map('map');
+
+    var DEBUG = true;
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', '{{ STATIC_URL }}ping.mp3');
+
+
+    function load_JSON1() {
+        return $.getJSON("{{ STATIC_URL }}GeoJSON/MMR_adm1.GeoJSON.json",
+                function (data) {
+                    JSON1 = data;
+                    init_s_map();
+                }
+        );
+    }
+
+    function load_JSON3() {
+        return $.getJSON("{{ STATIC_URL }}GeoJSON/MMR_adm2.GeoJSON.json",
+                function (data) {
+                    JSON3 = data;
+                    init_r_map();
+                }
+        );
+    }
+
+    function init_s_map() {
+        s_map = new stat_map(map);
+        //s_map.startUp(1);
+        var periods = {
+            7: 'fa-calendar-o fa-lg',
+            31: 'fa-calendar  fa-lg',
+            365: 'fa-line-chart  fa-lg'
+        };
+
+        for (var period in periods) {
+
+            var button = L.easyButton(
+                    periods[period],
+                    function () {
+                        if (r_map) {
+                            r_map.destroy();
+                        }
+
+                        buttons.forEach(function (button) {
+                            button.enable();
+                        });
+                        this.disable();
+                        map_fit();
+                        s_map.startUp(this.period);
+                    }
+            ).addTo(map);
+
+            button.period = period;
+            buttons.push(button);
+        }
+    }
+
+    function init_r_map() {
+        r_map = new realtime_map(map);
+        var button = L.easyButton('fa-heartbeat fa-lg',
+                function () {
+                    if (s_map) {
+                        s_map.destroy();
+                    }
+                    buttons.forEach(function (button) {
+                        button.enable();
+                    });
+                    this.disable();
+                    map_fit();
+                    r_map.startUp(this.period);
+                }).addTo(map).disable();
+
+        r_map.startUp();
+        buttons.push(button);
+    }
+
+    function map_fit() {
+        var bounds = [
+            [28.543, 101.176],
+            [9.061, 92.189]
+        ];
+        map.fitBounds(bounds).setMaxBounds(bounds);
+    }
+
+    $.getScript( "{% url 'js_info_dict' %}", function( data, textStatus, jqxhr ) {
+        var django_catalog = django.catalog;
+        $.getScript( "{% url 'django_info_dict' %}", function( data, textStatus, jqxhr ) {
+            $.extend(django.catalog, django_catalog);
+        });
+    });
+
+    $(document).ready(function () {
+
+        moment.locale("{{ LANGUAGE_CODE }}");
+        L.tileLayer('http://{s}.tile.osm-tools.org/osm_then/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        map_fit();
+
+        if (L.Browser.touch) {
+            var touch = L.control.touchHover().addTo(map);
+            touch._toggle(touch);
+            $(touch.getContainer()).hide()
+        } else {
+            L.control.fullscreen().addTo(map);
+            map.on('fullscreenchange', map_fit);
+        }
+
+        load_JSON3();
+        load_JSON1();
+    });
+
+
+</script>
+</body>
+</html>

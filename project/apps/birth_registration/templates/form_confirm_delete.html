@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% load bootstrap3 %}
+{% load tags %}
+
+{% block content %}
+    {% if form|name == "101" %}
+        {% url 'F101Deleted' as deletedUrl%}
+        {% url 'F101Detail' object.pk as detailUrl%}
+    {% elif form|name == "201" %}
+        {% url 'F201Deleted' as deletedUrl%}
+        {% url 'F201Detail' object.pk as detailUrl%}
+    {% endif %}
+    <h1>
+        <span class="text-danger">
+    {% block title %}
+        {% if object.deleted %}
+            {% trans "Restore form " %} {{ form|name }}/{{ object.pk }}
+        {% else %}
+            {% trans "Remove form " %} {{ form|name }}/{{ object.pk }}
+        {% endif %}
+    {% endblock %}
+    </span>
+    </h1>
+    <div class="col-lg-6">
+        <form id="f101_form" method="post">
+            {% include "form.html" %}
+            {% buttons %}
+                {% if object.deleted %}
+                    <button type="submit" class="btn btn-danger">
+                        {% bootstrap_icon "floppy-open" %} {% trans "Restore" %}
+                    </button>
+                    <a href="{{ deletedUrl }}" class="btn btn-default">
+                        {% trans "Cancel" %}
+                    </a>
+
+                {% else %}
+                    <button type="submit" class="btn btn-danger">
+                        {% bootstrap_icon "trash" %} {% trans "Delete" %}
+                    </button>
+                    <a href="{{ detailUrl }}" class="btn btn-default">
+                        {% trans "Cancel" %}
+                    </a>
+                {% endif %}
+            {% endbuttons %}
+            <hr/>
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(function () {
+            $("textarea").first().focus();
+            $('select').select2("readonly", true);
+        })
+    </script>
+{% endblock %}

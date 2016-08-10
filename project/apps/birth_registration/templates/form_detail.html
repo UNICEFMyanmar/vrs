@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% load bootstrap3 %}
+{% load tags %}
+{% load tags %}
+
+{% block content %}
+    {% if form|name == "101" %}
+        {% url 'F101Edit' object.pk as editUrl %}
+        {% url 'F101Restore' object.pk as restoreUrl %}
+        {% url 'F101List' as listUrl %}
+    {% elif form|name == "201" %}
+        {% url 'F201Edit' object.pk as editUrl %}
+        {% url 'F201Restore' object.pk as restoreUrl %}
+        {% url 'F201List' as listUrl %}
+    {% endif %}
+    <h1>{% block title %}{% trans "Form " %}{{ form|name }}/{{ object.pk }}{% endblock %}</h1>
+    <div class="col-lg-8">
+        <table class="table table-striped">
+            {% for fields in form %}
+                {% with fields as field %}
+                    {% if field.value != '' and field.value != None %}
+                        <tr>
+                            <td><strong>{{ field.label }}</strong></td>
+                            <td>{{ field|display }}</td>
+                        </tr>
+                    {% else %}
+                        {% if field.name == 'Name_of_child' %}
+                            <tr>
+                                <td><strong>{{ field.label }}</strong></td>
+                                <td>{% trans "&lt;blank&gt;" %}</td>
+                            </tr>
+                        {% endif %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </table>
+
+        {% if object.Original_form and object.Original_form != '1' %}
+            <a class="thumbnail" id="id_Original_form" href="{{ object.Original_form.url }}">
+                <img src="{{ object.Original_form.url }}">
+            </a>
+        {% endif %}
+
+        <hr/>
+        {% if object.deleted == False %}
+
+            {% if user_can_change %}
+                <a href="{{ editUrl }}" class="btn btn-primary">
+                    {% bootstrap_icon "edit" %} {% trans "Edit" %}
+                    </a>
+            {% endif %}
+
+            {% if form|name == '101' %}
+                {% if perms.certification.add_f103 %}
+                    <a href="{% url "F103CreateView" f101=object.pk %}" type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        {% trans "Issue F103" %}
+                    </a>
+                {% endif %}
+            {% endif %}
+
+            {% if form|name == '201' %}
+                {% if perms.certification.add_f203 %}
+                    <a href="{% url "F203CreateView" f201=object.pk %}" type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        {% trans "Issue F203" %}
+                    </a>
+                {% endif %}
+            {% endif %}
+
+
+        {% else %}
+
+            {% if user_can_delete %}
+                <a href="{{ restoreUrl }}" class="btn btn-danger">
+                    {% bootstrap_icon "floppy-open" %} {% trans "Restore" %}
+                </a>
+            {% endif %}
+
+        {% endif %}
+        <a href="{{ listUrl }}" class="btn btn-default">
+            {% trans "Cancel" %}
+        </a>
+        <hr/>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(function () {
+            $("input:visible").first().focus();
+        })
+    </script>
+{% endblock %}

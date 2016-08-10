@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-23 03:57-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: project/apps/birth_registration/static/js/form_validation.js:216
+msgid "Usually 1361 - 5000"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:217
+msgid "Usually 15 - 50"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:218
+msgid "Usually 28 - 42"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:219
+#: project/apps/birth_registration/static/js/form_validation.js:220
+msgid "Usually 0 - 12"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:221
+#: project/apps/birth_registration/static/js/form_validation.js:222
+#: project/apps/birth_registration/static/js/form_validation.js:295
+#: project/apps/birth_registration/static/js/form_validation.js:296
+msgid "Please enter date in format DDMMYYYY"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:294
+msgid "Bounds are: 1 - 99999"
+msgstr ""
+
+#: project/apps/birth_registration/static/js/form_validation.js:297
+#: project/apps/birth_registration/static/js/form_validation.js:298
+msgid "Please check this field value or \"SEX\" field value above"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:40
+msgid "for the last 24 hours"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:41
+msgid "for the last week"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:42
+msgid "for the last month"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:43
+msgid "for the last year"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:47
+msgid "Birth registrations"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:365
+msgid "Last registration:"
+msgstr ""
+
+#: project/apps/map/static/js/maps.js:367
+msgid "Hover over a marker"
+msgstr ""

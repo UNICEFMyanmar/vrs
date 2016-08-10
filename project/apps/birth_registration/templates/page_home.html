@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load i18n %}
+{% load webdesign %}
+
+{% block nav_user %}
+    {% if user.is_authenticated %}
+        {{ block.super }}
+    {% else %}
+        {% include "navbar-form-login.html" %}
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+    <h1>
+        {% block title %}
+            {% trans "Myanmar Vital Registration Database" %}
+        {% endblock %}
+    </h1>
+
+    <div class="row">
+        {% if "map" in INSTALLED_APPS %}<div class="col-lg-7">{% else %}<div class="col-lg-12">{% endif %}
+            {% include "include_cso_info.html" %}
+            <h3>{% trans "User documentation" %}</h3>
+
+            <p>{% bootstrap_icon "book" %} {% trans "User manuals are available" %}
+                <a href="http://vrs.gov.mm/redmine/projects/vrs-support/wiki">
+                {% trans " in the Wiki section of VR DB support site." %}
+                    {% comment %}
+                    todo: $( "h1" ).first().load( "/redmine/projects/vrs-support/wiki .wiki-page" );
+                    {% endcomment %}
+                </a>
+            </p>
+        </div>
+
+
+        {% if "map" in INSTALLED_APPS %}
+            <div class="col-lg-5">
+                <h3>
+                    {% trans "Birth registrations for the last 365 days:" %}
+                </h3>
+                <canvas style=" width: 100%;
+                        height: auto;" id="canvas"></canvas>
+                <blockquote>
+                    <a href="{% url "map" %}">{% bootstrap_icon "stats" %} {% trans "Click here for the realtime monitoring and more stats data" %}</a>
+                </blockquote>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {% if "map" in INSTALLED_APPS %}
+        <script src="{{ STATIC_URL }}vendor/Chart.js/src/Chart.Core.js"></script>
+        <script src="{{ STATIC_URL }}vendor/Chart.js/src/Chart.Line.js"></script>
+
+        <script>
+            $(function () {
+                var lineChartData = {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: "",
+                            fillColor: "rgba(220,220,220,0.2)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            pointColor: "rgba(220,220,220,1)",
+                            pointStrokeColor: "#fff",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(220,220,220,1)",
+                            data: []
+                        }
+                    ]
+                };
+                $.getJSON("/monitor/stat_detail/365", function (data) {
+                    var ChartData = {};
+                    for (var i in data) {
+                        var point = data[i];
+                        if (ChartData[point.day]) {
+                            ChartData[point.day] += point.number;
+                        } else {
+                            ChartData[point.day] = point.number;
+                        }
+                    }
+
+                    lineChartData.labels = Object.keys(ChartData);
+                    lineChartData.datasets[0].data = Object.keys(ChartData).map(function (key) {
+                        return ChartData[key];
+                    });
+                    new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData, {
+                        animationEasing: "easeOutBack"
+                    });
+                }
+                )
+                ;
+            });
+        </script>
+    {% endif %}
+{% endblock %}

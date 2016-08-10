@@ -1,0 +1,1 @@
+{{ site.name }}: {% trans "Please activate your account." %}

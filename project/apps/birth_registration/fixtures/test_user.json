@@ -1,0 +1,22 @@
+[
+  {
+    "fields": {
+      "username": "kostik",
+      "first_name": "Kostik",
+      "last_name": "Naumov",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2015-09-13T00:17:38.271Z",
+      "groups": [
+        1
+      ],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$20000$yr7dmeUzkoY5$N0I2xj8dH7vCnaUEmWgS6rgIvgpe/GEkgPm+u46CoXw=",
+      "email": "kostik@kostik.net",
+      "date_joined": "2014-10-31T17:59:32Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+  }
+]

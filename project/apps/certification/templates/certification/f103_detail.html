@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% load bootstrap3 %}
+{% load tags %}
+
+{% block content %}
+    <h1>{% block title %}{% trans "Form 103" %}/{{ object.pk }}{% endblock %}</h1>
+
+    <div class="col-lg-10">
+        <table class="table table-striped">
+            {% for fields in form %}
+                {% with fields as field %}
+                    {% if field.value != '' and field.value != None %}
+                        <tr>
+                            <td><strong>{{ field.label }}</strong></td>
+                            <td>{{ field|display }}</td>
+                        </tr>
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </table>
+
+        {% buttons %}
+            {% block buttons %}
+                <a href="{% url 'F103ListView' %}" class="btn btn-default">
+                    {% bootstrap_icon "list" %}
+                    {% trans "Browse" %}
+                </a>
+
+                <a href="{% url 'F103PrintView' pk=object.pk %}" class="btn btn-default">
+                    {% bootstrap_icon "print" %}
+                    {% trans "Print" %}
+                </a>
+            {% endblock %}
+        {% endbuttons %}
+        <hr/>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

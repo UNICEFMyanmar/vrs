@@ -1,0 +1,5111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: UNICEF Myanmar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-18 20:13+0630\n"
+"PO-Revision-Date: 2016-04-29 20:50+0625\n"
+"Last-Translator: Pyae Sone <gipsyhnh@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: my_MM\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Translated-Using: django-rosetta 0.7.4\n"
+
+#: project/apps/birth_registration/admin.py:65
+msgid "Opened by admin"
+msgstr "အုပ်ချုပ်သူမှဖွင့်ခဲ့သည်"
+
+#: project/apps/birth_registration/admin.py:76
+#, python-format
+msgid "Revision (%s) %s opened by admin"
+msgstr " ပြန်လည်မွမ်းမံခြင်း(%s) %s ကိုအုပ်ချုပ်သူမှဖွင့်ခဲ့သည်"
+
+#: project/apps/birth_registration/admin.py:142
+msgid "History"
+msgstr "ရာဇဝင် "
+
+#: project/apps/birth_registration/admin.py:225
+#: project/apps/birth_registration/templates/form_create.html:62
+#: project/templates/reversion/object_history.html:16
+msgid "User"
+msgstr "အသုံးပြုသူ"
+
+#: project/apps/birth_registration/admin.py:230
+msgid "Personal info"
+msgstr "ကိုယ်ပိုင်အချက်အလက်"
+
+#: project/apps/birth_registration/admin.py:231
+#: project/apps/birth_registration/models.py:1070
+#: project/apps/birth_registration/models.py:1071
+#: project/apps/birth_registration/models.py:1074
+msgid "Authority"
+msgstr "ဌာန"
+
+#: project/apps/birth_registration/admin.py:232
+msgid "Permissions"
+msgstr "ခွင့်ပြုချက်များ"
+
+#: project/apps/birth_registration/admin.py:234
+msgid "Applied permissions"
+msgstr "ခွင့်ပြုချက်များများကိုသက်ရောက်စေခဲ့သည်"
+
+#: project/apps/birth_registration/admin.py:236
+msgid "Important dates"
+msgstr "အရေးကြီးသောရက်စွဲများ"
+
+#: project/apps/birth_registration/apps.py:38
+msgid "Vital registration"
+msgstr "ပြည်သူ့မှတ်တမ်း အချက်အလက်စုဆောင်းမှု"
+
+#: project/apps/birth_registration/codes.py:22
+msgid "Kachin State"
+msgstr "ကချင်"
+
+#: project/apps/birth_registration/codes.py:25
+#: project/apps/birth_registration/codes.py:27
+msgid "Myitkyina"
+msgstr "မြစ်ကြီးနား"
+
+#: project/apps/birth_registration/codes.py:28
+msgid "Hsinbo"
+msgstr "ဆင်ဘို"
+
+#: project/apps/birth_registration/codes.py:29
+msgid "Waingmaw"
+msgstr "ဝိုင်းမော်"
+
+#: project/apps/birth_registration/codes.py:30
+msgid "Hsadone"
+msgstr "ဆဒုံး"
+
+#: project/apps/birth_registration/codes.py:31
+msgid "Kanpaikti"
+msgstr "ကန်ပိုက်တီး"
+
+#: project/apps/birth_registration/codes.py:32
+msgid "Ingyanyan"
+msgstr "အင်ဂျန်းယန်"
+
+#: project/apps/birth_registration/codes.py:33
+msgid "Tanaing"
+msgstr "တနိုင်း"
+
+#: project/apps/birth_registration/codes.py:34
+msgid "Shinbwayyan"
+msgstr "ရှင်ဗွေယန်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:35
+msgid "Chiphwe"
+msgstr "ချီဖွေ"
+
+#: project/apps/birth_registration/codes.py:36
+msgid "Panwa"
+msgstr "ပန်ဝါ"
+
+#: project/apps/birth_registration/codes.py:37
+msgid "Hsotlaw"
+msgstr "ဆော့လော်"
+
+#: project/apps/birth_registration/codes.py:41
+#: project/apps/birth_registration/codes.py:43
+msgid "Mohnyin"
+msgstr "မိုးညှင်း"
+
+#: project/apps/birth_registration/codes.py:44
+msgid "Hopin"
+msgstr "ဟိုပင်"
+
+#: project/apps/birth_registration/codes.py:45
+msgid "Mogaung"
+msgstr "မိုးကောင်း"
+
+#: project/apps/birth_registration/codes.py:46
+msgid "Nanmatee"
+msgstr "နမ္မတီး"
+
+#: project/apps/birth_registration/codes.py:47
+msgid "Phakant"
+msgstr "ဖားကန့်"
+
+#: project/apps/birth_registration/codes.py:48
+msgid "Kamine"
+msgstr "ကာမိုင်း"
+
+#: project/apps/birth_registration/codes.py:52
+#: project/apps/birth_registration/codes.py:54
+msgid "Bhamo"
+msgstr "ဗန်းမော်"
+
+#: project/apps/birth_registration/codes.py:55
+msgid "_Shwegu"
+msgstr "ရွှေဂူ"
+
+#: project/apps/birth_registration/codes.py:56
+msgid "Myohla"
+msgstr "မြို့လှ"
+
+#: project/apps/birth_registration/codes.py:57
+msgid "Momauk"
+msgstr "မိုးမောက်"
+
+#: project/apps/birth_registration/codes.py:58
+msgid "Lwe`ge`"
+msgstr "လွယ်ဂျယ်"
+
+#: project/apps/birth_registration/codes.py:59
+msgid "Dotphoneyan"
+msgstr "ဒေါ့ဖုန်းယန်"
+
+#: project/apps/birth_registration/codes.py:60
+msgid "Mansi"
+msgstr "မံစီ"
+
+#: project/apps/birth_registration/codes.py:64
+#: project/apps/birth_registration/codes.py:66
+msgid "Putao"
+msgstr "ပူတာအို"
+
+#: project/apps/birth_registration/codes.py:67
+msgid "Sumprabum"
+msgstr "စွမ်ပရာဘွမ်"
+
+#: project/apps/birth_registration/codes.py:68
+msgid "Machanbaw"
+msgstr "မချမ်းဘော"
+
+#: project/apps/birth_registration/codes.py:69
+msgid "Khaunglanphoo"
+msgstr "ခေါင်လန်ဖူး"
+
+#: project/apps/birth_registration/codes.py:70
+msgid "Naungmoon"
+msgstr "နောင်မွန်း"
+
+#: project/apps/birth_registration/codes.py:71
+msgid "Pannandin"
+msgstr "ပန်နန်းဒင်"
+
+#: project/apps/birth_registration/codes.py:77
+msgid "Kayah State"
+msgstr "ကယား"
+
+#: project/apps/birth_registration/codes.py:80
+msgid "LoiKaw"
+msgstr "လွိုင်ကော်"
+
+#: project/apps/birth_registration/codes.py:82
+msgid "LoiKaw "
+msgstr "လွိုင်ကော်"
+
+#: project/apps/birth_registration/codes.py:83
+msgid "Dimawso"
+msgstr "ဒီမောဆို"
+
+#: project/apps/birth_registration/codes.py:84
+msgid "Phruso"
+msgstr "ဖရူးဆို"
+
+#: project/apps/birth_registration/codes.py:85
+msgid "Shadaw"
+msgstr "ရှားတော"
+
+#: project/apps/birth_registration/codes.py:89
+msgid "Bawlakhe"
+msgstr "ဘောလခဲ"
+
+#: project/apps/birth_registration/codes.py:91
+msgid "Bawlakhe "
+msgstr "ဘောလခဲ"
+
+#: project/apps/birth_registration/codes.py:92
+msgid "Ywathit"
+msgstr "ရွှာသစ်"
+
+#: project/apps/birth_registration/codes.py:93
+msgid "Phrsaung"
+msgstr "ဖားဆောင်း"
+
+#: project/apps/birth_registration/codes.py:94
+msgid "Meisi"
+msgstr "မယ်စဲ့"
+
+#: project/apps/birth_registration/codes.py:100
+msgid "Kayin State"
+msgstr "ကရင်"
+
+#: project/apps/birth_registration/codes.py:103
+msgid "Hpa-an"
+msgstr "ဘားအံ"
+
+#: project/apps/birth_registration/codes.py:105
+msgid "Hpa-an "
+msgstr "ဘားအံ"
+
+#: project/apps/birth_registration/codes.py:106
+msgid "Hlaingbwe"
+msgstr "လှိုင်းဘွဲ့"
+
+#: project/apps/birth_registration/codes.py:107
+msgid "Paingkyon"
+msgstr "ပိုင်ကျုံ"
+
+#: project/apps/birth_registration/codes.py:108
+msgid "Shan Ywathit"
+msgstr "ရှမ်းရွာသစ်"
+
+#: project/apps/birth_registration/codes.py:109
+msgid "Thandaunggyi"
+msgstr "သံတောင်ကြီး"
+
+#: project/apps/birth_registration/codes.py:110
+msgid "Thandaung"
+msgstr "သံတောင်"
+
+#: project/apps/birth_registration/codes.py:111
+msgid "Leiktho"
+msgstr "လိပ်သို"
+
+#: project/apps/birth_registration/codes.py:112
+msgid "Bawgali"
+msgstr "ဘောဂလိ"
+
+#: project/apps/birth_registration/codes.py:116
+#: project/apps/birth_registration/codes.py:118
+msgid "Kawkareik"
+msgstr "ကော့ကရိတ်"
+
+#: project/apps/birth_registration/codes.py:119
+msgid "Kyondoe"
+msgstr "ကျုဒိုး"
+
+#: project/apps/birth_registration/codes.py:120
+msgid "Kyarinseikkyi"
+msgstr "ကြာအင်းဆိပ်ကြီး"
+
+#: project/apps/birth_registration/codes.py:121
+msgid "Payarthonezu"
+msgstr "ဘုရားသုံးဆူမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:122
+msgid "Kyaidon"
+msgstr "ကျိုက်ဒုံမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:126
+#: project/apps/birth_registration/codes.py:128
+msgid "Myawady"
+msgstr "မြဝတီ"
+
+#: project/apps/birth_registration/codes.py:129
+msgid "Sugali"
+msgstr "စုကလိ"
+
+#: project/apps/birth_registration/codes.py:130
+msgid "Wawlaymyaing(Wawlay)"
+msgstr "ဝေါလေမြိုင်(ဝေါလေ)"
+
+#: project/apps/birth_registration/codes.py:134
+#: project/apps/birth_registration/codes.py:135
+msgid "Pharpon"
+msgstr "ဖာပွန်"
+
+#: project/apps/birth_registration/codes.py:135
+msgid "Kamamaung"
+msgstr "ကမမောင်းမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:141
+msgid "Chin State"
+msgstr "ချင်း"
+
+#: project/apps/birth_registration/codes.py:144
+#: project/apps/birth_registration/codes.py:145
+msgid "Haka"
+msgstr "ဟားခါး"
+
+#: project/apps/birth_registration/codes.py:145
+msgid "Thantlang"
+msgstr "ထန်တလန်"
+
+#: project/apps/birth_registration/codes.py:149
+#: project/apps/birth_registration/codes.py:151
+msgid "Falam"
+msgstr "ဖလမ်း"
+
+#: project/apps/birth_registration/codes.py:152
+msgid "Rihkhuadal"
+msgstr "ရိခေါ်ဒါရ်"
+
+#: project/apps/birth_registration/codes.py:153
+msgid "Tedim"
+msgstr "တီးတိန်"
+
+#: project/apps/birth_registration/codes.py:154
+msgid "Tonzaung"
+msgstr "တွန်းဇန်"
+
+#: project/apps/birth_registration/codes.py:155
+msgid "Cikha"
+msgstr "ကျီးခါး"
+
+#: project/apps/birth_registration/codes.py:159
+#: project/apps/birth_registration/codes.py:161
+msgid "Mindat"
+msgstr "မင်းတပ်"
+
+#: project/apps/birth_registration/codes.py:162
+msgid "Matupi"
+msgstr "မတူပီ"
+
+#: project/apps/birth_registration/codes.py:163
+msgid "Reazu"
+msgstr "ရေဇွာမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:164
+msgid "Kanpalet"
+msgstr "ကန်ပက်လက်"
+
+#: project/apps/birth_registration/codes.py:165
+msgid "Paletwa"
+msgstr "ပလက်၀"
+
+#: project/apps/birth_registration/codes.py:166
+msgid "Sami"
+msgstr "ဆမီး"
+
+#: project/apps/birth_registration/codes.py:172
+msgid "Sagaing Region"
+msgstr "စစ်ကိုင်း"
+
+#: project/apps/birth_registration/codes.py:175
+#: project/apps/birth_registration/codes.py:177
+msgid "Monywa"
+msgstr "မုံရွာ"
+
+#: project/apps/birth_registration/codes.py:178
+msgid "Butalin"
+msgstr "ဘုတလင်"
+
+#: project/apps/birth_registration/codes.py:179
+msgid "Ayartaw"
+msgstr "အရာတော်"
+
+#: project/apps/birth_registration/codes.py:180
+msgid "Chaung Oo"
+msgstr "ချောင်းဦး"
+
+#: project/apps/birth_registration/codes.py:184
+#: project/apps/birth_registration/codes.py:186
+msgid "_ Shwebo"
+msgstr "ရွှေဘို"
+
+#: project/apps/birth_registration/codes.py:187
+msgid "Kyaukmyaung"
+msgstr "ကျောက်မြောင်း"
+
+#: project/apps/birth_registration/codes.py:188
+msgid "Khin U"
+msgstr "ခင်ဦး"
+
+#: project/apps/birth_registration/codes.py:189
+msgid "Wetlet"
+msgstr "ဝက်လက်"
+
+#: project/apps/birth_registration/codes.py:190
+msgid "Depayin"
+msgstr "ဒီပဲယင်း"
+
+#: project/apps/birth_registration/codes.py:194
+#: project/apps/birth_registration/codes.py:196
+msgid "Kambalu"
+msgstr "ကန့်ဘလူ"
+
+#: project/apps/birth_registration/codes.py:197
+msgid "Kyunhla"
+msgstr "ကျွန်းလှ"
+
+#: project/apps/birth_registration/codes.py:198
+msgid "_Ye U"
+msgstr "ရေဦး"
+
+#: project/apps/birth_registration/codes.py:199
+msgid "Tasei"
+msgstr "တန့်ဆည်"
+
+#: project/apps/birth_registration/codes.py:203
+#: project/apps/birth_registration/codes.py:205
+msgid "Sagaing"
+msgstr "စစ်ကိုင်း"
+
+#: project/apps/birth_registration/codes.py:206
+msgid "Myinmu"
+msgstr "မြင်းမူ"
+
+#: project/apps/birth_registration/codes.py:207
+msgid "Myaung"
+msgstr "မြောင်"
+
+#: project/apps/birth_registration/codes.py:211
+#: project/apps/birth_registration/codes.py:213
+msgid "Yinmarpin"
+msgstr "ယင်းမာပင်"
+
+#: project/apps/birth_registration/codes.py:214
+msgid "Kani"
+msgstr "ကနီ"
+
+#: project/apps/birth_registration/codes.py:215
+msgid "Sarlingyi"
+msgstr "ဆားလင်းကြီး "
+
+#: project/apps/birth_registration/codes.py:216
+msgid "Palae"
+msgstr "ပုလဲ"
+
+#: project/apps/birth_registration/codes.py:220
+#: project/apps/birth_registration/codes.py:222
+msgid "Katha"
+msgstr "ကသာ"
+
+#: project/apps/birth_registration/codes.py:223
+#: project/apps/birth_registration/codes.py:681
+msgid "Indaw"
+msgstr "အင်တောမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:224
+msgid "Tigyaing"
+msgstr "ထီးချိုင့်"
+
+#: project/apps/birth_registration/codes.py:225
+msgid "Banmauk"
+msgstr "ဗန်းမောက်"
+
+#: project/apps/birth_registration/codes.py:226
+msgid "Kawlin"
+msgstr "ကောလင်း"
+
+#: project/apps/birth_registration/codes.py:227
+msgid "Wutho"
+msgstr "ဝန်းသို"
+
+#: project/apps/birth_registration/codes.py:228
+msgid "Pinlebu"
+msgstr "ပင်လယ်ဘူး "
+
+#: project/apps/birth_registration/codes.py:232
+#: project/apps/birth_registration/codes.py:233
+msgid "Kalay"
+msgstr "ကလေး "
+
+#: project/apps/birth_registration/codes.py:233
+msgid "Kalawa"
+msgstr "ကလေး၀"
+
+#: project/apps/birth_registration/codes.py:233
+msgid "Mingin"
+msgstr "မင်းကင်း"
+
+#: project/apps/birth_registration/codes.py:237
+#: project/apps/birth_registration/codes.py:239
+msgid "Tamu"
+msgstr "တမူး "
+
+#: project/apps/birth_registration/codes.py:239
+#: project/apps/birth_registration/codes.py:384
+msgid "Myothit"
+msgstr "မြို့သစ်"
+
+#: project/apps/birth_registration/codes.py:239
+msgid "Khampat"
+msgstr "ခမ်းပတ်"
+
+#: project/apps/birth_registration/codes.py:243
+#: project/apps/birth_registration/codes.py:244
+msgid "Mawlaik"
+msgstr "မော်လိုက်"
+
+#: project/apps/birth_registration/codes.py:244
+msgid "Phaungpyin"
+msgstr "‌ဖောင်းပြင်"
+
+#: project/apps/birth_registration/codes.py:248
+#: project/apps/birth_registration/codes.py:250
+msgid "Hkanmti"
+msgstr "ခန္တီး"
+
+#: project/apps/birth_registration/codes.py:251
+msgid "Homalin"
+msgstr "ဟုမ္မလင်း"
+
+#: project/apps/birth_registration/codes.py:252
+msgid "Shwepyiaye"
+msgstr "ရွှေပြည်အေး"
+
+#: project/apps/birth_registration/codes.py:253
+msgid "Lashi"
+msgstr "‌လေရှီး"
+
+#: project/apps/birth_registration/codes.py:254
+msgid "Mobaingluk"
+msgstr "မိုပိုင်းလွတ်"
+
+#: project/apps/birth_registration/codes.py:255
+msgid "Sonemara"
+msgstr "ဆွမ္မရာ"
+
+#: project/apps/birth_registration/codes.py:256
+msgid "Lahe"
+msgstr "လဟယ်"
+
+#: project/apps/birth_registration/codes.py:257
+msgid "Htanparkway"
+msgstr "ထန်ပါခွေ"
+
+#: project/apps/birth_registration/codes.py:258
+msgid "Nanyun"
+msgstr "နန်းယွန်း"
+
+#: project/apps/birth_registration/codes.py:259
+msgid "Pansaung"
+msgstr "ပန်ဆောင်"
+
+#: project/apps/birth_registration/codes.py:260
+msgid "Donhee"
+msgstr "ဒုံဟီး"
+
+#: project/apps/birth_registration/codes.py:266
+msgid "Tanintharyi Region"
+msgstr "တနင်္သာရီ "
+
+#: project/apps/birth_registration/codes.py:269
+#: project/apps/birth_registration/codes.py:271
+msgid "Dawei"
+msgstr "ထားဝယ် "
+
+#: project/apps/birth_registration/codes.py:272
+msgid "Myitta"
+msgstr "မေတ္တာမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:273
+msgid "_Longlone"
+msgstr "လောင်းလုံး"
+
+#: project/apps/birth_registration/codes.py:274
+msgid "Thayetchaung"
+msgstr "သရက်ချောင်း "
+
+#: project/apps/birth_registration/codes.py:275
+msgid "_Yebyu"
+msgstr "​ရေဖြူ"
+
+#: project/apps/birth_registration/codes.py:276
+msgid "Kaleinaung"
+msgstr "ကလိန်အောင်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:280
+#: project/apps/birth_registration/codes.py:282
+msgid "Myeik "
+msgstr "မြိတ်"
+
+#: project/apps/birth_registration/codes.py:283
+msgid "Kyunsu"
+msgstr "ကျွန်းစု "
+
+#: project/apps/birth_registration/codes.py:284
+msgid "Palaw"
+msgstr "ပုလော"
+
+#: project/apps/birth_registration/codes.py:285
+msgid "Palauk"
+msgstr "ပလောက်"
+
+#: project/apps/birth_registration/codes.py:286
+msgid "Tanintharyi"
+msgstr "တနင်္သာရီ "
+
+#: project/apps/birth_registration/codes.py:290
+msgid "_ Kawthoung"
+msgstr "ကော့သောင်း"
+
+#: project/apps/birth_registration/codes.py:292
+msgid "_Kawthoung"
+msgstr "ကော့သောင်း"
+
+#: project/apps/birth_registration/codes.py:293
+msgid "Khamaukkyi"
+msgstr "ခမောက်ကြီး"
+
+#: project/apps/birth_registration/codes.py:294
+msgid "Bokepyin"
+msgstr "ဘုတ်ပြင်း "
+
+#: project/apps/birth_registration/codes.py:295
+msgid "Pyigyimandaing"
+msgstr "ပြည်​ကြီးမဏ္ဍိုင်"
+
+#: project/apps/birth_registration/codes.py:296
+msgid "Karathuri"
+msgstr "ကရသူရိမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:302
+msgid "Bago Region"
+msgstr "ပဲခူး"
+
+#: project/apps/birth_registration/codes.py:305
+#: project/apps/birth_registration/codes.py:307
+msgid "Bago"
+msgstr "ပဲခူး "
+
+#: project/apps/birth_registration/codes.py:308
+msgid "Payagyi"
+msgstr "ဘုရားကြီး"
+
+#: project/apps/birth_registration/codes.py:309
+msgid "Inntakaw"
+msgstr "အင်းတကော်"
+
+#: project/apps/birth_registration/codes.py:310
+msgid "Tanatpin"
+msgstr "သနပ်ပင်"
+
+#: project/apps/birth_registration/codes.py:311
+msgid "Kawa"
+msgstr "က၀"
+
+#: project/apps/birth_registration/codes.py:312
+msgid "Thetkala"
+msgstr "သက္ကလ"
+
+#: project/apps/birth_registration/codes.py:313
+msgid "Waw"
+msgstr "ဝေါ "
+
+#: project/apps/birth_registration/codes.py:314
+msgid "Kyauktaga"
+msgstr "ကျောက်တံခါး "
+
+#: project/apps/birth_registration/codes.py:315
+msgid "Penwegon"
+msgstr "ပဲနွယ်ကုန်းမြို့"
+
+#: project/apps/birth_registration/codes.py:316
+msgid "Phado"
+msgstr "ဖဒိုမြို့"
+
+#: project/apps/birth_registration/codes.py:317
+msgid "Daik U"
+msgstr "ဒိုက်ဦး "
+
+#: project/apps/birth_registration/codes.py:318
+msgid "_Shwegyin"
+msgstr "ရွှေကျင် "
+
+#: project/apps/birth_registration/codes.py:319
+msgid "Nyaunglebin"
+msgstr "ညောင်လေးပင်"
+
+#: project/apps/birth_registration/codes.py:320
+msgid "Madauk"
+msgstr "မဒေါက်"
+
+#: project/apps/birth_registration/codes.py:321
+msgid "Pyuntasa"
+msgstr "ပြွန်တန်ဆာ"
+
+#: project/apps/birth_registration/codes.py:322
+msgid "Painzaloat"
+msgstr "ပိန်းဇလုတ်"
+
+#: project/apps/birth_registration/codes.py:326
+#: project/apps/birth_registration/codes.py:328
+msgid "Taungoo"
+msgstr "တောင်ငူ"
+
+#: project/apps/birth_registration/codes.py:329
+msgid "Kaytumati"
+msgstr "ကေတုမတီ"
+
+#: project/apps/birth_registration/codes.py:330
+msgid "Yaedashe"
+msgstr "ရေတာရှည်"
+
+#: project/apps/birth_registration/codes.py:331
+msgid "Swa"
+msgstr "ဆွာမြို့"
+
+#: project/apps/birth_registration/codes.py:332
+msgid "_Kyauklyi"
+msgstr "ကျောက်ကြီး "
+
+#: project/apps/birth_registration/codes.py:333
+msgid "Pyu"
+msgstr "ဖြူး"
+
+#: project/apps/birth_registration/codes.py:334
+msgid "Zayyawaddy"
+msgstr "ဇေယျဝတီ"
+
+#: project/apps/birth_registration/codes.py:335
+msgid "Kanyutkwin"
+msgstr "ကညွတ်ကွင်းမြို့"
+
+#: project/apps/birth_registration/codes.py:336
+msgid "Oatwin"
+msgstr "အုတ်တွင်း"
+
+#: project/apps/birth_registration/codes.py:337
+msgid "Kyaepwe"
+msgstr "ကျွဲပွဲမြို့"
+
+#: project/apps/birth_registration/codes.py:338
+msgid "Htantapin"
+msgstr "ထန်းတပင်"
+
+#: project/apps/birth_registration/codes.py:342
+#: project/apps/birth_registration/codes.py:344
+msgid "Pyay"
+msgstr "ပြည်"
+
+#: project/apps/birth_registration/codes.py:345
+msgid "Paungtale"
+msgstr "ပေါင်းတည်"
+
+#: project/apps/birth_registration/codes.py:346
+msgid "_Paukkhaung"
+msgstr "ပေါက်ခေါင်း "
+
+#: project/apps/birth_registration/codes.py:347
+msgid "Padaung"
+msgstr "ပန်းတောင်း"
+
+#: project/apps/birth_registration/codes.py:348
+msgid "Oatshitpin"
+msgstr "ဥရှစ်ပင်မြို့"
+
+#: project/apps/birth_registration/codes.py:349
+msgid "_Paunde"
+msgstr "ပေါင်းတည်"
+
+#: project/apps/birth_registration/codes.py:350
+msgid "Thegon"
+msgstr "သဲကုန်း"
+
+#: project/apps/birth_registration/codes.py:351
+msgid "Patigone"
+msgstr "ပုတီးကုန်းမြို့"
+
+#: project/apps/birth_registration/codes.py:352
+msgid "Shewdaung"
+msgstr "ရွှေတောင် "
+
+#: project/apps/birth_registration/codes.py:356
+#: project/apps/birth_registration/codes.py:358
+msgid "Thayawady"
+msgstr "သာယာဝတီ"
+
+#: project/apps/birth_registration/codes.py:359
+msgid "Thoneze"
+msgstr "သုံးဆယ်"
+
+#: project/apps/birth_registration/codes.py:360
+msgid "Letpadan"
+msgstr "လက်ပံတန်း"
+
+#: project/apps/birth_registration/codes.py:361
+#: project/apps/birth_registration/codes.py:404
+msgid "Minhla"
+msgstr "မင်းလှ"
+
+#: project/apps/birth_registration/codes.py:362
+msgid "Sitkwin"
+msgstr "စစ်ကွင်း"
+
+#: project/apps/birth_registration/codes.py:363
+msgid "Okpo"
+msgstr "အုတ်ဖို"
+
+#: project/apps/birth_registration/codes.py:364
+msgid "Othekon"
+msgstr "အိုးသည်ကုန်းမြို့"
+
+#: project/apps/birth_registration/codes.py:365
+msgid "Zigon"
+msgstr "ဇီးကုန်း"
+
+#: project/apps/birth_registration/codes.py:366
+msgid "Nattalin"
+msgstr "နတ်တလင်း"
+
+#: project/apps/birth_registration/codes.py:367
+msgid "Tarpon"
+msgstr "တာပွန်"
+
+#: project/apps/birth_registration/codes.py:368
+msgid "Monyo"
+msgstr "မိုးညို"
+
+#: project/apps/birth_registration/codes.py:369
+msgid "Gyobingauk"
+msgstr "ကြို့ပင်ကောက်"
+
+#: project/apps/birth_registration/codes.py:375
+msgid "Magway Region"
+msgstr "မကွေး "
+
+#: project/apps/birth_registration/codes.py:378
+#: project/apps/birth_registration/codes.py:380
+msgid "Magway"
+msgstr "မကွေး "
+
+#: project/apps/birth_registration/codes.py:381
+msgid "_Yenanyoung"
+msgstr "ရေနံချောင်း"
+
+#: project/apps/birth_registration/codes.py:382
+msgid "Chauk"
+msgstr "ချောက် "
+
+#: project/apps/birth_registration/codes.py:383
+msgid "_Tawngdwingyi"
+msgstr "တောင်တွင်းကြီး "
+
+#: project/apps/birth_registration/codes.py:385
+msgid "Natmauk"
+msgstr "နတ်မောက် "
+
+#: project/apps/birth_registration/codes.py:389
+#: project/apps/birth_registration/codes.py:391
+msgid "Minbu"
+msgstr "မင်းဘူး "
+
+#: project/apps/birth_registration/codes.py:392
+msgid "Sagu"
+msgstr "စကုမြို့"
+
+#: project/apps/birth_registration/codes.py:393
+msgid "Pwint Phyu"
+msgstr "ပွင့်ဖြူ "
+
+#: project/apps/birth_registration/codes.py:394
+msgid "Ngape"
+msgstr "ငဖဲ "
+
+#: project/apps/birth_registration/codes.py:395
+msgid "Salin"
+msgstr "စလင်း"
+
+#: project/apps/birth_registration/codes.py:396
+msgid "Sinphyukyun"
+msgstr "ဆင်ဖြူကျွန်းမြို့"
+
+#: project/apps/birth_registration/codes.py:397
+msgid "Saytottara"
+msgstr "စေတုတ္တရာ "
+
+#: project/apps/birth_registration/codes.py:401
+#: project/apps/birth_registration/codes.py:403
+msgid "Thayet"
+msgstr "သရက်"
+
+#: project/apps/birth_registration/codes.py:405
+msgid "Mindon"
+msgstr "မင်းတုန်း"
+
+#: project/apps/birth_registration/codes.py:406
+msgid "Kamma"
+msgstr "ကံမ"
+
+#: project/apps/birth_registration/codes.py:407
+msgid "Aunglan"
+msgstr "အောင်လံ "
+
+#: project/apps/birth_registration/codes.py:408
+msgid "Sinpaungwe"
+msgstr "ဆင်ပေါင်ဝဲ"
+
+#: project/apps/birth_registration/codes.py:412
+#: project/apps/birth_registration/codes.py:414
+msgid "Pakokku"
+msgstr "ပခုက္ကူ "
+
+#: project/apps/birth_registration/codes.py:415
+msgid "Kanma"
+msgstr "ကံမ"
+
+#: project/apps/birth_registration/codes.py:416
+msgid "_Yesagyo"
+msgstr "ရေစကြို "
+
+#: project/apps/birth_registration/codes.py:417
+msgid "Myaing"
+msgstr "မြိုင်"
+
+#: project/apps/birth_registration/codes.py:418
+msgid "_Pauk"
+msgstr "ပေါက် "
+
+#: project/apps/birth_registration/codes.py:419
+msgid "Seikphyu"
+msgstr "ဆိပ်ဖြူ "
+
+#: project/apps/birth_registration/codes.py:423
+#: project/apps/birth_registration/codes.py:425
+msgid "Gangaw"
+msgstr "ဂန့်ဂေါ"
+
+#: project/apps/birth_registration/codes.py:426
+msgid "Kyaw`"
+msgstr "ကျောမြို့"
+
+#: project/apps/birth_registration/codes.py:427
+msgid "Htilin"
+msgstr "ထီလင်း"
+
+#: project/apps/birth_registration/codes.py:428
+msgid "Saw"
+msgstr "ဆော "
+
+#: project/apps/birth_registration/codes.py:429
+msgid "Kyaukhtu"
+msgstr "ကျောက်ထု"
+
+#: project/apps/birth_registration/codes.py:435
+msgid "Mandalay Region"
+msgstr "မန္တလေး"
+
+#: project/apps/birth_registration/codes.py:438
+msgid "Mandalay"
+msgstr "မန္တလေး"
+
+#: project/apps/birth_registration/codes.py:440
+msgid "_Aungmyethazan"
+msgstr "အောင်မြေသာစံ "
+
+#: project/apps/birth_registration/codes.py:441
+msgid "Chanayeharzan"
+msgstr "ချမ်းအေးသာစံ"
+
+#: project/apps/birth_registration/codes.py:442
+msgid "Mahaaungmye"
+msgstr "မဟာအောင်မြေ"
+
+#: project/apps/birth_registration/codes.py:443
+msgid "Chanmyatharzai"
+msgstr "ချမ်းမြသာစည် "
+
+#: project/apps/birth_registration/codes.py:444
+msgid "Pyigyidagon"
+msgstr "ပြည်ကြီးတံခွန်"
+
+#: project/apps/birth_registration/codes.py:445
+msgid "Mmarapura"
+msgstr "အမရပူရ"
+
+#: project/apps/birth_registration/codes.py:446
+msgid "Myitnge"
+msgstr "မြစ်ငယ်"
+
+#: project/apps/birth_registration/codes.py:447
+msgid "Patheingyi"
+msgstr "ပုသိမ်ကြီး "
+
+#: project/apps/birth_registration/codes.py:451
+#: project/apps/birth_registration/codes.py:453
+msgid "Pyin Oo Lwin"
+msgstr "ပြင်ဦးလွင်"
+
+#: project/apps/birth_registration/codes.py:454
+msgid "Madaya"
+msgstr "မတ္တရာ "
+
+#: project/apps/birth_registration/codes.py:455
+msgid "Sinku"
+msgstr "စဉ့်ကူးကျေးလက်"
+
+#: project/apps/birth_registration/codes.py:456
+msgid "Mogok"
+msgstr "မိုးကုတ်"
+
+#: project/apps/birth_registration/codes.py:457
+msgid "Thabeikkyin"
+msgstr "သပိတ်ကျင်း "
+
+#: project/apps/birth_registration/codes.py:458
+msgid "Tagaung"
+msgstr "တကောင်းမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:462
+#: project/apps/birth_registration/codes.py:464
+msgid "Kyaukse"
+msgstr "ကျောက်ဆည် "
+
+#: project/apps/birth_registration/codes.py:465
+msgid "Singaing"
+msgstr "စဉ့်ကိုင်"
+
+#: project/apps/birth_registration/codes.py:466
+msgid "Myitthar"
+msgstr "မြစ်သား"
+
+#: project/apps/birth_registration/codes.py:467
+msgid "Tada U"
+msgstr "တံတားဦး "
+
+#: project/apps/birth_registration/codes.py:471
+#: project/apps/birth_registration/codes.py:473
+msgid "Myingyan"
+msgstr "မြင်းခြံ"
+
+#: project/apps/birth_registration/codes.py:474
+msgid "Taungtha"
+msgstr "တောင်သာ "
+
+#: project/apps/birth_registration/codes.py:475
+msgid "Natogyi"
+msgstr "နွားထိုးကြီး"
+
+#: project/apps/birth_registration/codes.py:476
+msgid "Ngazun"
+msgstr "ငါန်းဇွန်"
+
+#: project/apps/birth_registration/codes.py:480
+#: project/apps/birth_registration/codes.py:482
+msgid "Nyaung U"
+msgstr "ညောင်ဦး "
+
+#: project/apps/birth_registration/codes.py:483
+msgid "Bagan"
+msgstr "ပုဂံမြို့"
+
+#: project/apps/birth_registration/codes.py:484
+msgid "Ngathayauk"
+msgstr "ငါ့သရောက်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:485
+msgid "Kyaukpadaung"
+msgstr "ကျောက်ပန်းတောင်း"
+
+#: project/apps/birth_registration/codes.py:489
+#: project/apps/birth_registration/codes.py:491
+msgid "Meiktila"
+msgstr "မိတ္ထီလာ "
+
+#: project/apps/birth_registration/codes.py:492
+msgid "Mahling"
+msgstr "မလှိုင် "
+
+#: project/apps/birth_registration/codes.py:493
+msgid "Thazi"
+msgstr "သာစည်"
+
+#: project/apps/birth_registration/codes.py:494
+msgid "Wundwin"
+msgstr "ဝမ်းတွင်း"
+
+#: project/apps/birth_registration/codes.py:498
+#: project/apps/birth_registration/codes.py:499
+msgid "Yamethin"
+msgstr "ရမည်းသင်း "
+
+#: project/apps/birth_registration/codes.py:499
+msgid "Pyawbwe"
+msgstr "ပျော်ဘွယ်"
+
+#: project/apps/birth_registration/codes.py:505
+msgid "Mon State"
+msgstr "မွန်"
+
+#: project/apps/birth_registration/codes.py:508
+#: project/apps/birth_registration/codes.py:510
+msgid "Mawlamyine"
+msgstr "မော်လမြိုင်"
+
+#: project/apps/birth_registration/codes.py:511
+msgid "Kyaikemaraw"
+msgstr "ကျိုက်မရော"
+
+#: project/apps/birth_registration/codes.py:512
+msgid "Chaungzon"
+msgstr "ချောင်းဆုံ "
+
+#: project/apps/birth_registration/codes.py:513
+msgid "Thanbyuzayat"
+msgstr "သံဖြူဇရပ်"
+
+#: project/apps/birth_registration/codes.py:514
+msgid "Kyaikkhami"
+msgstr "ကျိုက္ခမီ"
+
+#: project/apps/birth_registration/codes.py:515
+msgid "Mudon"
+msgstr "မုဒုံ "
+
+#: project/apps/birth_registration/codes.py:516
+msgid "Kamarwat"
+msgstr "ကမာဝက်တိုက်နယ်"
+
+#: project/apps/birth_registration/codes.py:517
+msgid "Ye"
+msgstr "ရေး"
+
+#: project/apps/birth_registration/codes.py:518
+msgid "Lamine"
+msgstr "လမိုင်းမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:519
+msgid "Khawzar"
+msgstr "‌ခေါဇာ"
+
+#: project/apps/birth_registration/codes.py:523
+#: project/apps/birth_registration/codes.py:525
+msgid "Thaton"
+msgstr "သထုံ"
+
+#: project/apps/birth_registration/codes.py:526
+msgid "Paung"
+msgstr "ပေါင် "
+
+#: project/apps/birth_registration/codes.py:527
+msgid "Zinkyate"
+msgstr "ဇင်းကျိုက်ကျေးလက်"
+
+#: project/apps/birth_registration/codes.py:528
+msgid "Kyaikto"
+msgstr "ကျိုက်ထို"
+
+#: project/apps/birth_registration/codes.py:529
+msgid "Bilin"
+msgstr "ဘီးလင်း"
+
+#: project/apps/birth_registration/codes.py:530
+msgid "Tuwanawaddy"
+msgstr "သုဝဏ္ဏဝတီ"
+
+#: project/apps/birth_registration/codes.py:536
+msgid "Rakhine State"
+msgstr "ရခိုင် "
+
+#: project/apps/birth_registration/codes.py:539
+#: project/apps/birth_registration/codes.py:541
+msgid "Sittway "
+msgstr "စစ်တွေ"
+
+#: project/apps/birth_registration/codes.py:542
+msgid "Ponnagyun"
+msgstr "ပုဏ္ဏားကျွန်း"
+
+#: project/apps/birth_registration/codes.py:543
+msgid "Pauktaw"
+msgstr "ပေါက်တော "
+
+#: project/apps/birth_registration/codes.py:544
+msgid "Yethedaung"
+msgstr "ရသေ့တောင်"
+
+#: project/apps/birth_registration/codes.py:548
+#: project/apps/birth_registration/codes.py:550
+msgid "_Myauk U"
+msgstr "မြောက်ဦး "
+
+#: project/apps/birth_registration/codes.py:551
+msgid "Kyauktaw"
+msgstr "ကျောက်တော်"
+
+#: project/apps/birth_registration/codes.py:552
+msgid "Minbya"
+msgstr "မင်းပြား "
+
+#: project/apps/birth_registration/codes.py:553
+msgid "Myebon"
+msgstr "မြေပုံ"
+
+#: project/apps/birth_registration/codes.py:554
+msgid "Kantauntgyi"
+msgstr "ကမ်းထောင့်ကြီးမြို့"
+
+#: project/apps/birth_registration/codes.py:558
+#: project/apps/birth_registration/codes.py:560
+msgid "Maungtaw"
+msgstr "‌မောင်တော"
+
+#: project/apps/birth_registration/codes.py:561
+msgid "Taungpyoletwe"
+msgstr "‌တောင်ပြိုလက်ဝဲ"
+
+#: project/apps/birth_registration/codes.py:562
+msgid "Buthidaung"
+msgstr "ဘူးသီးတောင် "
+
+#: project/apps/birth_registration/codes.py:566
+#: project/apps/birth_registration/codes.py:568
+msgid "Kuaukpyu"
+msgstr "ကျောက်ဖြူ  "
+
+#: project/apps/birth_registration/codes.py:569
+msgid "Sanae"
+msgstr "စနဲတိုက်နယ်"
+
+#: project/apps/birth_registration/codes.py:570
+msgid "Mannaung"
+msgstr "မာန်အောင်"
+
+#: project/apps/birth_registration/codes.py:571
+msgid "Yanbye"
+msgstr "ရမ်းဗြဲ"
+
+#: project/apps/birth_registration/codes.py:572
+msgid "An"
+msgstr "အမ်း "
+
+#: project/apps/birth_registration/codes.py:573
+msgid "Tattaung"
+msgstr "တပ်တောင်တိုက်နယ်"
+
+#: project/apps/birth_registration/codes.py:577
+#: project/apps/birth_registration/codes.py:579
+msgid "Thandwe"
+msgstr "သံတွဲ "
+
+#: project/apps/birth_registration/codes.py:580
+msgid "Ngapali"
+msgstr "ငပလီ"
+
+#: project/apps/birth_registration/codes.py:581
+msgid "Taungup"
+msgstr "‌တောင်ကုတ်"
+
+#: project/apps/birth_registration/codes.py:582
+msgid "Maei"
+msgstr "မအီ"
+
+#: project/apps/birth_registration/codes.py:583
+msgid "Gwa"
+msgstr "ဂွ "
+
+#: project/apps/birth_registration/codes.py:584
+msgid "Kyeintali"
+msgstr "ကျိန္တလီမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:590
+msgid "Yangon Region"
+msgstr "ရန်ကုန်"
+
+#: project/apps/birth_registration/codes.py:593
+msgid "East Yangon"
+msgstr "ရန်ကုန်အရှေ့ို့င်း"
+
+#: project/apps/birth_registration/codes.py:595
+msgid "Thingangyun"
+msgstr "သင်္ကန်းကျွန်း"
+
+#: project/apps/birth_registration/codes.py:596
+msgid "Yankin"
+msgstr "ရန်ကင်း"
+
+#: project/apps/birth_registration/codes.py:597
+msgid "South Okkalapa"
+msgstr "တောင်ဥက္ကလာပ "
+
+#: project/apps/birth_registration/codes.py:598
+msgid "North Okkalapa"
+msgstr "မြောက်ဥက္ကလာပ "
+
+#: project/apps/birth_registration/codes.py:599
+msgid "Thakayta"
+msgstr "သာကေတ"
+
+#: project/apps/birth_registration/codes.py:600
+msgid "Dawbon"
+msgstr "ဒေါပုံ"
+
+#: project/apps/birth_registration/codes.py:601
+msgid "Tamway"
+msgstr "တာမွေ"
+
+#: project/apps/birth_registration/codes.py:602
+msgid "Pazuntaung"
+msgstr "ပုဇွန်တောင် "
+
+#: project/apps/birth_registration/codes.py:603
+msgid "Botahtaung"
+msgstr "ဗိုလ်တထောင် "
+
+#: project/apps/birth_registration/codes.py:604
+msgid "Dagon Myothit(South)"
+msgstr "ဒဂုံမြို့သစ် (တောင်) "
+
+#: project/apps/birth_registration/codes.py:605
+msgid "Dagon Myothit(North)"
+msgstr "ဒဂုံမြို့သစ် (မြောက်) "
+
+#: project/apps/birth_registration/codes.py:606
+msgid "Dagon Myothit(East)"
+msgstr "ဒဂုံမြို့သစ် (အရှေ့) "
+
+#: project/apps/birth_registration/codes.py:607
+msgid "Dagon Myothit(Seikkan)"
+msgstr "ဒဂုံမြို့သစ် (ဆိပ်ကမ်း)"
+
+#: project/apps/birth_registration/codes.py:608
+msgid "Mingala Taungnyunt"
+msgstr "မင်္ဂလာတောင်ညွန့်  "
+
+#: project/apps/birth_registration/codes.py:612
+msgid "West Yangon"
+msgstr "ရန်ကုန်အနောက်ပိုင်း"
+
+#: project/apps/birth_registration/codes.py:614
+msgid "_Kyuktada"
+msgstr "ကျောက်တံတား "
+
+#: project/apps/birth_registration/codes.py:615
+msgid "Pabedan"
+msgstr "ပန်းဘဲတန်း "
+
+#: project/apps/birth_registration/codes.py:616
+msgid "Lanmadaw"
+msgstr "လမ်းမတော် "
+
+#: project/apps/birth_registration/codes.py:617
+msgid "Latha"
+msgstr "လသာ"
+
+#: project/apps/birth_registration/codes.py:618
+msgid "Ahlon"
+msgstr "အလုံ "
+
+#: project/apps/birth_registration/codes.py:619
+msgid "Kyimyindine"
+msgstr "ကြည့်မြင်တိုင် "
+
+#: project/apps/birth_registration/codes.py:620
+msgid "Sangyoung"
+msgstr "စမ်းချောင်း"
+
+#: project/apps/birth_registration/codes.py:621
+msgid "Hline"
+msgstr "လှိုင်"
+
+#: project/apps/birth_registration/codes.py:622
+msgid "Kamayut"
+msgstr "ကမာရွတ်"
+
+#: project/apps/birth_registration/codes.py:623
+msgid "Mayangon"
+msgstr "မရမ်းကုန်း"
+
+#: project/apps/birth_registration/codes.py:624
+msgid "Dagon"
+msgstr "ဒဂုံ "
+
+#: project/apps/birth_registration/codes.py:625
+msgid "Bahan"
+msgstr "ဗဟန်း"
+
+#: project/apps/birth_registration/codes.py:626
+msgid "Seikkan"
+msgstr "ဆိပ်ကမ်း "
+
+#: project/apps/birth_registration/codes.py:630
+msgid "South Yangon"
+msgstr "ရန်ကုန်တောင်ပိုင်း"
+
+#: project/apps/birth_registration/codes.py:632
+msgid "Thanlyin"
+msgstr "သန်လျင်"
+
+#: project/apps/birth_registration/codes.py:633
+msgid "Kyauktan"
+msgstr "ကျောက်တန်း "
+
+#: project/apps/birth_registration/codes.py:634
+msgid "Tada"
+msgstr "တံတားမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:635
+msgid "Thongwa"
+msgstr "သုံးခွ "
+
+#: project/apps/birth_registration/codes.py:636
+msgid "Khayan"
+msgstr "ခရမ်း "
+
+#: project/apps/birth_registration/codes.py:637
+msgid "Twantay"
+msgstr "တွံတေး"
+
+#: project/apps/birth_registration/codes.py:638
+msgid "Kawhmu"
+msgstr "ကော့မှူး"
+
+#: project/apps/birth_registration/codes.py:639
+msgid "Kungyangon"
+msgstr "ကွမ်းခြံကုန်း "
+
+#: project/apps/birth_registration/codes.py:640
+msgid "Dala"
+msgstr "ဒလ"
+
+#: project/apps/birth_registration/codes.py:641
+msgid "Seikkyi/Khanaungto"
+msgstr "ဆိပ်ကြီး၊ခနောင်တို"
+
+#: project/apps/birth_registration/codes.py:642
+msgid "Cocogyun"
+msgstr "ကိုကိုးကျွန်း"
+
+#: project/apps/birth_registration/codes.py:646
+msgid "North Yangon"
+msgstr "ရန်ကုန်မြောက်ပိုင်း"
+
+#: project/apps/birth_registration/codes.py:648
+msgid "Insein"
+msgstr "အင်းစိန်"
+
+#: project/apps/birth_registration/codes.py:649
+msgid "Mingaladon"
+msgstr "မင်္ဂလာဒုံ "
+
+#: project/apps/birth_registration/codes.py:650
+msgid "Htaukkyant"
+msgstr "ထောက်ကြန့်"
+
+#: project/apps/birth_registration/codes.py:651
+msgid "_Hmawby"
+msgstr "မှော်ဘီ"
+
+#: project/apps/birth_registration/codes.py:652
+msgid "Hlagu"
+msgstr "လှည်းကူး"
+
+#: project/apps/birth_registration/codes.py:653
+msgid "Taikkyi"
+msgstr "တိုက်ကြီး"
+
+#: project/apps/birth_registration/codes.py:654
+msgid "Okkan"
+msgstr "ဥက္ကံမြို့"
+
+#: project/apps/birth_registration/codes.py:655
+msgid "Aphyaut"
+msgstr "အဖျောက်"
+
+#: project/apps/birth_registration/codes.py:656
+msgid "Htantabin"
+msgstr "ထန်းတပင်"
+
+#: project/apps/birth_registration/codes.py:657
+msgid "Shwepyitha"
+msgstr "ရွှေပြည်သာ "
+
+#: project/apps/birth_registration/codes.py:658
+msgid "Hlaingthaya"
+msgstr "လှိုင်သာယာ "
+
+#: project/apps/birth_registration/codes.py:664
+msgid "Shan State"
+msgstr "ရှမ်း"
+
+#: project/apps/birth_registration/codes.py:667
+#: project/apps/birth_registration/codes.py:669
+msgid "Taunggyi"
+msgstr "တောင်ကြီး "
+
+#: project/apps/birth_registration/codes.py:670
+msgid "Ayetharyar"
+msgstr "အေးသာယာ"
+
+#: project/apps/birth_registration/codes.py:671
+msgid "Shwenyaung"
+msgstr "ရွှေညောင်"
+
+#: project/apps/birth_registration/codes.py:672
+msgid "Kyauktalongyi"
+msgstr "ကျောက်တလုံးကြီး"
+
+#: project/apps/birth_registration/codes.py:673
+msgid "Hopon"
+msgstr "ဟိုပုံး "
+
+#: project/apps/birth_registration/codes.py:674
+msgid "Nyaungshwe"
+msgstr "ညောင်ရွှေ "
+
+#: project/apps/birth_registration/codes.py:675
+msgid "Hsihseng"
+msgstr "ဆီဆိုင်"
+
+#: project/apps/birth_registration/codes.py:676
+msgid "Kalaw"
+msgstr "ကလော"
+
+#: project/apps/birth_registration/codes.py:677
+msgid "Aungban"
+msgstr "အောင်ပန်း"
+
+#: project/apps/birth_registration/codes.py:678
+msgid "Pindaya"
+msgstr "ပင်းတယ"
+
+#: project/apps/birth_registration/codes.py:679
+msgid "Ywamgan"
+msgstr "ရွာငံ"
+
+#: project/apps/birth_registration/codes.py:680
+msgid "Yatsauk"
+msgstr "ရပ်စောက် "
+
+#: project/apps/birth_registration/codes.py:682
+msgid "Pinlaung"
+msgstr "ပင်လောင်း "
+
+#: project/apps/birth_registration/codes.py:683
+msgid "Paunglong"
+msgstr "ပေါင်းလောင်းမြို့"
+
+#: project/apps/birth_registration/codes.py:684
+msgid "Naungtayar"
+msgstr "နောင်တရားမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:685
+msgid "Phekon"
+msgstr "ဖယ်ခုံ "
+
+#: project/apps/birth_registration/codes.py:689
+#: project/apps/birth_registration/codes.py:691
+msgid "Loilin "
+msgstr "လွိုင်လင်"
+
+#: project/apps/birth_registration/codes.py:692
+msgid "Panglong"
+msgstr "ပင်လုံမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:693
+msgid "Lechar"
+msgstr "လဲချား "
+
+#: project/apps/birth_registration/codes.py:694
+msgid "Nanhsam(south)"
+msgstr "နမ့်စမ်(တောင်ပိုင်း) "
+
+#: project/apps/birth_registration/codes.py:695
+msgid "Kholan"
+msgstr "ခိုလမ်"
+
+#: project/apps/birth_registration/codes.py:696
+msgid "Kunhing"
+msgstr "ကွန်ဟိန်း"
+
+#: project/apps/birth_registration/codes.py:697
+msgid "Karli"
+msgstr "ကာလိ"
+
+#: project/apps/birth_registration/codes.py:698
+msgid "Kehsi"
+msgstr "ကျေးသီး"
+
+#: project/apps/birth_registration/codes.py:699
+msgid "Minenaung"
+msgstr "မိုင်းနောင်း"
+
+#: project/apps/birth_registration/codes.py:700
+msgid "Mongkai"
+msgstr "မိုင်းကိုင်"
+
+#: project/apps/birth_registration/codes.py:701
+msgid "Mineshu"
+msgstr "မိုင်းရှုး "
+
+#: project/apps/birth_registration/codes.py:702
+msgid "Minesan (Monsan)"
+msgstr "မိုင်းစံ(မုန်းဆန်း)မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:706
+#: project/apps/birth_registration/codes.py:708
+msgid "Linkhe`"
+msgstr "လင်းခေး"
+
+#: project/apps/birth_registration/codes.py:709
+msgid "Homane"
+msgstr "ဟိုမိန်း"
+
+#: project/apps/birth_registration/codes.py:710
+msgid "Mone`"
+msgstr "မိုးနဲ"
+
+#: project/apps/birth_registration/codes.py:711
+msgid "Kengtaung"
+msgstr "ကျိုင်းတောင်းမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:712
+msgid "Maukme"
+msgstr "မောက်မယ် "
+
+#: project/apps/birth_registration/codes.py:713
+msgid "Minepan"
+msgstr "မိုင်းပန်"
+
+#: project/apps/birth_registration/codes.py:717
+#: project/apps/birth_registration/codes.py:719
+msgid "Kengtung"
+msgstr "ကျိုင်းတုံ"
+
+#: project/apps/birth_registration/codes.py:720
+msgid "Minekai"
+msgstr "မိုင်းခတ်"
+
+#: project/apps/birth_registration/codes.py:721
+msgid "Mineyan"
+msgstr "မိုင်းယန်း "
+
+#: project/apps/birth_registration/codes.py:722
+msgid "Minepauk"
+msgstr "မိုင်းပေါကက်"
+
+#: project/apps/birth_registration/codes.py:723
+msgid "Minelar"
+msgstr "မိုင်းလား "
+
+#: project/apps/birth_registration/codes.py:724
+msgid "Minepyin"
+msgstr "မိုင်းပျဉ်း"
+
+#: project/apps/birth_registration/codes.py:725
+msgid "Tontar"
+msgstr "တုံတာ"
+
+#: project/apps/birth_registration/codes.py:729
+#: project/apps/birth_registration/codes.py:731
+msgid "Minesat"
+msgstr "မိုင်းဆတ် "
+
+#: project/apps/birth_registration/codes.py:732
+msgid "Minekoke"
+msgstr "မိုင်းခုတ်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:733
+msgid "Minetung"
+msgstr "မိုင်းတုံ"
+
+#: project/apps/birth_registration/codes.py:734
+msgid "Ponparkyin"
+msgstr "ပုံပါကျင်"
+
+#: project/apps/birth_registration/codes.py:735
+msgid "Monehta"
+msgstr "မုန်းထ"
+
+#: project/apps/birth_registration/codes.py:739
+#: project/apps/birth_registration/codes.py:741
+msgid "Tachileik"
+msgstr "တာချီလိတ်"
+
+#: project/apps/birth_registration/codes.py:742
+msgid "Talay"
+msgstr "တာလေမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:743
+msgid "Kenglat"
+msgstr "ကျိုင်းလပ်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:744
+msgid "Minephyat"
+msgstr "မိုင်းဖြတ် "
+
+#: project/apps/birth_registration/codes.py:745
+msgid "Mineyaung"
+msgstr "မိုင်းယောင်း"
+
+#: project/apps/birth_registration/codes.py:746
+msgid "Mineyu"
+msgstr "မိုင်းယု"
+
+#: project/apps/birth_registration/codes.py:750
+#: project/apps/birth_registration/codes.py:752
+msgid "Lashio"
+msgstr "လားရှိုး "
+
+#: project/apps/birth_registration/codes.py:753
+msgid "Theinni"
+msgstr "သိန္နီ"
+
+#: project/apps/birth_registration/codes.py:754
+msgid "Mineye"
+msgstr "မိုင်းရယ် "
+
+#: project/apps/birth_registration/codes.py:755
+msgid "Tantyan"
+msgstr "တန့်ယန်း "
+
+#: project/apps/birth_registration/codes.py:756
+msgid "Kunlon"
+msgstr "ကွမ်းလုံ "
+
+#: project/apps/birth_registration/codes.py:760
+#: project/apps/birth_registration/codes.py:762
+msgid "Hopan"
+msgstr "ဟိုပန်"
+
+#: project/apps/birth_registration/codes.py:763
+msgid "Namtik"
+msgstr "နမ်တစ်"
+
+#: project/apps/birth_registration/codes.py:764
+msgid "Panlon"
+msgstr "ပင်လုံ "
+
+#: project/apps/birth_registration/codes.py:765
+msgid "Panwine"
+msgstr "ပန်ဝိုင်"
+
+#: project/apps/birth_registration/codes.py:766
+msgid "Minemaw"
+msgstr "မိုင်းမော "
+
+#: project/apps/birth_registration/codes.py:770
+#: project/apps/birth_registration/codes.py:772
+msgid "Muse"
+msgstr "မူဆယ်"
+
+#: project/apps/birth_registration/codes.py:773
+msgid "Monekoe (Manhyo)"
+msgstr "မုန်းကိုးမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:774
+msgid "Manhero"
+msgstr "မန်ဟီးရိုး"
+
+#: project/apps/birth_registration/codes.py:775
+msgid "Pansai (Kyu-kok)"
+msgstr "ပန်ဆိုင်း(ကျူကုတ်)"
+
+#: project/apps/birth_registration/codes.py:776
+msgid "Namkham"
+msgstr "နမ့်ခမ်း"
+
+#: project/apps/birth_registration/codes.py:777
+msgid "Kukai"
+msgstr "ကွတ်ခိုင်"
+
+#: project/apps/birth_registration/codes.py:778
+msgid "Tamoenye"
+msgstr "တာမိုးညဲ"
+
+#: project/apps/birth_registration/codes.py:782
+#: project/apps/birth_registration/codes.py:783
+msgid "Momeik"
+msgstr "မိုးမိတ်"
+
+#: project/apps/birth_registration/codes.py:783
+msgid "Mabane"
+msgstr "မဘိမ်း"
+
+#: project/apps/birth_registration/codes.py:787
+#: project/apps/birth_registration/codes.py:789
+msgid "_Kyaukme"
+msgstr "ကျောက်မဲ "
+
+#: project/apps/birth_registration/codes.py:790
+msgid "Minengaw"
+msgstr "မိုင်းငေါ့မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:791
+msgid "Minelon"
+msgstr "မိုင်းလုံ"
+
+#: project/apps/birth_registration/codes.py:792
+msgid "_Naungkhio"
+msgstr "နောင်ချို "
+
+#: project/apps/birth_registration/codes.py:793
+msgid "Hsipaw"
+msgstr "သီပေါ"
+
+#: project/apps/birth_registration/codes.py:794
+msgid "Namtu"
+msgstr "နမ္မတူ"
+
+#: project/apps/birth_registration/codes.py:795
+msgid "Namsan(North)"
+msgstr "နမ့်ဆမ်(မြောက်) "
+
+#: project/apps/birth_registration/codes.py:796
+msgid "Manton"
+msgstr "မန်းတုံ "
+
+#: project/apps/birth_registration/codes.py:800
+#: project/apps/birth_registration/codes.py:802
+msgid "Laukine"
+msgstr "လောက်ကိုင် "
+
+#: project/apps/birth_registration/codes.py:803
+msgid "Chinshwehaw"
+msgstr "ချင်းရွှေဟော်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:804
+msgid "Kongyan"
+msgstr "ကုန်းကြမ်း"
+
+#: project/apps/birth_registration/codes.py:805
+msgid "Mawhtike"
+msgstr "မော်ထိုက်"
+
+#: project/apps/birth_registration/codes.py:809
+#: project/apps/birth_registration/codes.py:811
+msgid "Makman"
+msgstr "မက်မန်း"
+
+#: project/apps/birth_registration/codes.py:812
+msgid "Pansan(Pankhan)"
+msgstr "ပန်ဆန်း(ပန်ခမ်း)"
+
+#: project/apps/birth_registration/codes.py:813
+msgid "Mankan"
+msgstr "မန်ကန်မြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:814
+msgid "Naphang"
+msgstr "နားဖန်း "
+
+#: project/apps/birth_registration/codes.py:820
+msgid "Ayeyawady Region"
+msgstr "ဧရာဝတီ"
+
+#: project/apps/birth_registration/codes.py:823
+#: project/apps/birth_registration/codes.py:825
+msgid "Pathein"
+msgstr "ပုသိမ် "
+
+#: project/apps/birth_registration/codes.py:826
+msgid "Shwethaungyan"
+msgstr "ရွှေသောင်ယံမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:827
+msgid "Ngwehsaung"
+msgstr "ငွေဆောင်"
+
+#: project/apps/birth_registration/codes.py:828
+msgid "Kyaungyidaunt"
+msgstr "ကန်ကြီးဒေါင့် "
+
+#: project/apps/birth_registration/codes.py:829
+msgid "Thapaung"
+msgstr "သာပေါင်း "
+
+#: project/apps/birth_registration/codes.py:830
+msgid "Ngaputaw"
+msgstr "ငပုတော "
+
+#: project/apps/birth_registration/codes.py:831
+msgid "Ngayokaung"
+msgstr "ငရုတ်ကောင်းမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:832
+msgid "Hainggyikyun"
+msgstr "ဟိုင်းကြီးကျွန်း "
+
+#: project/apps/birth_registration/codes.py:833
+msgid "Kyonpyaw"
+msgstr "ကျုံပျော် "
+
+#: project/apps/birth_registration/codes.py:834
+msgid "Ahtaung"
+msgstr "အထောင်မြို့"
+
+#: project/apps/birth_registration/codes.py:835
+msgid "_Yekyi"
+msgstr "ရေကြည်"
+
+#: project/apps/birth_registration/codes.py:836
+msgid "Athot"
+msgstr "အသုတ်မြို့"
+
+#: project/apps/birth_registration/codes.py:837
+msgid "Ngathaingchaung"
+msgstr "ငသိုင်းချောင်း"
+
+#: project/apps/birth_registration/codes.py:838
+msgid "Kyaungon"
+msgstr "ကျောင်းကုန်း "
+
+#: project/apps/birth_registration/codes.py:842
+#: project/apps/birth_registration/codes.py:844
+msgid "Hinthada"
+msgstr "ဟင်္သာတ "
+
+#: project/apps/birth_registration/codes.py:845
+msgid "Zalun"
+msgstr "ဇလွန်"
+
+#: project/apps/birth_registration/codes.py:846
+msgid "_Laymyethna"
+msgstr "လေးမျက်နှာ "
+
+#: project/apps/birth_registration/codes.py:847
+msgid "Myanaung"
+msgstr "မြန်အောင်"
+
+#: project/apps/birth_registration/codes.py:848
+msgid "Kanaung"
+msgstr "ကနောင်"
+
+#: project/apps/birth_registration/codes.py:849
+msgid "Kyangin"
+msgstr "ကြံခင်း"
+
+#: project/apps/birth_registration/codes.py:850
+msgid "Batye"
+msgstr "ဘက်ရဲ"
+
+#: project/apps/birth_registration/codes.py:851
+msgid "Ingapu"
+msgstr "အင်္ဂပူ "
+
+#: project/apps/birth_registration/codes.py:852
+msgid "Htoogyi"
+msgstr "ထူးကြီး"
+
+#: project/apps/birth_registration/codes.py:856
+#: project/apps/birth_registration/codes.py:858
+msgid "Myaungmya"
+msgstr "မြောင်းမြ "
+
+#: project/apps/birth_registration/codes.py:859
+msgid "Einme"
+msgstr "အိမ်မဲ"
+
+#: project/apps/birth_registration/codes.py:860
+msgid "Wakema"
+msgstr "ဝါးခယ်မ"
+
+#: project/apps/birth_registration/codes.py:861
+msgid "Kyonemangay"
+msgstr "ကျုံမငေး"
+
+#: project/apps/birth_registration/codes.py:865
+#: project/apps/birth_registration/codes.py:867
+msgid "Laputta"
+msgstr "လပွတ္တာ "
+
+#: project/apps/birth_registration/codes.py:867
+msgid "Pyinsalu"
+msgstr "ပြင်စလူမြို့နယ်ခွဲ"
+
+#: project/apps/birth_registration/codes.py:867
+msgid "Mawlamyinegyum"
+msgstr "မော်လမြိုင်ကျွန်း "
+
+#: project/apps/birth_registration/codes.py:871
+#: project/apps/birth_registration/codes.py:873
+msgid "Maubin"
+msgstr "မအူပင်"
+
+#: project/apps/birth_registration/codes.py:874
+msgid "Pantanaw"
+msgstr "ပန်းတနော် "
+
+#: project/apps/birth_registration/codes.py:875
+msgid "Nyaungdon"
+msgstr "ညောင်တုန်း"
+
+#: project/apps/birth_registration/codes.py:876
+msgid "Danypyu"
+msgstr "ဓနုဖြူ"
+
+#: project/apps/birth_registration/codes.py:880
+#: project/apps/birth_registration/codes.py:882
+msgid "Phyapon"
+msgstr "ဖျာပုံ"
+
+#: project/apps/birth_registration/codes.py:883
+msgid "Ahmar"
+msgstr "အမာ"
+
+#: project/apps/birth_registration/codes.py:884
+msgid "Bogale"
+msgstr "ဘိုကလေး "
+
+#: project/apps/birth_registration/codes.py:885
+msgid "Kyaiklatt"
+msgstr "ကျိုက်လတ် "
+
+#: project/apps/birth_registration/codes.py:886
+msgid "_Kaydaye"
+msgstr "ဒေးဒရဲ"
+
+#: project/apps/birth_registration/codes.py:892
+msgid "Nay Pyi Taw Council"
+msgstr "နေပြည်တော်"
+
+#: project/apps/birth_registration/codes.py:895
+#: project/apps/birth_registration/codes.py:897
+msgid "Ottarathiri"
+msgstr "ဥတ္တရသီရိ"
+
+#: project/apps/birth_registration/codes.py:898
+msgid "_Zeyarthiri"
+msgstr "ဇေယျာသီရိ"
+
+#: project/apps/birth_registration/codes.py:899
+msgid "Pobbathiri"
+msgstr "ပုဗ္ဗသီရိ"
+
+#: project/apps/birth_registration/codes.py:900
+msgid "Tatkon"
+msgstr "တပ်ကုန်း "
+
+#: project/apps/birth_registration/codes.py:904
+#: project/apps/birth_registration/codes.py:906
+msgid "Dekkhinathiri"
+msgstr "ဒက္ခိဏသီရိ"
+
+#: project/apps/birth_registration/codes.py:907
+msgid "Zabuthiri"
+msgstr "ဇမ္ဗူသီရိ"
+
+#: project/apps/birth_registration/codes.py:908
+msgid "Pyinmana"
+msgstr "ပျဉ်းမနား "
+
+#: project/apps/birth_registration/codes.py:909
+msgid "Lewe"
+msgstr "လယ်ဝေး"
+
+#: project/apps/birth_registration/codes.py:944
+msgid "1"
+msgstr "1"
+
+#: project/apps/birth_registration/codes.py:944
+msgid "Any hospital"
+msgstr "မည်သည့်ဆေးရုံမဆို"
+
+#: project/apps/birth_registration/codes.py:965
+msgid "99"
+msgstr "99"
+
+#: project/apps/birth_registration/codes.py:966
+msgid "Not mentioned"
+msgstr "ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/codes.py:1003
+#, python-format
+msgid "Invalid State Division value: %s"
+msgstr "အကျုံးမဝင်သော ပြည်နယ်နှင့်တိုင်းများ- %s"
+
+#: project/apps/birth_registration/codes.py:1007
+msgid "This district belongs to another state division"
+msgstr "ဤခရိုင်သည် အခြား ပြည်နယ်၊ တိုင်းဒေသကြီးနှင့် သက်ဆိုင်နေသည်"
+
+#: project/apps/birth_registration/codes.py:1011
+msgid "This township or town belongs to another district"
+msgstr "ဤမြို့နယ်သည် အခြား ခရိုင်နှင့် သက်ဆိုင်နေသည်"
+
+#: project/apps/birth_registration/fields.py:54
+msgid "01 - Urban"
+msgstr "01 - မြို့ပြ "
+
+#: project/apps/birth_registration/fields.py:55
+msgid "02 - Rural"
+msgstr "02 - ကျေးလက်"
+
+#: project/apps/birth_registration/fields.py:57
+msgid "Urban/Rural"
+msgstr "မြို့ပြ/ ကျေးလက်"
+
+#: project/apps/birth_registration/fields.py:63
+msgid "Sub code No (urban areas)"
+msgstr "အညွှန်းကိန်း အခွဲ အမှတ်(မြို့ပြဧရိယာ)"
+
+#: project/apps/birth_registration/fields.py:64
+msgid ""
+"Code 01 for vital events occurred in any hospital and 21,22,23,...99 for any"
+" hospital in Yangon City"
+msgstr ""
+"မည်သည့် ဆေးရုံအတွက်မဆို အညွှန်းကိန်း 01 ဖြစ်ပြီး ရန်ကုန်မြို့အတွင်း "
+"မည်သည့်ဆေးရုံအတွက်မဆို 21,22,23 .... 99 ဖြစ်သည်"
+
+#: project/apps/birth_registration/fields.py:72
+msgid "Serial number in registration book"
+msgstr "မှတ်ပုံတင်စာအုပ်တွင်ထည့်သွင်းသည့် အမှတ်စဉ်"
+
+#: project/apps/birth_registration/fields.py:74
+msgid ""
+"Enter serial No. direct into coding column. Watch carefully for sequence of "
+"serial No. If it is not in sequence make query.<br/>Code actual serial No. "
+"in full to 5 digits. If serial No. is 1 to 99; Code 00001-00009, and 10-99 "
+"code 00010, 00011,………00099, 00100 and over in full"
+msgstr ""
+"အမှတ်စဉ်ကို အညွှန်းကော်လံသို့ တိုက်ရိုက်ထည့်သွင်းပါ။ အမှတ်စဉ် အစဉ်လိုက်ရှိမရှိကို ဂရုစိုက်ကြည့်ပါ။ အကယ်၍ အစဉ်အတိုင်း မဟုတ်ပါက \"\n"
+"\"စုံစမ်းပါ။<br/> မွေးစာရင်းမှတ်ပုံတင်အမှတ်သည် ဂဏန်း 5 လုံးရှိရမည်။ အကယ်၍ အမှတ်စဉ်သည် 1 မှ 99 ဖြစ်က၊ အညွှန်း \"\n"
+"\"00001-00009 နှင့် 10-99 အစဉ်လိုက် 00010,00011 ........ 00099,00100 စသဖြင့် ရှိရမည်။"
+
+#: project/apps/birth_registration/fields.py:88
+#| msgid "E-code of cause of death"
+msgid "Age group for cause of death"
+msgstr "သေဆုံးသူ၏အသက်အုပ်စု"
+
+#: project/apps/birth_registration/fields.py:91
+#| msgid "00 - Under 15 Years"
+msgid "0 - Under 1 year"
+msgstr "0 - ၁ နှစ်အောက်"
+
+#: project/apps/birth_registration/fields.py:92
+#| msgid "%s - %d years"
+msgid "1 - 1 year"
+msgstr "1 - ၁ နှစ်"
+
+#: project/apps/birth_registration/fields.py:93
+#| msgid "%s - %d years"
+msgid "2 - 2 years"
+msgstr "2 - ၂ နှစ်"
+
+#: project/apps/birth_registration/fields.py:94
+#| msgid "%s - %d years"
+msgid "3 - 3 years"
+msgstr "3 - ၃ နှစ်"
+
+#: project/apps/birth_registration/fields.py:95
+#| msgid "%s - %d years"
+msgid "4 - 4 years"
+msgstr "4 - ၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:96
+#| msgid "%s - %d years"
+msgid "6 - 5-9 years"
+msgstr "6 - ၅ နှစ်မှ ၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:97
+#| msgid "%s - %d years"
+msgid "7 - 10-14 years"
+msgstr "7 - ၁၀ နှစ်မှ ၁၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:98
+#| msgid "%s - %d years"
+msgid "8 - 15-19 years"
+msgstr "8 - ၁၅ နှစ်မှ ၁၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:99
+#| msgid "%s - %d years"
+msgid "9 - 20-24 years"
+msgstr "9 - ၂၀ နှစ်မှ ၂၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:100
+#| msgid "10 - 2 Males"
+msgid "10 - 25-29 years"
+msgstr "10 - ၂၅နှစ်မှ ၂၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:101
+#| msgid "11 - 3 Females"
+msgid "11 - 30-34 years"
+msgstr "11 - ၃၀နှစ်မှ ၃၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:102
+#| msgid "%s - %d years"
+msgid "12 - 35-39 years"
+msgstr "12 - ၃၅နှစ်မှ ၃၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:103
+#| msgid "%s - %d years"
+msgid "13 - 40-44 years"
+msgstr "13 - နှစ် ၄၀ မှ ၄၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:104
+#| msgid "%s - %d years"
+msgid "14 - 45-49 years"
+msgstr "14 - ၄၅နှစ်မှ ၄၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:105
+#| msgid "%s - %d years"
+msgid "15 - 50-54 years"
+msgstr "15 - ၅၀နှစ်မှ ၅၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:106
+#| msgid "%s - %d years"
+msgid "16 - 55-59 years"
+msgstr "16 - ၅၅နှစ်မှ ၅၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:107
+#| msgid "%s - %d years"
+msgid "17 - 60-64 years"
+msgstr "17 - ၆၀နှစ်မှ ၆၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:108
+#| msgid "%s - %d years"
+msgid "18 - 65-69 years"
+msgstr "18 - ၆၅နှစ်မှ ၆၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:109
+#| msgid "%s - %d years"
+msgid "19 - 70-74 years"
+msgstr "19 - ၇၀နှစ်မှ ၇၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:110
+#| msgid "%s - %d years"
+msgid "20 - 75-79 years"
+msgstr "20 - ၇၅နှစ်မှ ၇၉ နှစ်"
+
+#: project/apps/birth_registration/fields.py:111
+#| msgid "%s - %d years"
+msgid "21 - 80-84 years"
+msgstr "21 - ၈၀နှစ်မှ ၈၄ နှစ်"
+
+#: project/apps/birth_registration/fields.py:112
+#| msgid "08 - 50 and over"
+msgid "22 - 85 and over"
+msgstr "22 - ၈၅နှစ် နှင့်အထက်"
+
+#: project/apps/birth_registration/fields.py:113
+#| msgid "09 - Not stated"
+msgid "23 - No stated"
+msgstr "23 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/fields.py:121
+msgid "Age"
+msgstr "အသက်"
+
+#: project/apps/birth_registration/fields.py:122
+msgid ""
+"Note: If age is not stated in death information form do not code. (enquire "
+"later/make not of entry)"
+msgstr ""
+"မှတ်ချက် - အသက်ကိုသေသည့်အချက်အလက်များတွင်မဖော်ပြထားပါက မဖြည့်စွက်ပါနှင့်၊ "
+"(နောက်မှစုံစမ်းပါ၊ ထည့်သွင်းမှုမပြုလုပ်ပါနှင့်)"
+
+#: project/apps/birth_registration/fields.py:125
+msgid "700 - Newborn and under 1 hour"
+msgstr "700- အသစ်မွေးဖွားမှု နှင့် ၁ နာရီအောက်"
+
+#: project/apps/birth_registration/fields.py:126
+msgid "600 - 1 - 11 hours"
+msgstr "600- ၁ - ၁၁ နာရီ"
+
+#: project/apps/birth_registration/fields.py:127
+msgid "500 - 12 hours and under 1 day"
+msgstr "500 - ၁၂ နာရီ နှင့် ၁ ရက်အောက်"
+
+#: project/apps/birth_registration/fields.py:128
+#, python-format
+msgid "%d - %s days"
+msgstr "%d - %s ရက်"
+
+#: project/apps/birth_registration/fields.py:129
+#, python-format
+msgid "%d - %s weeks"
+msgstr "%d - %s အပတ်"
+
+#: project/apps/birth_registration/fields.py:130
+#, python-format
+msgid "%d - %s months"
+msgstr "%d - %s လ"
+
+#: project/apps/birth_registration/fields.py:131
+msgid "800 - Unknown (under 1 year)"
+msgstr "800 - မသိရှိသော ( ၁ နှစ်အောက်"
+
+#: project/apps/birth_registration/fields.py:132
+#, python-format
+msgid "%s - %d years"
+msgstr "%s - %d နှစ်"
+
+#: project/apps/birth_registration/fields.py:134
+msgid "199 - 99 years and over"
+msgstr "၁၉၉ - ၉၉ နှစ် နှင့်အထက်"
+
+#: project/apps/birth_registration/fields.py:135
+msgid "900 - Unknown (1 year and over )"
+msgstr "900 - မသိရှိသော (၁ နှစ်နှင့် အထက်)"
+
+#: project/apps/birth_registration/fields.py:144
+msgid "V99.99"
+msgstr "V99.99"
+
+#: project/apps/birth_registration/fields.py:152
+msgid "A99.99"
+msgstr "A99.99"
+
+#: project/apps/birth_registration/fields.py:158
+#: project/apps/birth_registration/models.py:397
+#: project/apps/certification/models.py:70
+msgid "Sex"
+msgstr "ကျား/မ"
+
+#: project/apps/birth_registration/fields.py:160
+#: project/apps/birth_registration/models.py:399
+#: project/apps/certification/models.py:72
+msgid "01 - Male"
+msgstr "01 - ကျား"
+
+#: project/apps/birth_registration/fields.py:161
+#: project/apps/birth_registration/models.py:400
+#: project/apps/certification/models.py:73
+msgid "02 - Female"
+msgstr "02 - မ"
+
+#: project/apps/birth_registration/fields.py:162
+msgid "09 - Not stated"
+msgstr "09 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/fields.py:169
+msgid "Person certifying cause of death"
+msgstr "သေဆုံးမှုအကြောင်းအရာကိုစမ်းသပ်ပေးသောသူ"
+
+#: project/apps/birth_registration/fields.py:171
+msgid "01 - Registered doctor in attendance"
+msgstr "01 - ဆရာဝန်(ကိုယ်တိုင်ကုသ)"
+
+#: project/apps/birth_registration/fields.py:172
+msgid "02 - Registered doctor Not in Attendance"
+msgstr "02 - ဆရာဝန် (ကိုယ်တိုင်မကုသ)"
+
+#: project/apps/birth_registration/fields.py:173
+msgid "03 - Health Officer"
+msgstr "03 - ကျန်းမာရေးမှူး"
+
+#: project/apps/birth_registration/fields.py:174
+msgid "04 - Other Health Staffs"
+msgstr "04 - အခြားကျန်းမာရေးဝန်ထမ်းများ"
+
+#: project/apps/birth_registration/fields.py:175
+#: project/apps/birth_registration/models.py:581
+msgid "05 - Other"
+msgstr "05 - အခြား "
+
+#: project/apps/birth_registration/fields.py:183
+msgid "01 - Home/House"
+msgstr "01 - အိမ်/ အိမ်ယာ"
+
+#: project/apps/birth_registration/fields.py:184
+msgid "02 - Government Hospital"
+msgstr "02 - အစိုးရဆေးရုံ"
+
+#: project/apps/birth_registration/fields.py:185
+msgid "03 - Nursing Home (including any maternity and child welfare society) "
+msgstr "03 - သားဖွားခန်း "
+
+#: project/apps/birth_registration/fields.py:186
+msgid "04 - Private Hospital/clinic"
+msgstr "04 - ပုဂ္ဂလိက ဆေးရုံ/ ဆေးခန်း"
+
+#: project/apps/birth_registration/fields.py:187
+msgid "05 - Other institution"
+msgstr "05 - အခြားသော ဌာနများ "
+
+#: project/apps/birth_registration/fields.py:195
+msgid "01 - Kachin"
+msgstr "01 - ကချင်"
+
+#: project/apps/birth_registration/fields.py:196
+msgid "02 - Kayah"
+msgstr "02 - ကယား"
+
+#: project/apps/birth_registration/fields.py:197
+msgid "03 - Kayin"
+msgstr "03 - ကရင်"
+
+#: project/apps/birth_registration/fields.py:198
+msgid "04 - Chin"
+msgstr "04 - ချင်း"
+
+#: project/apps/birth_registration/fields.py:199
+msgid "05 - Bamar"
+msgstr "05 - ဗမာ"
+
+#: project/apps/birth_registration/fields.py:200
+msgid "06 - Mon"
+msgstr "06 - မွန်"
+
+#: project/apps/birth_registration/fields.py:201
+msgid "07 - Rakhine"
+msgstr "07 - ရခိုင်"
+
+#: project/apps/birth_registration/fields.py:202
+msgid "08 - Shan"
+msgstr "08 - ရှမ်း"
+
+#: project/apps/birth_registration/fields.py:203
+msgid "09 - Other indigenous Races"
+msgstr "09 - အခြားတိုင်းရင်းသားမျိုးနွယ်များ"
+
+#: project/apps/birth_registration/fields.py:204
+msgid "10 - Myanmar/Foreigners"
+msgstr "10 - မြန်မာ/ နိုင်ငံခြားသား "
+
+#: project/apps/birth_registration/fields.py:205
+msgid "11 - Chinese"
+msgstr "11 - တရုတ်"
+
+#: project/apps/birth_registration/fields.py:206
+msgid "12 - Indian"
+msgstr "12 - အိန္ဒိယနွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:207
+msgid "13 - Pakistani"
+msgstr "13 - ပါကစ္စတန်နွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:208
+msgid "14 - Bangladesh"
+msgstr "14 - ဘင်္ဂလားဒေ့ရှ်နွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:209
+msgid "15 - Nepal"
+msgstr "15 - နီပေါနွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:210
+msgid "16 - Other Asian"
+msgstr "16 - အခြားသော အာရှမျိုးနွယ် တခုခု"
+
+#: project/apps/birth_registration/fields.py:211
+msgid "17 - Others"
+msgstr "17 - အခြားသော မျိုးနွယ်များ"
+
+#: project/apps/birth_registration/fields.py:212
+msgid "18 - Not stated"
+msgstr "18 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/fields.py:220
+msgid "01 - Professional Technical and related workers"
+msgstr "01 - သက်မွေးဝမ်းကျောင်းနည်းပညာတစ်ခုခု ကျွမ်းကျင်သောလုပ်သား"
+
+#: project/apps/birth_registration/fields.py:221
+msgid "02 - Administrative and managerial workers"
+msgstr "02 - အုပ်ချုပ်ရေး၊ စီမံခန့်ခွဲရေးနှင့် ပတ်သက် ကျွမ်းကျင်သောလုပ်သား"
+
+#: project/apps/birth_registration/fields.py:222
+msgid "03 - Clerical and related workers"
+msgstr "03 - စာရေး၊ စာချီလုပ်ငန်းနှင့် ပတ်သက် ကျွမ်းကျင်သောလုပ်သား"
+
+#: project/apps/birth_registration/fields.py:223
+msgid "04 - Sales workers"
+msgstr "04 - အရောင်းဆိုင်ရာ ပတ်သက် ကျွမ်းကျင်သောလုပ်သား"
+
+#: project/apps/birth_registration/fields.py:224
+msgid "05 - Services workers"
+msgstr "05 - ဝန်ဆောင်မှုဆိုင်ရာ ပတ်သက် ကျွမ်းကျင်သောလုပ်သား"
+
+#: project/apps/birth_registration/fields.py:225
+msgid ""
+"06 - Agriculture, Animal Husbandry and Forest workers, Fishermen, Hunters"
+msgstr ""
+"06 - စိုက်ပျိုးရေး၊ မွေးမြူရေး၊ သစ်တော၊ ရေလုပ်ငန်းနှင့် မုဆိုး စသည့်လုပ်သား"
+
+#: project/apps/birth_registration/fields.py:226
+msgid ""
+"07 - Production and related workers, Transport equipment operators and "
+"labours"
+msgstr ""
+"07 - ထုတ်လုပ်ခြင်း၊ သယ်ယူပို့ဆောင်ခြင်းနှင့် ပတ်သက်သော ကိရိယာများကို "
+"နားလည်တတ်ကျွမ်း မောင်းနှင်နိုင်သော လုပ်သား"
+
+#: project/apps/birth_registration/fields.py:227
+msgid "08 - Not classified by occupation"
+msgstr "08 - သတ်မှတ်လုပ်ငန်းများတွင် မပါဝင်သူများ"
+
+#: project/apps/birth_registration/fields.py:228
+msgid "09 - Armed Forces"
+msgstr "09 - တပ်မတော်တွင်ပါဝင်သူများ"
+
+#: project/apps/birth_registration/fields.py:229
+msgid "00 - Economically inactive"
+msgstr "00 - စီးပွားရေးလုပ်ငန်းများနှင့်သက်ဆိုင်ခြင်းမရှိ၊မှီခို"
+
+#: project/apps/birth_registration/fields.py:237
+msgid "01 - Buddhist"
+msgstr "01 - ဗုဒ္ဓဘာသာ"
+
+#: project/apps/birth_registration/fields.py:238
+msgid "02 - Islam"
+msgstr "02 - အစ္စလာမ်ဘာသာ"
+
+#: project/apps/birth_registration/fields.py:239
+msgid "03 - Christian"
+msgstr "03 - ခရစ်ယာန်ဘာသာ"
+
+#: project/apps/birth_registration/fields.py:240
+msgid "04 - Hindu"
+msgstr "04 - ဟိန္ဒူဘာသာ"
+
+#: project/apps/birth_registration/fields.py:241
+msgid "05 - Animist"
+msgstr "05 - နတ်ကိုးကွယ်သည့်ဘာသာ"
+
+#: project/apps/birth_registration/fields.py:242
+msgid "06 - Confucian"
+msgstr "06 - ကွန်ဖြူးရှပ်ဘာသာ"
+
+#: project/apps/birth_registration/fields.py:243
+msgid "07 - Sikh"
+msgstr "07 - ဆစ်ခ်ဘာသာ"
+
+#: project/apps/birth_registration/fields.py:244
+msgid "08 - Jew"
+msgstr "08 - ဂျူးဘာသာ"
+
+#: project/apps/birth_registration/fields.py:245
+#: project/apps/birth_registration/fields.py:270
+msgid "09 - Others"
+msgstr "09 - အခြားသောမျိုးနွယ်များ"
+
+#: project/apps/birth_registration/fields.py:246
+msgid "Not stated"
+msgstr "ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/fields.py:254
+msgid "Original form image"
+msgstr "မူရင်းပုံစံ၏ပုံ"
+
+#: project/apps/birth_registration/fields.py:255
+msgid "Please attach a scanned copy of a photograph on the original form"
+msgstr "ကျေးဇူးပြု၍ မူလပုံစံ scan ဖတ်ထားသည်ကိုတွဲထည့်ပေးပါ။"
+
+#: project/apps/birth_registration/fields.py:262
+msgid "01 - Myanmar"
+msgstr "01 - မြန်မာ"
+
+#: project/apps/birth_registration/fields.py:263
+msgid "02 - Indian"
+msgstr "02 - အိန္ဒိယနွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:264
+msgid "03 - Pakistani"
+msgstr "03 - ပါကစ္စတန်နွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:265
+msgid "04 - Bangladesh"
+msgstr "04 - ဘင်္ဂလားဒေ့ရှ်နွယ်ဖွား"
+
+#: project/apps/birth_registration/fields.py:266
+msgid "05 - Nepalese"
+msgstr "05 - နီပေါလူမျိုး"
+
+#: project/apps/birth_registration/fields.py:267
+msgid "06 - Chinese"
+msgstr "06 - တရုတ်လူမျိုး"
+
+#: project/apps/birth_registration/fields.py:268
+msgid "07 - European/American"
+msgstr "07 - ဥရောပ/ အမေရိကန်လူမျိုး"
+
+#: project/apps/birth_registration/fields.py:269
+msgid "08 - Other Asian"
+msgstr "08 - အခြားသော အာရှမျိုးနွယ်တခုခု"
+
+#: project/apps/birth_registration/fields.py:271
+msgid "10 - Not stated"
+msgstr "10 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/fields.py:295
+msgid "Occupation (optional description)"
+msgstr "အလုပ်အကိုင်(လိုအပ်မှဖြည့်စွက်နိုင်သည်)"
+
+#: project/apps/birth_registration/filters.py:16
+#: project/apps/birth_registration/filters.py:40
+#: project/apps/certification/filters.py:12
+msgid "Any"
+msgstr "မည်သည့်"
+
+#: project/apps/birth_registration/forms.py:99
+#: project/apps/birth_registration/forms.py:163
+msgid "You are not allowed to create or edit entries for this region"
+msgstr ""
+"ဒီဒေသအတွက် ရိုက်သွင်းရန် သင့်အားဖန်တီးခွင့်၊ပြင်ဆင်ခွင့် သင့်တွင်မရှိပါ"
+
+#: project/apps/birth_registration/forms.py:107
+#: project/apps/birth_registration/forms.py:171
+msgid "Reason for edit:"
+msgstr "ပြန်လည် ပြင်ဆင်သည့် အကြောင်းရင်း - "
+
+#: project/apps/birth_registration/models.py:24
+msgid "Day, month and year: <kbd>25102006</kbd>"
+msgstr "နေ့၊လ နှင့် နှစ်- <kbd>25102006</kbd>"
+
+#: project/apps/birth_registration/models.py:56
+msgid "99 - Not stated"
+msgstr "99 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/models.py:92
+msgid "Hospital"
+msgstr "ဆေးရုံ"
+
+#: project/apps/birth_registration/models.py:93
+msgid "Hospitals"
+msgstr "ဆေးရုံများ"
+
+#: project/apps/birth_registration/models.py:105
+msgid "Code"
+msgstr "ကုဒ်"
+
+#: project/apps/birth_registration/models.py:111
+#: project/apps/birth_registration/models.py:825
+#: project/apps/certification/models.py:181
+msgid "Name"
+msgstr "အမည်"
+
+#: project/apps/birth_registration/models.py:116
+msgid "Birth registration"
+msgstr "မွေးစာရင်း"
+
+#: project/apps/birth_registration/models.py:117
+msgid "Death registration"
+msgstr "သေစာရင်း"
+
+#: project/apps/birth_registration/models.py:136
+msgid "RHC"
+msgstr "ကျေးလက်ကျန်းမာရေးဌာန"
+
+#: project/apps/birth_registration/models.py:137
+msgid "RHCs"
+msgstr "ကျေးလက်ကျန်းမာရေးဌာနများ"
+
+#: project/apps/birth_registration/models.py:149
+msgid "RHC Code"
+msgstr "ကျေးလက်ကျန်းမာရေးဌာန ကုဒ်"
+
+#: project/apps/birth_registration/models.py:154
+msgid "Village"
+msgstr "ကျေးရွာအုပ်စု"
+
+#: project/apps/birth_registration/models.py:176
+msgid "RHC code (rural areas)"
+msgstr "ကျေးလက်ကျန်းမာရေးဌာန ကုဒ် (ကျေးလက်ဧရိယာ)"
+
+#: project/apps/birth_registration/models.py:222
+msgid "You can not use this field for urban areas"
+msgstr "မြို့ပြဧရိယာများအတွက် သင်သည်ဒီအကွက်ကိုမသုံးနိုင်ပါ"
+
+#: project/apps/birth_registration/models.py:231
+#: project/apps/birth_registration/models.py:268
+msgid "This hospital belongs to another township or town"
+msgstr "ဤဆေးရုံသည် အခြားသော မြို့(သို့)မြို့နယ် အတွင်းတွင်ဖြစ်သည်"
+
+#: project/apps/birth_registration/models.py:235
+#: project/apps/birth_registration/models.py:240
+#, python-format
+msgid "Please check the code: looks like it should be %s"
+msgstr "အညွှန်းကိန်းကို ပြန်စစ်ပါ၊ %s ဖြင့်ဖြစ်ရမည်"
+
+#: project/apps/birth_registration/models.py:243
+msgid "This field is required for rural areas"
+msgstr "ဒီအကွက်သည် ကျေးလက်ဒေသများအတွက် လိုအပ်သည်။"
+
+#: project/apps/birth_registration/models.py:247
+msgid "This RHC belongs to another township"
+msgstr "ဒီ ကျေးလက်ကျန်းမာရေးဌာန သည်တခြားမြို့နယ်ထဲတွင်ပါဝင်သည်"
+
+#: project/apps/birth_registration/models.py:272
+#: project/apps/birth_registration/models.py:274
+#: project/apps/birth_registration/models.py:276
+msgid "Conflicting value"
+msgstr "ထပ်နေသောတန်ဖိုး"
+
+#: project/apps/birth_registration/models.py:283
+msgid "Form 101"
+msgstr "ပုံစံ ၁၀၁"
+
+#: project/apps/birth_registration/models.py:284
+msgid "Forms 101"
+msgstr "ပုံစံ ၁၀၁"
+
+#: project/apps/birth_registration/models.py:288
+#: project/apps/birth_registration/models.py:757
+#: project/apps/certification/models.py:29
+#: project/apps/certification/models.py:137
+#: project/apps/certification/models.py:200
+msgid "State/Division"
+msgstr "ပြည်နယ်/တိုင်းဒေသကြီး"
+
+#: project/apps/birth_registration/models.py:290
+#: project/apps/birth_registration/models.py:455
+#: project/apps/birth_registration/models.py:759
+#: project/apps/birth_registration/models.py:870
+#: project/apps/certification/models.py:31
+#: project/apps/certification/models.py:139
+#: project/apps/certification/models.py:202
+msgid "District"
+msgstr "ခရိုင်"
+
+#: project/apps/birth_registration/models.py:292
+#: project/apps/birth_registration/models.py:457
+#: project/apps/birth_registration/models.py:761
+#: project/apps/birth_registration/models.py:872
+#: project/apps/certification/models.py:33
+#: project/apps/certification/models.py:141
+msgid "Township or town"
+msgstr "မြို့နယ် သို့မဟုတ် မြို့"
+
+#: project/apps/birth_registration/models.py:294
+#: project/apps/birth_registration/models.py:764
+#: project/apps/certification/models.py:35
+#: project/apps/certification/models.py:144
+msgid "Area"
+msgstr "ဧရိယာ"
+
+#: project/apps/birth_registration/models.py:304
+#: project/apps/birth_registration/models.py:778
+#: project/apps/certification/models.py:48
+#: project/apps/certification/models.py:158
+msgid "Governmental hospital name"
+msgstr "အစိုးရဆေးရုံအမည်"
+
+#: project/apps/birth_registration/models.py:305
+#: project/apps/birth_registration/models.py:779
+#: project/apps/certification/models.py:49
+#: project/apps/certification/models.py:159
+msgid "Private hospital name"
+msgstr "ပုဂ္ဂလိက ဆေးရုံ/ဆေးခန်းအမည်"
+
+#: project/apps/birth_registration/models.py:310
+#: project/apps/birth_registration/models.py:784
+#: project/apps/certification/models.py:52
+msgid "Date of Registration"
+msgstr "မှတ်ပုံတင်သည့်ရက်စွဲ"
+
+#: project/apps/birth_registration/models.py:317
+#: project/apps/birth_registration/models.py:791
+msgid "Date of Registration - year"
+msgstr "မှတ်ပုံတင်သည့်နေ့ - နှစ်"
+
+#: project/apps/birth_registration/models.py:322
+#: project/apps/birth_registration/models.py:797
+msgid "Date of Registration - month"
+msgstr "မှတ်ပုံတင်သည့်နေ့ - လ"
+
+#: project/apps/birth_registration/models.py:329
+msgid "Birth status"
+msgstr "မွေးဖွားမှုအခြေအနေ"
+
+#: project/apps/birth_registration/models.py:331
+msgid "<ul><li>Born alive = 1 </li><li>Born dead = 2</li></ul>"
+msgstr "<ul><li>အရှင်မွေး = 1 </li><li>အသေမွေး = 2</li></ul>"
+
+#: project/apps/birth_registration/models.py:337
+msgid "01 - Born alive"
+msgstr "01 - အရှင်မွေး"
+
+#: project/apps/birth_registration/models.py:338
+msgid "02 - Born dead"
+msgstr "02 - အသေမွေး"
+
+#: project/apps/birth_registration/models.py:343
+msgid "Optional comment"
+msgstr "-"
+
+#: project/apps/birth_registration/models.py:349
+#: project/apps/certification/models.py:59
+msgid "Date of Birth"
+msgstr "မွေးဖွားသည့်ရက်စွဲ"
+
+#: project/apps/birth_registration/models.py:355
+msgid "Date of Birth - year"
+msgstr "မွေးဖွားသည့်- ခုနှစ်"
+
+#: project/apps/birth_registration/models.py:360
+msgid "Date of Birth - month"
+msgstr "မွေးဖွားသည့်- လ"
+
+#: project/apps/birth_registration/models.py:364
+#: project/apps/certification/models.py:78
+msgid "Place of Birth"
+msgstr "မွေးဖွားသည့်နေရာ"
+
+#: project/apps/birth_registration/models.py:365
+msgid ""
+"Check if place of birth given in entry form (may be residence). Enter area "
+"of Yangon only if a house address. If a hospital or nursing home etc. give "
+"full address.<br/><ul><li>Home/House = 1</li><li>Government Hospital = "
+"2</li><li>Nursing Home (including any maternity and child welfare society) ="
+" 3</li><li>Private Hospital/clinic = 4</li><li>Other institution = "
+"5</li><li>Elsewhere = 6</li></ul>"
+msgstr ""
+"မွေးရာအရပ်ဒေသကို အဝင်ပုံစံတွင်ကြည့်ရန် (အိမ်လိပ်စာလည်း ဖြစ်နိုင်သည်).\n"
+"အကယ်၍ ရန်ကုန်တိုင်းဒေသကြီးအတွင်းရှိ အိမ်လိပ်စာ၊ ဆေးရုံ သို့မဟုတ်\n"
+"ကျန်းမာရေးဌာနတခုခု ဖြစ်နေပါက၊ ရန်ကုန် နယ်နမိတ်အတွင်း\n"
+"လိပ်စာအတိအကျထည့်သွင်းရန်<br/><ul><li>အိမ် = 1</li><li>အစိုးရဆေးရုံ =\n"
+"2</li><li>သားဖွားခန်း (မိခင်နှင့်ကလေး စောင်ရှောက်ရေးဌာနများ အပါအဝင်) =\n"
+"3</li><li>ပုဂ္ဂလိက ဆေးရုံ ဆေးခန်း = 4</li><li>အခြားသော နေရာဌာနများ =\n"
+"5</li><li>တစ်ခြားတစ်နေရာရာ = 6</li></ul>"
+
+#: project/apps/birth_registration/models.py:390
+#: project/apps/certification/models.py:64
+msgid "Name of child"
+msgstr "ကလေးအမည်"
+
+#: project/apps/birth_registration/models.py:391
+msgid "(if has)"
+msgstr "(ရှိခဲ့ပါက)"
+
+#: project/apps/birth_registration/models.py:402
+msgid "<ul><li>Male = 1 </li><li>Female = 2 </li></ul>"
+msgstr "<ul><li>ကျား = 1 </li><li>မ = 2 </li></ul>"
+
+#: project/apps/birth_registration/models.py:409
+#: project/apps/birth_registration/models.py:881
+msgid "Father's name"
+msgstr "ဖခင်၏ အမည်"
+
+#: project/apps/birth_registration/models.py:414
+msgid "Father's race"
+msgstr "ဖခင်၏လူမျိုး"
+
+#: project/apps/birth_registration/models.py:417
+msgid "Father's NRC"
+msgstr "ဖခင်၏မှတ်ပုံတင်အမှတ်"
+
+#: project/apps/birth_registration/models.py:422
+msgid "Father's citizenship"
+msgstr "ဖခင်၏ နိုင်ငံသား"
+
+#: project/apps/birth_registration/models.py:424
+#: project/apps/certification/models.py:88
+msgid "Father's Religion"
+msgstr "ဖခင်၏ကိုးကွယ်သည့်ဘာသာ"
+
+#: project/apps/birth_registration/models.py:426
+msgid "Father's occupation"
+msgstr "ဖခင်၏ အလုပ်အကိုင်"
+
+#: project/apps/birth_registration/models.py:433
+#: project/apps/birth_registration/models.py:883
+msgid "Mother's name"
+msgstr "မိခင်၏ အမည်"
+
+#: project/apps/birth_registration/models.py:435
+msgid "Mother's race"
+msgstr "မိခင်၏လူမျိုး"
+
+#: project/apps/birth_registration/models.py:438
+msgid "Mother's NRC"
+msgstr "မိခင်၏မှတ်ပုံတင်အမှတ်"
+
+#: project/apps/birth_registration/models.py:443
+msgid "Mother's citizenship"
+msgstr "မိခင်၏ နိုင်ငံသား"
+
+#: project/apps/birth_registration/models.py:445
+#: project/apps/certification/models.py:103
+msgid "Mother's Religion"
+msgstr "မိခင်၏ကိုးကွယ်သည့်ဘာသာ"
+
+#: project/apps/birth_registration/models.py:447
+#: project/apps/certification/models.py:105
+msgid "Mother's occupation"
+msgstr "မိခင်၏ အလုပ်အကိုင်"
+
+#: project/apps/birth_registration/models.py:452
+#: project/apps/birth_registration/models.py:455
+#: project/apps/birth_registration/models.py:457
+msgid "Usual Place of residence of mother:"
+msgstr "မိခင်၏ အမြဲတမ်းနေအိမ် တည်နေရာ "
+
+#: project/apps/birth_registration/models.py:452
+#: project/apps/birth_registration/models.py:868
+msgid " State Division"
+msgstr "ပြည်နယ်နှင့် တိုင်းဒေသကြီး"
+
+#: project/apps/birth_registration/models.py:460
+msgid "Address of mother"
+msgstr "မိခင်၏လိပ်စာ(အပြည့်အစုံ)"
+
+#: project/apps/birth_registration/models.py:465
+msgid "Informer's name, address and relation to the child:"
+msgstr "တိုင်ကြားသူ၏အမည်၊ လိပ်စာ၊ နှင့် ကလေးနှင့် တော်စပ်ပုံ -"
+
+#: project/apps/birth_registration/models.py:474
+msgid "Type of birth"
+msgstr "မွေးဖွားပုံအမျိုးအစား"
+
+#: project/apps/birth_registration/models.py:476
+msgid "01 - Single"
+msgstr "01 - တစ်ဦးတည်း"
+
+#: project/apps/birth_registration/models.py:477
+msgid "02 - Twins"
+msgstr "02 - အမြွှာ"
+
+#: project/apps/birth_registration/models.py:478
+msgid "03 - Triplets"
+msgstr "03 - သုံးမြွှာ"
+
+#: project/apps/birth_registration/models.py:479
+msgid "04 - Quadruplets and above"
+msgstr "04 - သုံးမြွှာပူးအထက်"
+
+#: project/apps/birth_registration/models.py:481
+msgid ""
+"<ul><li>Single = 1</li><li>Twins = 2</li><li>Triplets = "
+"3</li><li>Quadruplets and above = 4</li></ul>"
+msgstr ""
+"<ul><li>တစ်ဦးတည်း =1</li><li>အမြွှာ = 2</li><li>သုံးမြွှာ = "
+"3</li><li>သုံးမြွှာအထက် = 4</li></ul>"
+
+#: project/apps/birth_registration/models.py:497
+msgid "For both alive"
+msgstr " အရှင်မွေးဖွားသူများအတွက်"
+
+#: project/apps/birth_registration/models.py:499
+msgid "01 - 2 Females"
+msgstr "01 - မ 2 ဦး"
+
+#: project/apps/birth_registration/models.py:500
+msgid "02 - 1 Male and 1 Female"
+msgstr "02 - ကျား 1 နှင့် မ 1"
+
+#: project/apps/birth_registration/models.py:501
+msgid "03 - 2 Males"
+msgstr "03 - ကျား 2 ဦး"
+
+#: project/apps/birth_registration/models.py:505
+msgid "For 1 alive"
+msgstr "တစ်ဦးသာ အရှင်မွေးဖွားလာမှုများ အတွက်"
+
+#: project/apps/birth_registration/models.py:507
+msgid "04 - 2 females"
+msgstr "04 - မ 2 ဦး"
+
+#: project/apps/birth_registration/models.py:508
+msgid "05 - 1 live male"
+msgstr "05 -  ကျား 1 ဦး ရှင်"
+
+#: project/apps/birth_registration/models.py:509
+msgid "06 - 1 live female"
+msgstr "06 -  မ 1 ဦး ရှင်"
+
+#: project/apps/birth_registration/models.py:510
+msgid "07 - 2 males"
+msgstr "07 -  ကျား 2 ဦး "
+
+#: project/apps/birth_registration/models.py:514
+msgid "For born dead"
+msgstr "အသေမွေးသူများအတွက်"
+
+#: project/apps/birth_registration/models.py:516
+msgid "08 - 2 females"
+msgstr "08 - မ 2 ဦး"
+
+#: project/apps/birth_registration/models.py:517
+msgid "09 - 1 Male and 1 Female"
+msgstr "09 - ကျား 1 နှင့် မ 1"
+
+#: project/apps/birth_registration/models.py:518
+msgid "10 - 2 Males"
+msgstr "10 - ကျား 2 ဦး"
+
+#: project/apps/birth_registration/models.py:522
+msgid "For 3 born alive"
+msgstr "3 ယောက်အရှင်မွေးလာသူများအတွက် "
+
+#: project/apps/birth_registration/models.py:523
+msgid "11 - 3 Females"
+msgstr "11 - 3 ဦးလုံး မ"
+
+#: project/apps/birth_registration/models.py:524
+msgid "12 - 1 Male"
+msgstr "12 - ကျား 1 ဦးပါ"
+
+#: project/apps/birth_registration/models.py:525
+msgid "13 - 2 Males"
+msgstr "13 - ကျား 2 ဦးပါ"
+
+#: project/apps/birth_registration/models.py:526
+msgid "14 - 3 Males"
+msgstr "14 - 3 ဦးလုံး ကျား"
+
+#: project/apps/birth_registration/models.py:530
+msgid "For 2 born alive & 1 born dead"
+msgstr "2 ဦး ရှင် 1 ဦးသေ မွေးအတွက်"
+
+#: project/apps/birth_registration/models.py:532
+msgid "15 - 2 LF & 1 SM"
+msgstr "15 - ရှင် မ 2 ၊ သေ ကျား 1"
+
+#: project/apps/birth_registration/models.py:533
+msgid "16 - 2 LF & 1 SF"
+msgstr "16 - ရှင် မ 2 ၊ သေ မ 1"
+
+#: project/apps/birth_registration/models.py:534
+msgid "17 - 2 LM & 1 SM"
+msgstr "17 - ရှင် ကျား 2 ၊ သေ ကျား 1"
+
+#: project/apps/birth_registration/models.py:535
+msgid "18 - 2 LM & 1 SF"
+msgstr "18 - ရှင် ကျား 2 ၊ သေ မ 1"
+
+#: project/apps/birth_registration/models.py:536
+msgid "19 - 1 LM & 1 LF, 1 SM"
+msgstr "19 - ရှင် ကျား 1 ၊ ရှင် မ 1 ၊ သေ ကျား 1"
+
+#: project/apps/birth_registration/models.py:537
+msgid "20 - 1 LM & 1 LF, 1 SF"
+msgstr "20 - ရှင် ကျား 1 ၊ ရှင် မ 1 ၊ သေ မ 1"
+
+#: project/apps/birth_registration/models.py:541
+msgid "For 1 born alive & 2 born dead"
+msgstr "1 ဦးရှင် ၊ 2 ဦး သေ မွေးအတွက်"
+
+#: project/apps/birth_registration/models.py:543
+msgid "21 - 1 LF & 2 SM"
+msgstr "21 - ရှင် မ 1 ၊ သေ ကျား 2"
+
+#: project/apps/birth_registration/models.py:544
+msgid "22 - 1 LF & 2 SF"
+msgstr "22 - ရှင် မ 1 ၊ သေ မ 2"
+
+#: project/apps/birth_registration/models.py:545
+msgid "23 - 1 LM& 2 SM"
+msgstr "23 - ရှင် ကျား 1 ၊ သေ ကျား 2"
+
+#: project/apps/birth_registration/models.py:546
+msgid "24 - 1 LM & 2 SF"
+msgstr "24 - ရှင် ကျား 1 ၊ သေ မ 2"
+
+#: project/apps/birth_registration/models.py:547
+msgid "25 - 1 LF, 1 SM & 1 SF"
+msgstr "25 - ရှင် မ 1 ၊ သေ မ 1 ၊ သေ ကျား 1"
+
+#: project/apps/birth_registration/models.py:548
+msgid "26 - 1 LM, 1 SM & 1 SF"
+msgstr "26 - ရှင် ကျား 1 ၊ သေ မ 1 ၊ သေ ကျား 1"
+
+#: project/apps/birth_registration/models.py:552
+msgid "For all born dead"
+msgstr "အားလုံးအသေမွေးသူများအတွက်"
+
+#: project/apps/birth_registration/models.py:554
+msgid "27 - 3 Females"
+msgstr "27 - မ 3"
+
+#: project/apps/birth_registration/models.py:555
+msgid "28 - 1 Male"
+msgstr "28 - ကျား 1"
+
+#: project/apps/birth_registration/models.py:556
+msgid "29 - 2 Males"
+msgstr "29 - ကျား 2"
+
+#: project/apps/birth_registration/models.py:557
+msgid "30 - 3 Males"
+msgstr "30 -  ကျား 3"
+
+#: project/apps/birth_registration/models.py:568
+msgid "Twins"
+msgstr "အမြွှာများ"
+
+#: project/apps/birth_registration/models.py:575
+msgid "Attendant at birth"
+msgstr "မွေးဖွားပေးသူ"
+
+#: project/apps/birth_registration/models.py:577
+msgid "01 - Doctor"
+msgstr "01 - ဆရာဝန်"
+
+#: project/apps/birth_registration/models.py:578
+msgid "02 - Registered midwife or nurse"
+msgstr "02 - မှတ်ပုံတင် သားဖွားဆရာမ သို့ သူနာပြုဆရာမ"
+
+#: project/apps/birth_registration/models.py:579
+msgid "03 - Auxiliary midwife"
+msgstr "03 - အရံ သားဖွားဆရာမ"
+
+#: project/apps/birth_registration/models.py:580
+msgid "04 - Lethe (Trained Traditional Birth Attendant) TTBA"
+msgstr "04 - အရပ် ရိုးရာ လက်သည်"
+
+#: project/apps/birth_registration/models.py:588
+msgid "Age of Mother"
+msgstr "မိခင်၏ အသက် "
+
+#: project/apps/birth_registration/models.py:589
+msgid "Enter age, unknown age = 99"
+msgstr "မိခင်၏ အသက်ကိုရိုက်ထည့်ပါ၊ မသိရှိပါက ၉၉ ဟုဖြည့်သွင်းပါ"
+
+#: project/apps/birth_registration/models.py:609
+msgid "Age of Mother - code"
+msgstr "မိခင်၏ အသက် - အညွှန်းကုဒ်"
+
+#: project/apps/birth_registration/models.py:610
+msgid ""
+"Enter age as shown in information form on left hand side of word AGE for 1st"
+" two columns and then code as shown for the 3rd column"
+msgstr "."
+
+#: project/apps/birth_registration/models.py:613
+msgid "00 - Under 15 Years"
+msgstr "00- အသက် 15 နှစ်အောက်"
+
+#: project/apps/birth_registration/models.py:614
+msgid "01 - 15 – 19"
+msgstr "၀၁ - ၁၅  ၁၉"
+
+#: project/apps/birth_registration/models.py:615
+msgid "02 - 20 – 24"
+msgstr "၀၂ - ၂၀ - ၂၄"
+
+#: project/apps/birth_registration/models.py:616
+msgid "03 - 25 – 29"
+msgstr "၀၃ - ၂၅ - ၂၉"
+
+#: project/apps/birth_registration/models.py:617
+msgid "04 - 30 – 34"
+msgstr "၀၄ - ၃၀ - ၃၄"
+
+#: project/apps/birth_registration/models.py:618
+msgid "05 - 35 – 39"
+msgstr "၀၅ - ၃၅ - ၃၉"
+
+#: project/apps/birth_registration/models.py:619
+msgid "06 - 40 – 44"
+msgstr "၀၆ - ၄၀ - ၄၄"
+
+#: project/apps/birth_registration/models.py:620
+msgid "07 - 45 – 49"
+msgstr "၀၇ - ၄၅ - ၄၉"
+
+#: project/apps/birth_registration/models.py:621
+msgid "08 - 50 and over"
+msgstr "၀၈ - ၅၀ နှင့် အထက်"
+
+#: project/apps/birth_registration/models.py:622
+msgid "09 - Unknown age (99)"
+msgstr "၀၉ - အသက်မသိ (၉၉)"
+
+#: project/apps/birth_registration/models.py:629
+msgid "Weight of baby at birth"
+msgstr "မွေးကင်းစကလေး၏အလေးချိန်"
+
+#: project/apps/birth_registration/models.py:630
+msgid ""
+"Code 4 digits in gram. If weight of baby is shown in pound use conversion "
+"table"
+msgstr ""
+"ကီလိုဂရမ်ကို ဂဏန်း 4 လုံး အညွှန်းထည့်ပါ။ ကလေး၏ အလေးချိန်ကို ပေါင်ဖြင့် "
+"ပြထားပါက ပြောင်းလဲမှုဇယားကို သုံးပါ။ "
+
+#: project/apps/birth_registration/models.py:640
+msgid "Gestational period"
+msgstr "ကိုယ်ဝန်ဆောင်ကာလ"
+
+#: project/apps/birth_registration/models.py:641
+msgid "Code 2 digits in week"
+msgstr "အပတ်အရေအတွက်ကို ဂဏန်း 2 လုံးဖြင့်ဖော်ပြရမည်"
+
+#: project/apps/birth_registration/models.py:649
+msgid "99 - Not Stated"
+msgstr "99 - ဖော်ပြထားခြင်းမရှိ "
+
+#: project/apps/birth_registration/models.py:652
+msgid "Mother's previous children (Excluding this one)"
+msgstr "ယခုကလေးမပါဘဲ အရှင်မွေးပြီး ယခုတိုင် အသက်ရှင်နေသည့်ဦးရေ"
+
+#: project/apps/birth_registration/models.py:662
+msgid "Number born alive (Excluding this one)"
+msgstr "ယခုကလေးမပါဘဲ အရှင်မွေးပြီးနောက် သေဆုံးသွားသည့်ဦးရေ"
+
+#: project/apps/birth_registration/models.py:698
+msgid "Please check the code"
+msgstr "အညွှန်းကိန်းကို ပြန်စစ်ပါ"
+
+#: project/apps/birth_registration/models.py:702
+#: project/apps/birth_registration/models.py:706
+#: project/apps/birth_registration/models.py:1035
+#: project/apps/birth_registration/models.py:1039
+msgid "The date cannot be in the future"
+msgstr "မရောက်သေးသော အနာဂတ်မှ နေ့စွဲမဖြစ်ရပါ"
+
+#: project/apps/birth_registration/models.py:711
+msgid "Date of registration can not be before the date of birth"
+msgstr "မှတ်ပုံတင်သည့်ရက်က မွေးသောရက်ထက် ပိုစောနေခြင်း မဖြစ်နိုင်ပါ"
+
+#: project/apps/birth_registration/models.py:715
+msgid "Wrong type of birth?"
+msgstr "မွေးဖွားမှုပုံစံမှားယွင်းနေသလား။"
+
+#: project/apps/birth_registration/models.py:722
+#, python-format
+msgid "Please check the value (should be %d to %d)"
+msgstr "တန်ဖိုးကိုစစ်ဆေးပါ( %d မှ %d အတွင်းဖြစ်ရမည်)"
+
+#: project/apps/birth_registration/models.py:752
+msgid "Form 201"
+msgstr "ပုံစံ ၂၀၁"
+
+#: project/apps/birth_registration/models.py:753
+msgid "Forms 201"
+msgstr "ပုံစံ ၂၀၁"
+
+#: project/apps/birth_registration/models.py:803
+#: project/apps/certification/models.py:171
+msgid "Date of Death"
+msgstr "သေဆုံးသည့်ရက်စွဲ"
+
+#: project/apps/birth_registration/models.py:809
+msgid "Date of Death - year"
+msgstr "သေဆုံးသည့်- ခုနှစ်"
+
+#: project/apps/birth_registration/models.py:815
+msgid "Date of Death - month"
+msgstr "သေဆုံးသည့်- လ"
+
+#: project/apps/birth_registration/models.py:820
+#: project/apps/certification/models.py:176
+msgid "Place of Death"
+msgstr "သေဆုံးသောနေရာ"
+
+#: project/apps/birth_registration/models.py:821
+#: project/apps/certification/models.py:177
+msgid ""
+"Check if place of death given in entry form (may be residence).<br/>Enter "
+"area of Yangon only if a house address.<br/>If a hospital or nursing home "
+"etc. give full address."
+msgstr ""
+"ဖြည့်စွက်ထားသောပုံစံတွင်သေဆုံးသည့်နေရာ(အိမ်ဖြစ်ကောင်းလည်းဖြစ်နိုင်သည်)ကိုစစ်ဆေးပါ"
+" <br/>အိမ်လိပ်စာဖြစ်ပါက ရန်ကုန်၏ဧရိယာကိုပဲထည့်သွင်းပါ <br/> ဆေးရုံသို့မဟုတ် "
+"ပြုစုစောင့်ရှောက်ရေးအိမ် စသည်ဖြင့် ဖြစ်ပါက လိပ်စာအပြည့်အစုံထည့်သွင်းပါ"
+
+#: project/apps/birth_registration/models.py:833
+msgid "Age Group"
+msgstr "အသက်အုပ်စု"
+
+#: project/apps/birth_registration/models.py:841
+msgid "1-1"
+msgstr "၁-၁"
+
+#: project/apps/birth_registration/models.py:842
+msgid "2-3"
+msgstr "၂-၃"
+
+#: project/apps/birth_registration/models.py:843
+msgid "3-2"
+msgstr "၃-၂"
+
+#: project/apps/birth_registration/models.py:844
+msgid "3-3"
+msgstr "၃-၃"
+
+#: project/apps/birth_registration/models.py:848
+msgid "Extra age code"
+msgstr "အသက်ကုဒ်"
+
+#: project/apps/birth_registration/models.py:851
+#: project/apps/certification/models.py:189
+msgid "Occupation"
+msgstr "အလုပ်အကိုင်"
+
+#: project/apps/birth_registration/models.py:856
+#: project/apps/certification/models.py:194
+msgid "Race"
+msgstr "လူမျိုး"
+
+#: project/apps/birth_registration/models.py:858
+#: project/apps/certification/models.py:196
+msgid "Citizenship"
+msgstr "နိုင်ငံသား"
+
+#: project/apps/birth_registration/models.py:861
+msgid "NRC"
+msgstr "မှတ်ပုံတင်အမှတ်"
+
+#: project/apps/birth_registration/models.py:866
+#: project/apps/certification/models.py:198
+msgid "Religion"
+msgstr "ကိုးကွယ်သည့်ဘာသာ"
+
+#: project/apps/birth_registration/models.py:868
+#: project/apps/birth_registration/models.py:870
+#: project/apps/birth_registration/models.py:872
+#: project/apps/birth_registration/models.py:874
+#: project/apps/certification/models.py:200
+#: project/apps/certification/models.py:202
+#: project/apps/certification/models.py:204
+#: project/apps/certification/models.py:206
+msgid "Usual place of residence"
+msgstr "အမြဲတမ်းနေအိမ် တည်နေရာ"
+
+#: project/apps/birth_registration/models.py:877
+msgid "E-Code"
+msgstr "အီး - ကုဒ်"
+
+#: project/apps/birth_registration/models.py:879
+msgid "N-Code"
+msgstr "အန် - ကုဒ်"
+
+#: project/apps/birth_registration/models.py:886
+#: project/apps/certification/models.py:221
+msgid "Informant's name, address and relationship to deceased"
+msgstr "တိုင်ကြားသူ၏အမည်၊ လိပ်စာ၊ နှင့် သေဆုံးသူနှင့် တော်စပ်ပုံ"
+
+#: project/apps/birth_registration/models.py:893
+msgid "Marital status of deceased"
+msgstr "သေဆုံးသူ၏အိမ်ထောင်မှုအခြေအနေ"
+
+#: project/apps/birth_registration/models.py:895
+msgid "01 - Never married (Single)"
+msgstr "01 - မင်္ဂလာမဆောင်ခဲ့ပါ(လူပျို၊အပျို)"
+
+#: project/apps/birth_registration/models.py:896
+msgid "02 - Married"
+msgstr "02 - အိမ်ထောင်ရှိသော"
+
+#: project/apps/birth_registration/models.py:897
+msgid "03 - Divorced"
+msgstr "03 - ကွာရှင်းခဲ့သည်"
+
+#: project/apps/birth_registration/models.py:898
+msgid "04 - Separated"
+msgstr "04 - ကွဲကွာခဲဲ့သည်"
+
+#: project/apps/birth_registration/models.py:899
+msgid "05 - Widowed"
+msgstr "05 - မုဆိုးမ၊ဖို"
+
+#: project/apps/birth_registration/models.py:900
+msgid "06 - Renounced"
+msgstr "06 - ပြန်လည်ပေါင်းစည်းခြင်း"
+
+#: project/apps/birth_registration/models.py:901
+msgid "07 - Not stated"
+msgstr "07 - ဖော်ပြထားခြင်းမရှိ"
+
+#: project/apps/birth_registration/models.py:908
+msgid "If a woman was the death associated with pregnancy"
+msgstr "အမျိုးသမီးသေဆုံးမှုသည် ကိုယ်ဝန်ဆောင်မှုနှင့်ပတ်သတ်မှုရှိပါက"
+
+#: project/apps/birth_registration/models.py:910
+#: project/apps/birth_registration/models.py:920
+msgid "01 - Yes"
+msgstr "01 - ဟုတ်ပါတယ်"
+
+#: project/apps/birth_registration/models.py:911
+#: project/apps/birth_registration/models.py:921
+msgid "02 - No"
+msgstr "02 - မဟုတ်ပါ"
+
+#: project/apps/birth_registration/models.py:918
+msgid "Was there a delivery"
+msgstr "မွေးဖွားခဲ့ပါသလား"
+
+#: project/apps/birth_registration/models.py:1025
+#: project/apps/birth_registration/models.py:1030
+#, python-format
+msgid "Please check this field value or \"%s\" field value above"
+msgstr "ဒီအကွက်၏တန်ဖိုးကိုအမှန်ခြစ်ပါ သို့မဟုတ် အပေါ် \"%s\" အကွက်တန်ဖိုး"
+
+#: project/apps/birth_registration/models.py:1044
+msgid "Date of registration can not be before the date of death"
+msgstr "မှတ်ပုံတင်သည့်ရက်က သေဆုံးသောရက်ထက် ပိုစောနေခြင်း မဖြစ်ရပါ"
+
+#: project/apps/birth_registration/models.py:1086
+msgid ""
+"Phone number must be entered in the format: '+999999999'. Up to 15 digits "
+"allowed."
+msgstr ""
+"ဖုန်းနံပါတ်သည် အောက်ပါပုံစံအတိုင်းဖြစ်ရမည် - '+999999999' \n"
+"15 လုံးအထိခွင့်ပြုသည်"
+
+#: project/apps/birth_registration/models.py:1093
+#: project/apps/birth_registration/validators.py:9
+#, python-format
+msgid "%d should be two digits integer"
+msgstr "%d သည်ဂဏန်း ၂ လုံးသာဖြစ်သင့်သည်"
+
+#: project/apps/birth_registration/tables.py:28
+#: project/apps/birth_registration/tables.py:94
+#: project/apps/certification/tables.py:14
+#: project/apps/certification/tables.py:46
+msgid "Serial N."
+msgstr "မှတ်ပုံတင်မှု အမှတ်စဉ်"
+
+#: project/apps/birth_registration/tables.py:31
+#: project/apps/birth_registration/tables.py:72
+#: project/apps/certification/tables.py:12
+#: project/apps/certification/tables.py:47
+msgid "Certificate"
+msgstr "လက်မှတ်"
+
+#: project/apps/birth_registration/tables.py:47
+#: project/apps/birth_registration/tables.py:89
+msgid "N/A"
+msgstr "မရှိ"
+
+#: project/apps/birth_registration/templates/button_form_create_save_local.html:4
+msgid "Save form locally"
+msgstr "ပုံစံကိုစက်အတွင်းထဲသိမ်းမည်"
+
+#: project/apps/birth_registration/templates/form_confirm_delete.html:19
+msgid "Restore form "
+msgstr " ပြန်လည်ထားရှိသည့် ပုံစံ "
+
+#: project/apps/birth_registration/templates/form_confirm_delete.html:21
+msgid "Remove form "
+msgstr "ဖယ်ထုတ်လိုက်သည့် ပုံစံ "
+
+#: project/apps/birth_registration/templates/form_confirm_delete.html:32
+#: project/apps/birth_registration/templates/form_detail.html:78
+#: project/apps/birth_registration/templates/form_edit.html:45
+msgid "Restore"
+msgstr " ပြန်လည်ထားရှိခြင်း"
+
+#: project/apps/birth_registration/templates/form_confirm_delete.html:35
+#: project/apps/birth_registration/templates/form_confirm_delete.html:43
+#: project/apps/birth_registration/templates/form_detail.html:84
+#: project/apps/birth_registration/templates/form_edit.html:29
+#: project/apps/birth_registration/templates/inlcude_form_logic.html:14
+#: project/apps/certification/templates/certification/f103_form.html:33
+#: project/apps/certification/templates/certification/f203_form.html:9
+msgid "Cancel"
+msgstr "Cancel"
+
+#: project/apps/birth_registration/templates/form_confirm_delete.html:40
+#: project/apps/birth_registration/templates/form_edit.html:41
+msgid "Delete"
+msgstr "ဖျက်မည်"
+
+#: project/apps/birth_registration/templates/form_create.html:16
+msgid "Add new form"
+msgstr "ပုံစံ အသစ် ထည့်သွင်းမည်"
+
+#: project/apps/birth_registration/templates/form_create.html:23
+msgid "Locally saved forms"
+msgstr "ပုံစံကိုစက်အတွင်းထဲသိမ်းမည်"
+
+#: project/apps/birth_registration/templates/form_create.html:38
+msgid "Add and continue"
+msgstr "ထည့်သွင်းပြီး ရှေ့ဆက်မည်"
+
+#: project/apps/birth_registration/templates/form_create.html:41
+msgid "Add and open"
+msgstr "ထည့်သွင်းပြီး ဖွင့်မည်"
+
+#: project/apps/birth_registration/templates/form_create.html:44
+#: project/apps/certification/templates/certification/f103_form.html:27
+msgid "Add"
+msgstr "ထည့်သွင်းမည်"
+
+#: project/apps/birth_registration/templates/form_create.html:59
+msgid "Serial number"
+msgstr "အစီအစဉ် နံပါတ်"
+
+#: project/apps/birth_registration/templates/form_create.html:60
+msgid "Preview"
+msgstr "ကြိုတင်ကြည့်ရှုခြင်း"
+
+#: project/apps/birth_registration/templates/form_create.html:61
+msgid "Date"
+msgstr "နေ့ရက်"
+
+#: project/apps/birth_registration/templates/form_detail.html:18
+msgid "Form "
+msgstr "ပုံစံ "
+
+#: project/apps/birth_registration/templates/form_detail.html:32
+msgid "&lt;blank&gt;"
+msgstr "&lt;blank&gt;"
+
+#: project/apps/birth_registration/templates/form_detail.html:51
+msgid "Edit"
+msgstr "ပြင်ဆင်မည်"
+
+#: project/apps/birth_registration/templates/form_detail.html:59
+msgid "Issue F103"
+msgstr "ပုံစံ ၁၀၃ ကိုထုတ်မည်"
+
+#: project/apps/birth_registration/templates/form_detail.html:68
+msgid "Issue F203"
+msgstr "F203 ကိုထုတ်ပေးမည်"
+
+#: project/apps/birth_registration/templates/form_edit.html:18
+msgid "Edit form "
+msgstr "ပုံစံ ကို ပြင်ဆင်မည်"
+
+#: project/apps/birth_registration/templates/form_edit.html:26
+msgid "Save changes"
+msgstr "အပြောင်းအလဲများကို သိမ်းဆည်းပါ"
+
+#: project/apps/birth_registration/templates/form_list.html:12
+msgid "Deleted forms"
+msgstr "ဖျက်ခဲ့သောပုံစံများ"
+
+#: project/apps/birth_registration/templates/form_list.html:14
+msgid "Forms"
+msgstr "ပုံစံများ"
+
+#: project/apps/birth_registration/templates/form_list.html:25
+#: project/apps/birth_registration/templates/form_list.html:44
+#: project/apps/certification/templates/certification/f103_list.html:15
+#: project/apps/certification/templates/certification/f103_list.html:34
+msgid "Filter"
+msgstr "စစ်ထုတ်မည်"
+
+#: project/apps/birth_registration/templates/form_list.html:53
+#: project/apps/certification/templates/certification/f103_list.html:43
+msgid "Reset"
+msgstr "ပြန်သတ်မှတ်ရန် "
+
+#: project/apps/birth_registration/templates/include_cso_info.html:2
+msgid ""
+"The database is administered<br/>by the Central Statistical Organization"
+msgstr "ဒီ Database ကို <br/> ဗဟိုစာရင်းအင်းအဖွဲ့မှ ထိန်းသိမ်းထားသည်"
+
+#: project/apps/birth_registration/templates/include_cso_info.html:4
+msgid ""
+"\n"
+"        Access to the data is only available for authorised users and authorised purposes.\n"
+"    "
+msgstr ""
+"\n"
+"ခွင့်ပြုထားသောအသုံးပြုသူများသည် ခွင့်ပြုထားသောအကြောင်းအရာများကြောင့် သင်ဆိုင်သောအချက်အလက်များရရှိနိုင်သည်"
+
+#: project/apps/birth_registration/templates/include_cso_info.html:8
+msgid ""
+"\n"
+"        Please log in using your assigned username and password.\n"
+"    "
+msgstr ""
+"\n"
+"သင့်ကိုသတ်မှတ်ထားသောအသုံးပြုသူအမည်နှင့် စကားဝှက်ကိုသုံး၍ဝင်ရောက်ပါ"
+
+#: project/apps/birth_registration/templates/include_cso_info.html:13
+msgid ""
+"\n"
+"        For information about vital registration and this database, please contact:\n"
+"    "
+msgstr ""
+"\n"
+"ပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်း နှင့် ဒီ Database ပတ်သတ်သောအကြောင်းအရာများကိုအောက်ပါသို့ဆက်သွယ်မေးမြန်းနိုင်သည် -"
+
+#: project/apps/birth_registration/templates/include_cso_info.html:19
+msgid "Central Statistical Organization"
+msgstr "ဗဟိုစာရင်းအဖွဲ့"
+
+#: project/apps/birth_registration/templates/include_cso_info.html:20
+msgid ""
+"\n"
+"            Building(32), Nay Pyi Taw ,<br/>\n"
+"            Myanmar <br/>\n"
+"            <abbr title=\"Phone\">Tel:</abbr> 095-067-406325, 406328, 406326<br/>\n"
+"            <abbr title=\"Fax\">Fax:</abbr> 095-067-406151<br/>\n"
+"            Email: <a href=\"mailto:dg-cso@mptmail.com.mm\">dg-cso@mptmail.com.mm</a>\n"
+"        "
+msgstr ""
+"\n"
+"ရုံးအမှတ် (၃၂)၊ နေပြည်တော်၊<br/>\n"
+"မြန်မာ<br/>\n"
+"ဖုန်း - ၀၉၅-၀၆၇-၄၀၆၃၂၅၊ ၄၀၆၃၂၈၊ ၄၀၆၃၂၆<br/>\n"
+"ဖက်စ် - ၀၉၅-၀၆၇-၄၀၆၁၅၁<br/>\n"
+"အီးမေးလ် - <a href=\"mailto:dg-cso@mptmail.com.mm\">dg-cso@mptmail.com.mm</a>"
+
+#: project/apps/birth_registration/templates/inlcude_form_logic.html:8
+msgid "Are you sure?"
+msgstr "သေချာပါသလား"
+
+#: project/apps/birth_registration/templates/inlcude_form_logic.html:11
+msgid ""
+"Are you sure you want to submit this form? It looks like you may have some "
+"issues here"
+msgstr ""
+"ဒီပုံစံကိုသင်တကယ်ဖြည့်သွင်းချင်ပါသလား။\n"
+"ဒီနေရာလေးမှာ အမှားအယွင်းအနည်းငယ်ရှိနေမယ်လို့ထင်ပါတယ်"
+
+#: project/apps/birth_registration/templates/inlcude_form_logic.html:15
+msgid "Submit"
+msgstr "ဖြည့်သွင်းမည်"
+
+#: project/apps/birth_registration/templates/navbar-form-login.html:10
+#: project/templates/registration/login.html:5
+#: project/templates/registration/login.html:13
+#: project/templates/registration/password_reset_complete.html:12
+#: project/templates/registration/password_reset_confirm.html:40
+msgid "Sign in"
+msgstr "ဝင်ရောက်မည်"
+
+#: project/apps/birth_registration/templates/navbar_offline.html:6
+#: project/apps/birth_registration/templates/page_home_offline.html:36
+msgid "Save new F101 locally"
+msgstr "F101 ကိုစက်အတွင်းသို့သိမ်းမည်"
+
+#: project/apps/birth_registration/templates/navbar_offline.html:11
+#: project/apps/birth_registration/templates/page_home_offline.html:39
+msgid "Save new F201 locally"
+msgstr "F201 ကိုစက်အတွင်းသို့သိမ်းမည်"
+
+#: project/apps/birth_registration/templates/page_about.html:16
+msgid "License"
+msgstr "လိုင်စင်"
+
+#: project/apps/birth_registration/templates/page_home.html:18
+msgid "Myanmar Vital Registration Database"
+msgstr "ပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်း Database"
+
+#: project/apps/birth_registration/templates/page_home.html:25
+msgid "User documentation"
+msgstr "အသုံးပြုသူ၏ အထောက်အထား စာတမ်းများ"
+
+#: project/apps/birth_registration/templates/page_home.html:27
+msgid "User manuals are available"
+msgstr "အသုံးပြုသူလမ်းညွှန်များကိုု"
+
+#: project/apps/birth_registration/templates/page_home.html:29
+msgid " in the Wiki section of VR DB support site."
+msgstr "VR DB ၏ထောက်ပံ့ရေးဆိုဒ် ၏ Wiki တွင််ရရှိနိုင်သည်"
+
+#: project/apps/birth_registration/templates/page_home.html:42
+msgid "Birth registrations for the last 365 days:"
+msgstr "လွန်ခဲ့သော ၃၆၅ ရက်အတွက် မွေးစာရင်းများ"
+
+#: project/apps/birth_registration/templates/page_home.html:47
+msgid "Click here for the realtime monitoring and more stats data"
+msgstr "မွေးစာရင်းအချိန်နှင့်တစ်ပြေးညီစောင့်ကြည့်ခြင်းနှင့်အခြေအနေ"
+
+#: project/apps/birth_registration/templates/page_home_offline.html:20
+msgid "Offline mode"
+msgstr "အင်တာနက်နှင့်ချိတ်ဆက်မထားသော"
+
+#: project/apps/birth_registration/templates/page_home_offline.html:26
+msgid ""
+"Myanmar Vital Registration Database appears to be\n"
+"                    offline"
+msgstr ""
+"မြန်မာပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်းသည် လိုင်းနှင့်မချိတ်ဆက်မိပါ၊ "
+"အော်ဖ့်လိုင်းဖြစ်နေသည်"
+
+#: project/apps/birth_registration/templates/page_home_offline.html:30
+msgid ""
+" Please check your internet connection.<br/>You can still save registration forms locally\n"
+"                    while offline, but locally saved forms have to be submitted to VR DB when you back\n"
+"                    online."
+msgstr ""
+"သင်၏အင်တာနက်ကွန်နက်ရှင်ကိုစစ်ဆေးပါ <br/> အောဖ့်လိုင်းဖြစ်နေပါကလည်း "
+"စာရင်းသွင်းသည့်ပုံစံများကို စက်ထဲသိမ်းထားနိုင်ပြီး၊ အင်တာနက်ပြန်ရပါက VR DB "
+"သို့ပြန်လည်သွင်းရန်လိုအပ်သည်"
+
+#: project/apps/birth_registration/templates/page_profile.html:15
+msgid "Your username:"
+msgstr "သင်၏သုံးစွဲသူအမည် -"
+
+#: project/apps/birth_registration/templates/page_profile.html:18
+msgid "Authority:"
+msgstr "ခွင့်ပြုထားသော -"
+
+#: project/apps/birth_registration/templates/page_profile.html:20
+msgid "Position:"
+msgstr "ရာထူး -"
+
+#: project/apps/birth_registration/templates/page_profile.html:22
+msgid "Phone:"
+msgstr "ဖုန်းနံပါတ် -"
+
+#: project/apps/birth_registration/templates/page_profile.html:27
+#: project/templates/registration/password_reset_confirm.html:21
+msgid "Change password"
+msgstr "စကားဝှက်ကိုပြောင်းမည်"
+
+#: project/apps/birth_registration/templates/page_profile.html:37
+msgid "You can access forms<br/> within the following areas:"
+msgstr "သင်သည်ပုံစံများကို <br/> ဖော်ပြပါဧရိယာအတွင်း တွင်သာသုံးစွဲလို့ရသည်"
+
+#: project/apps/birth_registration/templates/page_profile.html:49
+msgid "You can:"
+msgstr "သင်ပြုလုပ်နိုင်သည်မှာ - "
+
+#: project/apps/birth_registration/templates/page_profile.html:63
+msgid ""
+"Please contact VR DB administrator if you need your profile detail or your "
+"access level changed"
+msgstr ""
+"သင်၏သုံးစွဲရယူမှု အဆင့်ပြောင်းလဲသွားပါက သို့မဟုတ် သင်၏စာမျက်နှာ "
+"အသေးစိတ်အချက်အလက်များကို လိုအပ်ပါက VR DB ၏အက်ဒမင်နှင့်ဆက်သွယ်ပါ"
+
+#: project/apps/birth_registration/templates/page_profile.html:71
+msgid "Offline mode is <strong>enabled</strong>. Click here to disable"
+msgstr ""
+"အောဖ့်လိုင်းမုဒ်ကို <strong> ဖွင့်ထားခဲဲ့သည် </strong>၊ ပိတ်ရန် "
+"ဒီနေရာတွင်နှိပ်ပါ"
+
+#: project/apps/birth_registration/templates/page_profile.html:72
+msgid "Offline mode is <strong>disabled</strong>. Click here to enable"
+msgstr ""
+"အော်ဖ့်လိုင်းမုဒ်ကို <strong> ပိတ်ထားပါသည်။</strong> ပြန်ဖွင့်ရန် "
+"ဒီနေရာတွင်နှိပ်ပါ"
+
+#: project/apps/birth_registration/validators.py:14
+msgid "Should be in A99.99 format"
+msgstr "A99.99 ပုံစံဖြင့်ဖြစ်ရမည်"
+
+#: project/apps/birth_registration/validators.py:18
+msgid "Should be in V99.99 format"
+msgstr "V99.99 ပုံစံဖြစ်ရမည်"
+
+#: project/apps/birth_registration/views.py:119
+#, python-format
+msgid "Changed %s, "
+msgstr "ပြောင်းခဲ့သည့် %s -"
+
+#: project/apps/birth_registration/views.py:119
+msgid "and"
+msgstr "နှင့် "
+
+#: project/apps/birth_registration/views.py:121
+msgid "No fields changed, "
+msgstr "မည်သည့် အကွက်မျှ ပြောင်းလဲခြင်း မရှိပါ"
+
+#: project/apps/birth_registration/views.py:137
+msgid "Opened"
+msgstr " ဖွင့်ခဲ့သည်"
+
+#: project/apps/birth_registration/views.py:165
+msgid "Restored"
+msgstr " ပြန်လည်ထားရှိခဲ့သည်"
+
+#: project/apps/birth_registration/views.py:167 project/templates/base.html:62
+#: project/templates/base.html.py:81
+msgid "Deleted"
+msgstr "ဖျက်ခဲ့သော"
+
+#: project/apps/certification/apps.py:15
+msgid "Vital registration - certification"
+msgstr "ပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်း -လက်မှတ်"
+
+#: project/apps/certification/forms.py:17
+msgid "You need to correct the original F101 form"
+msgstr "သင်သည် မူလပုံစံ၁၀၁ ကိုအမှန်ပြုလုပ်ရန်လိုအပ်သည်"
+
+#: project/apps/certification/forms.py:32
+msgid "According to the original F101 form, the child was born dead"
+msgstr "မူလ ပုံစံ၁၀၁ အရ ကလေးသည် အသေ မွေဖွားခဲ့သည်"
+
+#: project/apps/certification/models.py:22
+#: project/apps/certification/templates/certification/f103_detail.html:8
+msgid "Form 103"
+msgstr "ပုံစံ ၁၀၃"
+
+#: project/apps/certification/models.py:23
+#: project/apps/certification/templates/certification/f103_list.html:7
+msgid "Forms 103"
+msgstr "ပုံစံ ၁၀၃"
+
+#: project/apps/certification/models.py:82
+#: project/apps/certification/models.py:211
+msgid "Father's Name"
+msgstr "ဖခင်၏ အမည်"
+
+#: project/apps/certification/models.py:84
+msgid "Father's Race"
+msgstr "ဖခင်၏လူမျိုး"
+
+#: project/apps/certification/models.py:86
+msgid "Father's Citizenship"
+msgstr "ဖခင်၏ နိုင်ငံသား-"
+
+#: project/apps/certification/models.py:90
+msgid "Father's Occupation"
+msgstr "ဖခင်၏ အလုပ်အကိုင်"
+
+#: project/apps/certification/models.py:97
+#: project/apps/certification/models.py:213
+msgid "Mother's Name"
+msgstr "မိခင်၏ အမည်"
+
+#: project/apps/certification/models.py:99
+msgid "Mother's citizenship:"
+msgstr "ဖခင်၏ နိုင်ငံသား-"
+
+#: project/apps/certification/models.py:101
+msgid "Mother's Race"
+msgstr "မိခင်၏လူမျိုး"
+
+#: project/apps/certification/models.py:110
+msgid "Mother's Address"
+msgstr "မိခင်၏လိပ်စာ"
+
+#: project/apps/certification/models.py:115
+msgid "Informer's name and address"
+msgstr "တိုင်ကြားသူ၏အမည် နှင့် လိပ်စာ"
+
+#: project/apps/certification/models.py:120
+msgid "Registration Officer"
+msgstr "စာရင်းသွင်းသူအရာရှိ"
+
+#: project/apps/certification/models.py:130
+#: project/apps/certification/templates/certification/f203_detail.html:5
+msgid "Form 203"
+msgstr "ပုံစံ ၂၀၃"
+
+#: project/apps/certification/models.py:131
+#: project/apps/certification/templates/certification/f203_list.html:4
+msgid "Forms 203"
+msgstr "ပုံစံ ၂၀၃"
+
+#: project/apps/certification/models.py:164
+msgid "Date of registration"
+msgstr "မှတ်ပုံတင်သည့်ရက်စွဲ"
+
+#: project/apps/certification/models.py:204
+#: project/apps/certification/templates/certification/f103_print.html:176
+#: project/apps/certification/templates/certification/f203_print.html:53
+msgid "Township"
+msgstr "မြို့နယ် "
+
+#: project/apps/certification/tables.py:13 project/templates/base.html:50
+msgid "F101"
+msgstr "F101"
+
+#: project/apps/certification/tables.py:48 project/templates/base.html:69
+msgid "F201"
+msgstr "F201"
+
+#: project/apps/certification/templates/certification/empty_text.html:4
+msgid "Empty list"
+msgstr "စာရင်းအလွတ်"
+
+#: project/apps/certification/templates/certification/f103_detail.html:28
+#: project/apps/certification/templates/certification/f103_print.html:87
+#: project/apps/certification/templates/certification/f203_detail.html:10
+#: project/apps/certification/templates/certification/f203_print.html:15
+#: project/templates/base.html:59 project/templates/base.html.py:78
+msgid "Browse"
+msgstr "ရှာဖွေမည်"
+
+#: project/apps/certification/templates/certification/f103_detail.html:33
+#: project/apps/certification/templates/certification/f103_print.html:98
+#: project/apps/certification/templates/certification/f203_detail.html:15
+msgid "Print"
+msgstr "ပရင့်ထုတ်မည်"
+
+#: project/apps/certification/templates/certification/f103_form.html:6
+msgid "New Form 103"
+msgstr "ပုံစံ ၁၀၃ အသစ်"
+
+#: project/apps/certification/templates/certification/f103_form.html:23
+msgid "Add and print"
+msgstr "ထည့်သွင်းပြီး ပရင့်ထုတ်မည်"
+
+#: project/apps/certification/templates/certification/f103_print.html:8
+#: project/templates/base.html:4
+msgid "Vital registration DB"
+msgstr "ပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်း DB"
+
+#: project/apps/certification/templates/certification/f103_print.html:17
+#: project/apps/certification/templates/certification/f103_print.html:168
+msgid "BIRTH CERTIFICATE"
+msgstr "အရှင်မွေးလက်မှတ်"
+
+#: project/apps/certification/templates/certification/f103_print.html:82
+#: project/apps/certification/templates/certification/f203_print.html:10
+msgid "Form"
+msgstr "ပုံစံ "
+
+#: project/apps/certification/templates/certification/f103_print.html:93
+msgid "Toggle color"
+msgstr "အရောင်ပြောင်းရန်"
+
+#: project/apps/certification/templates/certification/f103_print.html:134
+msgid "Birth Certificate Counterfoil"
+msgstr "အရှင်မွေးလက်မှတ်လက်ခံဖြတ်ပိုင်း"
+
+#: project/apps/certification/templates/certification/f103_print.html:134
+#: project/apps/certification/templates/certification/f103_print.html:169
+msgid "V.R. Form 103"
+msgstr "ဖွားသေ ပုံစံ ၁၀၃"
+
+#: project/apps/certification/templates/certification/f103_print.html:137
+#: project/apps/certification/templates/certification/f103_print.html:182
+#: project/apps/certification/templates/certification/f203_print.html:29
+#: project/apps/certification/templates/certification/f203_print.html:59
+msgid "Book number:"
+msgstr "စာအုပ်နံပါတ် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:138
+#: project/apps/certification/templates/certification/f103_print.html:183
+#: project/apps/certification/templates/certification/f203_print.html:30
+#: project/apps/certification/templates/certification/f203_print.html:60
+msgid "Page number:"
+msgstr "စာမျက်နှာနံပါတ် - "
+
+#: project/apps/certification/templates/certification/f103_print.html:139
+#: project/apps/certification/templates/certification/f103_print.html:184
+#: project/apps/certification/templates/certification/f203_print.html:31
+#: project/apps/certification/templates/certification/f203_print.html:61
+msgid "Entry number:"
+msgstr "မှတ်ပုံတင်အမှတ်စဉ် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:140
+#: project/apps/certification/templates/certification/f103_print.html:185
+#: project/apps/certification/templates/certification/f203_print.html:32
+#: project/apps/certification/templates/certification/f203_print.html:62
+msgid "Registration date:"
+msgstr "မှတ်ပုံတင်သည့်နေ့ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:145
+msgid "Name of child:"
+msgstr "ကလေးအမည်-"
+
+#: project/apps/certification/templates/certification/f103_print.html:146
+msgid "Gender:"
+msgstr "ကျား/မ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:147
+msgid "Date of birth:"
+msgstr "မွေးဖွားသည့်ရက်စွဲ-"
+
+#: project/apps/certification/templates/certification/f103_print.html:148
+msgid "Place of birth:"
+msgstr "မွေးဖွားသည့်နေရာ-"
+
+#: project/apps/certification/templates/certification/f103_print.html:159
+msgid "Name of father:"
+msgstr "ဖခင်၏အမည်-"
+
+#: project/apps/certification/templates/certification/f103_print.html:160
+msgid "Name of Mather:"
+msgstr "မိခင်၏ အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:161
+msgid "Permanent address:"
+msgstr "အမြဲတမ်းနေရပ်လိပ်စာ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:162
+#: project/apps/certification/templates/certification/f203_print.html:37
+msgid "Signature of issuing person:"
+msgstr "ထုတ်ပေးသူ၏လက်မှတ် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:163
+#: project/apps/certification/templates/certification/f203_print.html:38
+msgid "Name of issuing person:"
+msgstr "ထုတ်ပေးသူ၏အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:164
+#: project/apps/certification/templates/certification/f203_print.html:39
+msgid "Date of issue:"
+msgstr "ထုတ်ပေးသည့်ရက်စွဲ - "
+
+#: project/apps/certification/templates/certification/f103_print.html:174
+msgid "State/Division:"
+msgstr "ပြည်နယ်/တိုင်းဒေသကြီး"
+
+#: project/apps/certification/templates/certification/f103_print.html:175
+#: project/apps/certification/templates/certification/f203_print.html:52
+msgid "District:"
+msgstr "ခရိုင်-"
+
+#: project/apps/certification/templates/certification/f103_print.html:177
+#: project/apps/certification/templates/certification/f203_print.html:54
+msgid "Ward/Village tract:"
+msgstr "မှတ်ပုံတင်သည့်နေရာ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:194
+msgid "Particulars of the child"
+msgstr "ကလေး၏အကြောင်းအရာများ"
+
+#: project/apps/certification/templates/certification/f103_print.html:196
+#: project/apps/certification/templates/certification/f203_print.html:75
+msgid "1. Name:"
+msgstr "၁။ အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:198
+msgid "3. Date of birth:"
+msgstr "၃။ မွေးဖွားသည့်ရက်စွဲ နှင့်အချိန်-"
+
+#: project/apps/certification/templates/certification/f103_print.html:201
+#: project/apps/certification/templates/certification/f203_print.html:80
+msgid "2. Gender:"
+msgstr "၂။ ကျား/မ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:202
+msgid "4. Place of birth:"
+msgstr "၄။ မွေးဖွားသည့်နေရာ-"
+
+#: project/apps/certification/templates/certification/f103_print.html:218
+msgid "Particulars of Father"
+msgstr "ဖခင်၏ အကြောင်းအရာများ"
+
+#: project/apps/certification/templates/certification/f103_print.html:220
+msgid "5. Name:"
+msgstr "၅။ အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:222
+msgid "8. Religion:"
+msgstr "၈။ ကိုးကွယ်သည့်ဘာသာ-"
+
+#: project/apps/certification/templates/certification/f103_print.html:225
+msgid "6. Race:"
+msgstr "၆။ လူမျိုး-"
+
+#: project/apps/certification/templates/certification/f103_print.html:226
+msgid "9. Occupation:"
+msgstr "၉။ အလုပ်အကိုင် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:230
+msgid "7. Citizenship:"
+msgstr "၇။ နိုင်ငံသားနှင့်အမှတ်  -"
+
+#: project/apps/certification/templates/certification/f103_print.html:236
+msgid "Particulars of Mother"
+msgstr "မိခင်၏အကြောင်းအရာ"
+
+#: project/apps/certification/templates/certification/f103_print.html:239
+msgid "10. Name:"
+msgstr "၁၀။ အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:240
+msgid "13. Religion:"
+msgstr "၁၃။ ကိုးကွယ်သည့်ဘာသာ -"
+
+#: project/apps/certification/templates/certification/f103_print.html:244
+msgid "11. Race:"
+msgstr "၁၁။ လူမျိုး-"
+
+#: project/apps/certification/templates/certification/f103_print.html:245
+msgid "14. Occupation:"
+msgstr "၁၄။ အလုပ်အကိုင် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:248
+msgid "12. Citizenship:"
+msgstr "၁၂။ နိုင်ငံသားနှင့်အမှတ်  -"
+
+#: project/apps/certification/templates/certification/f103_print.html:249
+msgid "15. Permanent address:"
+msgstr "၁၅။ အမြဲတမ်းနေရပ်လိပ်စာ - "
+
+#: project/apps/certification/templates/certification/f103_print.html:253
+msgid "Particulars of Informant"
+msgstr "တိုင်ကြားသူ၏အကြောင်းအရာ"
+
+#: project/apps/certification/templates/certification/f103_print.html:256
+msgid "Name, Address, Relation to the child:"
+msgstr "အမည်၊ လိပ်စာ၊ ကလေးနှင့်အမျိုးတော်စပ်ပုံ - "
+
+#: project/apps/certification/templates/certification/f103_print.html:259
+msgid "Signature"
+msgstr "လက်မှတ်"
+
+#: project/apps/certification/templates/certification/f103_print.html:263
+msgid ""
+"I, the undersigned, do hereby certify that the above\n"
+"                        mentioned child was\n"
+"                        born\n"
+"                        alive at the time and place\n"
+"                        mentioned above and registered with the Entry No.\n"
+"                        "
+msgstr ""
+"အထက်ဖော်ပြပါကလေးသည် ဖော်ပြပါဒေသနှင့် အချိန်တွင် အမှန်မွေးဖွားပြီး ကျွန်ုပ်၏ လက်ဝယ်တွင် အထက်ပါ ဒေသအတွက် တရားဝင်ထားရှိသည့် အရှင်မွေး မှတ်ပုံတင်စာအုပ်၌ ဖော်ပြပါအမှတ်စဉ်\n"
+"ဖြင့်မှတ်ပုံတင်ပြီးကြောင်း သက်သေခံလက်မှတ်ရေးထိုးလိုက်သည်။"
+
+#: project/apps/certification/templates/certification/f103_print.html:270
+msgid ""
+"\n"
+"                        in the Birth\n"
+"                        Register which\n"
+"                        is\n"
+"                        in my\n"
+"                        legal custody."
+msgstr ""
+"\n"
+"."
+
+#: project/apps/certification/templates/certification/f103_print.html:277
+msgid ""
+"Any person who (I) falsifies any of the particulars on this certificate or (2)\n"
+"                            uses it as true,\n"
+"                            knowing\n"
+"                            it to be false is liable to prosecution."
+msgstr ""
+"ဤသက်သေခံလက်မှတ် တွင် (၁) အကြောင်းအရာများကို လိမ်လည်ထည့်သွင်းသောသူ (၂) လိမ်လည်ထားမှန်း သိလျှက်နှင့် အမှန်ကဲ့သို့\n"
+"အသုံးပြုသောသူများအား တရားစွဲဆိုလိမ့်မည်။"
+
+#: project/apps/certification/templates/certification/f103_print.html:287
+#: project/apps/certification/templates/certification/f203_print.html:178
+msgid "Registration Officer's"
+msgstr "ဖွားသေမှတ်ပုံတင် အရာရှိ၏"
+
+#: project/apps/certification/templates/certification/f103_print.html:290
+#: project/apps/certification/templates/certification/f203_print.html:128
+#: project/apps/certification/templates/certification/f203_print.html:181
+msgid "Signature:"
+msgstr "လက်မှတ် - "
+
+#: project/apps/certification/templates/certification/f103_print.html:291
+#: project/apps/certification/templates/certification/f203_print.html:135
+#: project/apps/certification/templates/certification/f203_print.html:182
+msgid "Name:"
+msgstr "အမည် -"
+
+#: project/apps/certification/templates/certification/f103_print.html:292
+#: project/apps/certification/templates/certification/f203_print.html:142
+#: project/apps/certification/templates/certification/f203_print.html:183
+msgid "Designation:"
+msgstr "ရာထူး"
+
+#: project/apps/certification/templates/certification/f103_print.html:306
+msgid ""
+"\n"
+"                        A name given to the child before the expiry of 12 months from the date of registration of it,\n"
+"                        birth must be  reported to the registration officer having the custody of the Birth Register.\n"
+"                        by the parents or guardians concerned.\n"
+"                        "
+msgstr ""
+"\n"
+"မှတ်ချက် ။      ။ မွေးဖွားမှု မှတ်ပုံတင်သည့်နေ့မှ (၁)နှစ်မပြည့်မီ မှည်‌့ခေါ်‌ေသာ ကလေး၏ အမည်ကို မိဘ (သို့) အုပ်ထိန်းသူသည် \n"
+"ကလေးမွေးဖွားမှု မှတ်ပုံတင်ထားသည့် မှတ်ပုံတင်စာအုပ် လက်ဝယ်ထားသူ ဖွားသေမှတ်ပုံတင်အရာရှိထံသို့ အကြောင်းကြားရမည်။"
+
+#: project/apps/certification/templates/certification/f203_form.html:4
+msgid "New Form 203"
+msgstr "ပုံစံ ၂၀၃"
+
+#: project/apps/certification/templates/certification/f203_print.html:19
+msgid "DEATH CERTIFICATE #"
+msgstr "သေလက်မှတ်"
+
+#: project/apps/certification/templates/certification/f203_print.html:26
+msgid "Death Certificate Counterfoil"
+msgstr "သေလက်မှတ် ဖြတ်ပိုင်း"
+
+#: project/apps/certification/templates/certification/f203_print.html:26
+#: project/apps/certification/templates/certification/f203_print.html:46
+msgid "V.R. Form 203"
+msgstr "ဖွားသေ ပုံစံ ၂၀၃"
+
+#: project/apps/certification/templates/certification/f203_print.html:36
+msgid "Name of deceased:"
+msgstr "သေဆုံးသူ၏အမည် - "
+
+#: project/apps/certification/templates/certification/f203_print.html:45
+msgid "DEATH CERTIFICATE"
+msgstr "သေဆုံးမှုလက်မှတ်"
+
+#: project/apps/certification/templates/certification/f203_print.html:51
+msgid "State Division:"
+msgstr "ပြည်နယ်/တိုင်းဒေသကြီး"
+
+#: project/apps/certification/templates/certification/f203_print.html:71
+msgid "Particulars of Deceased"
+msgstr "သေဆုံးသူ၏အကြောင်းအရာ"
+
+#: project/apps/certification/templates/certification/f203_print.html:77
+msgid "7. Race:"
+msgstr "၇။ လူမျိုး - "
+
+#: project/apps/certification/templates/certification/f203_print.html:81
+msgid "8. Citizenship:"
+msgstr "၈။ နိုင်ငံသားနှင့်အမှတ်  -"
+
+#: project/apps/certification/templates/certification/f203_print.html:85
+msgid "3. Date of death:"
+msgstr "၃။ သေဆုံးသည့်ရက်စွဲ -"
+
+#: project/apps/certification/templates/certification/f203_print.html:87
+msgid "9. Religion:"
+msgstr "၉။ ကိုးကွယ်သည့်ဘာသာ -"
+
+#: project/apps/certification/templates/certification/f203_print.html:90
+msgid "4. Place of death:"
+msgstr "၄။ သေဆုံးသောနေရာ -"
+
+#: project/apps/certification/templates/certification/f203_print.html:101
+msgid "10. Permanent address:"
+msgstr "၁၀။ အမြဲတမ်းနေရပ်လိပ်စာ -"
+
+#: project/apps/certification/templates/certification/f203_print.html:104
+msgid "5. Age:"
+msgstr "၅။ အသက် -"
+
+#: project/apps/certification/templates/certification/f203_print.html:105
+msgid "11. Name of Father of the deceased:"
+msgstr "၁၁။ သေဆုံးသူ၏ဖခင်အမည်-"
+
+#: project/apps/certification/templates/certification/f203_print.html:108
+msgid "5. Occupation:"
+msgstr "၆။ အလုပ်အကိုင် -"
+
+#: project/apps/certification/templates/certification/f203_print.html:111
+msgid "11. Name of Mother of the deceased:"
+msgstr "၁၂။ သေဆုံးသူ၏မိခင်အမည် - "
+
+#: project/apps/certification/templates/certification/f203_print.html:115
+msgid "13. Cause of Death:"
+msgstr "၁၃။ သေဆုံးသည့်အကြောင်းအရင်း -"
+
+#: project/apps/certification/templates/certification/f203_print.html:119
+msgid ""
+"14. Informant's name, address, relationship to deceased and signature: "
+msgstr ""
+"၁၄။ အကြောင်းကြားသူ၏ အမည်၊ လိပ်စာ၊ သေဆုံးသူနှင့်အမျိုးတော်စပ်ပုံ နှင့်လက်မှတ်"
+" - "
+
+#: project/apps/certification/templates/certification/f203_print.html:123
+msgid "15. Cause of death certifier's"
+msgstr "၁၅။ သေဆုံးသည့်အကြောင်းအရာ (သို့)ရောဂါ ထောက်ခံသူ၏"
+
+#: project/apps/certification/templates/certification/f203_print.html:155
+msgid ""
+"\n"
+"                            I, the undersigned, do hereby certify that the mentioned above deceased was dead at' the\n"
+"                            time and place mentioned above\n"
+"                        "
+msgstr ""
+"\n"
+"အထက်ဖော်ပြပါ သေဆုံးသူသည် ဖော်ပြပါဒေသနှင့် အချိန်တွင် အမှန်သေဆုံးပြီး ကျွန်ုပ်၏ လက်ဝယ်တွင် အထက်ပါ\n"
+"ဒေသအတွက် တရားဝင်ထားရှိသည့် သေဆုံးမှု မှတ်ပုံတင်စာအုပ်တွင် မှတ်ပုံတင်ပြီးကြောင်း သက်သေခံလက်မှတ် ရေးထိုးလိုက်သည်။"
+
+#: project/apps/certification/templates/certification/f203_print.html:160
+msgid ""
+"\n"
+"                            and registered with the Entry No.\n"
+"                        "
+msgstr ""
+"\n"
+"."
+
+#: project/apps/certification/templates/certification/f203_print.html:164
+msgid ""
+"\n"
+"                            in the Death Register and that such Register Book is now legally in my custody.\n"
+"                        "
+msgstr ""
+"\n"
+"ထို့နောက် ထိုကဲ့သို့ စာရင်းသွင်းစာအုပ်သည် ကျွန်ုပ်၏အုပ်ထိန်းခြင်းအောက်တွင် တရားဝင်ရှိသည်"
+
+#: project/apps/certification/templates/certification/f203_print.html:168
+msgid ""
+"\n"
+"                            Any person who (1) falsifies any of the particulars on this certificate or (2)\n"
+"                            uses it as true, knowing it to be false is liable to prosecution.\n"
+"                        "
+msgstr ""
+"\n"
+"ဤသက်သေခံလက်မှတ် တွင် (၁) အကြောင်းအရာများကို လိမ်လည်ထည့်သွင်းသောသူ (၂) လိမ်လည်ထားမှန်း သိလျှက်နှင့် အမှန်ကဲ့သို့\n"
+"အသုံးပြုသောသူများအား တရားစွဲဆိုလိမ့်မည်။"
+
+#: project/apps/certification/views.py:37
+#, python-format
+msgid "There is already a certificate related to this registration"
+msgid_plural ""
+"There are  already %(count)d certificates related to this registration"
+msgstr[0] ""
+"ဒီ စာရင်းသွင််းမှုနှင့်ပတ်သတ်သော  လက်မှတ် %(count)d သည် ရှိပြီးသားဖြစ်သည်။ "
+"ဒီစာရင်းသွင်းမှုနှင့် ချိတ်ဆက်ထားသော လကက်မှတ် တကယ်ရှိသည်"
+
+#: project/apps/certification/views.py:40
+msgid "browse"
+msgstr "ရှာဖွေမည်"
+
+#: project/apps/certification/views.py:49
+msgid "Original form was not found"
+msgstr "မူရင်းပုံစံကိုရှာမတွေ့ပါ"
+
+#: project/apps/map/templates/map.html:9
+msgid "Birth registration real time monitoring and stats"
+msgstr "မွေးစာရင်းအချိန်နှင့်တစ်ပြေးညီစောင့်ကြည့်ခြင်းနှင့်အခြေအနေ"
+
+#: project/settings.py:37
+msgid "English"
+msgstr "အင်္ဂလိပ်"
+
+#: project/settings.py:38
+msgid "Myanmar"
+msgstr "မြန်မာ"
+
+#: project/settings.py:137
+msgid "Vital registration DB administration"
+msgstr "ပြည်သူ့ရေးရာမှတ်ပုံတင်ခြင်း DB ထိန်းထားမှု"
+
+#: project/templates/404.html:5
+msgid "Page not found"
+msgstr "စာမျက်နှာ ရှာမတွေ့ပါ"
+
+#: project/templates/404.html:8
+msgid ""
+"<h1>Sorry,</h1><p>page is not found, the error was logged and will be "
+"examined</p>"
+msgstr ""
+"<h1>စိတ်မကောင်းပါဘူး။</h1><p>ရှာနေသောစာမျက်နှာရှာမတွေ့ပါ။ "
+"ချို့ယွင်းချက်ကိုမှတ်တမ်းတင်ထားပြီး ပြန်လည်စစ်ဆေးပါ့မယ်</p>"
+
+#: project/templates/404.html:10 project/templates/500.html:11
+msgid "If you need assistance, you may reference this error as"
+msgstr ""
+"သင်သည်အကူအညီလိုအပ်ပါက ဒီချို့ယွင်းမှုကိုဖော်ပြပါကဲ့သို့ ရည်ညွှန်းနိုင်ပါသည်"
+
+#: project/templates/500.html:5 project/templates/registration/logout.html:11
+#: project/templates/registration/password_change_done.html:14
+#: project/templates/registration/password_reset_complete.html:14
+msgid "Home"
+msgstr "မူလပင်မနေရာ"
+
+#: project/templates/500.html:9
+msgid ""
+"<h1>Sorry,</h1><p>An Internal error has occurred, the error was logged and "
+"will be examined</p>"
+msgstr ""
+"<h1>ဆောရီး</h1><p>အတွင်းပိုင်းချို့ယွင်းမှုဖြစ်ပေါ်ခဲ့သည်။ချို့ယွင်းမှုကိုမှတ်တမ်းတင်ထားပြီး"
+" ပြန်လည်ပြင်ဆင်ပေးပါ့မည်</p>"
+
+#: project/templates/base.html:55
+msgid "New F101"
+msgstr "F101 အသစ်"
+
+#: project/templates/base.html:74
+msgid "New F201"
+msgstr "F201 အသစ်"
+
+#: project/templates/base.html:88
+msgid "F103"
+msgstr "F103"
+
+#: project/templates/base.html:95
+msgid "F203"
+msgstr "F203"
+
+#: project/templates/base.html:104
+msgid "About"
+msgstr "အကြောင်း "
+
+#: project/templates/base.html:108
+msgid "Language"
+msgstr "ဘာသာစကား"
+
+#: project/templates/base.html:143
+msgid "Sign out"
+msgstr "ထွက်မည်"
+
+#: project/templates/registration/activate.html:7
+msgid "Account activation error"
+msgstr "အကောင့်အတည်ပြုခြင်း မှားယွင်းမှု"
+
+#: project/templates/registration/activate.html:10
+msgid "The activation key is invalid or expired:"
+msgstr "အတည်ပြုခြင်းနံပါတ်များသည် မမှန်ကန်ပါ သို့မဟုတ် သက်တမ်းကုန်သွားပါပြီ။"
+
+#: project/templates/registration/activation_complete.html:6
+msgid "Account activation complete"
+msgstr "အကောင့်အတည်ပြုခြင်းပြီးပါပြီ"
+
+#: project/templates/registration/activation_complete.html:7
+msgid "Account successfully activated!"
+msgstr "အကောင့်ကိုအောင်မြင်စွာအတည်ပြုပြီး"
+
+#: project/templates/registration/activation_complete.html:8
+msgid "You can now sign in to the website."
+msgstr "သင် ယခု ဝက်ဘ်ဆိုက်သို့ ဝင်ရောက်နိုင်ပါပြီ"
+
+#: project/templates/registration/activation_email.txt:1
+msgid ""
+"You are receiving this email because you have signed up for an account at"
+msgstr ""
+"အကောင့်တစ်ခုပြုလုပ်ခဲ့သဖြင့် သင်သည် ဒီအီးမေးလ်ကိုလက်ခံရရှိနေခြင်းဖြစ်သည်။"
+
+#: project/templates/registration/activation_email.txt:3
+msgid "To activate your account, please visit the following page:"
+msgstr ""
+"သင်၏အကောင့်ကိုအတည်ပြုရန် အောက်ပါစာမျက်နှာသို့ ကျေးဇူးပြု၍ သွားရောက်ပါ။"
+
+#: project/templates/registration/activation_email.txt:7
+msgid "This page will expire in"
+msgstr "ဤစာမျက်နှာသည် ဖေါ်ပြပါ အချိန်တွင် ပျက်ပျယ်တော့မည်"
+
+#: project/templates/registration/activation_email.txt:9
+msgid ""
+"If you did not sign up for this account you do not need to take any further"
+msgstr "ဒီအကောင့်အတွက် သင်မပြုလုပ်ခဲ့ပါက ရှေ့ဆက်ရန်မလိုအပ်ပါ"
+
+#: project/templates/registration/activation_email.txt:10
+msgid "action -- you can simply delete this email."
+msgstr "ဆောင်ရွက်ချက် -- ဒီအီးမေးလ်ကိုသင်လွယ်ကူစွာပယ်ဖျက်နိုင်ပါသည်။"
+
+#: project/templates/registration/activation_email_subject.txt:1
+msgid "Please activate your account."
+msgstr "သင်၏အကောင့်ကို ကျေးဇူးပြု၍ အတည်ပြုပါ။"
+
+#: project/templates/registration/login.html:15
+msgid "You are not allowed to do it"
+msgstr "၎င်းကိုပြုလုပ်ဖို့သင့်ကိုခွင့်မပြုထားပါ"
+
+#: project/templates/registration/login.html:18
+msgid "Trouble signing in?"
+msgstr "ဝင်ရောက်ရာတွင် အခက်အခဲရှိပါသလား"
+
+#: project/templates/registration/login.html:19
+msgid "Reset password."
+msgstr "စကားဝှက်ကိုပြန်လည်သတ်မှတ်မည် "
+
+#: project/templates/registration/login.html:26
+msgid "Login failed. Try again..."
+msgstr "ဝင်ရောက်ခွင့် မအောင်မြင်ပါ ထပ်မံ ကြိုးစားပါ"
+
+#: project/templates/registration/login.html:47
+msgid "Login"
+msgstr "ဝင်ရောက်မည်"
+
+#: project/templates/registration/logout.html:7
+msgid "Logout"
+msgstr "ထွက်မည်"
+
+#: project/templates/registration/logout.html:9
+msgid "You are now logged out."
+msgstr "သင်အခု ထွက်ခဲ့ပြီးပြီ"
+
+#: project/templates/registration/password_change_done.html:8
+msgid "Password change complete"
+msgstr "စကားဝှက် ပြင်ဆင်ပြောင်းလဲခြင်း ပြီးစီး"
+
+#: project/templates/registration/password_change_done.html:10
+msgid "Password successfully changed."
+msgstr "စကားဝှက်ကို အောင်မြင်စွာ ပြင်ဆင်ပြောင်းလဲပြီး"
+
+#: project/templates/registration/password_change_done.html:12
+msgid "Profile"
+msgstr "စာမျက်နှာ"
+
+#: project/templates/registration/password_change_form.html:9
+#: project/templates/registration/password_change_form.html:19
+msgid "Change Password"
+msgstr "စကားဝှက်ကိုပြောင်းမည်"
+
+#: project/templates/registration/password_reset_complete.html:8
+msgid "Password reset complete"
+msgstr "စကားဝှက်ကိုပြန်လည်သတ်မှတ်ခြင်း ပြီးပါပြီ"
+
+#: project/templates/registration/password_reset_complete.html:10
+msgid "Password successfully reset."
+msgstr "စကားဝှက်ကိုအောင်မြင်စွာပြန်လည်သတ်မှတ်ပြီးပါပြီ"
+
+#: project/templates/registration/password_reset_confirm.html:9
+msgid "Password reset"
+msgstr "စကားဝှက် ပြန်လည်သတ်မှတ်ခြင်း"
+
+#: project/templates/registration/password_reset_confirm.html:31
+msgid "Password reset failed!"
+msgstr "စကားဝှက် ပြန်လည်သတ်မှတ်ခြင်း မအောင်မြင်"
+
+#: project/templates/registration/password_reset_confirm.html:37
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used."
+msgstr ""
+"စကားဝှက်ပြန်လည်သတ်မှတ်ခြင်းလင်ခ့်သည် မမှန်ကန်ပါ။ "
+"၎င်းကိုသုံးပြီးသွားသောကြောင့်ဖြစ်နိုင်ပါသည်။"
+
+#: project/templates/registration/password_reset_done.html:8
+msgid "Password reset successful"
+msgstr "စကားဝှက် ပြန်လည်သတ်မှတ်ခြင်း အောင်မြင်"
+
+#: project/templates/registration/password_reset_done.html:10
+msgid "An email with instructions for setting a new password has been sent."
+msgstr ""
+"စကားဝှက်အသစ်ပြုလုပ်ရန် ညွှန်ကြားချက်များကို အီးမေးလ်ဖြင့်ပို့လိုက်ပါပြီ။"
+
+#: project/templates/registration/password_reset_form.html:9
+msgid "Password Reset"
+msgstr "စကားဝှက်ပြန်လည်သတ်မှတ်မည်"
+
+#: project/templates/registration/password_reset_form.html:20
+msgid "Reset password"
+msgstr "စကားဝှက် ကိုပြန်လည်သတ်မှတ်မည်"
+
+#: project/templates/registration/registration_complete.html:8
+msgid "Registration complete"
+msgstr "အကောင့်ပြုလုပ်ခြင်းပြီးပါပြီ"
+
+#: project/templates/registration/registration_complete.html:10
+msgid "An activation email has been sent."
+msgstr "အတည်ပြုသည့်အီးမေးလ်ကို ပို့လိုက်ပါသည်။"
+
+#: project/templates/registration/registration_form.html:9
+msgid "Registration"
+msgstr "အကောင့်ပြုလုပ်ခြင်း"
+
+#: project/templates/registration/registration_form.html:11
+msgid "Already registered?"
+msgstr "အကောင့်ပြုလုပ်ပြီးပြီလား"
+
+#: project/templates/registration/registration_form.html:12
+msgid "Sign in here."
+msgstr "ဤနေရာမှ ဝင်ရောက်ပါ"
+
+#: project/templates/registration/registration_form.html:24
+msgid " Sign Me Up!"
+msgstr "ကျွန်ုပ်အတွက် အကောင့်ပြုလုပ်မည်။"
+
+#: project/templates/reversion/object_history.html:7
+msgid ""
+"Choose a date from the list below to revert to a previous version of this\n"
+"            object."
+msgstr ""
+"ဤအကြောင်းအရာ \n"
+" ကို ယခင်အတိုင်းပြန်လည်ရှိစေရန် အောက်ပါစာရင်းရှိ ရက်စွဲတစ်ခုကို ရွေးချယ်ပါ"
+
+#: project/templates/reversion/object_history.html:15
+msgid "Date/time"
+msgstr "နေ့ရက်/ အချိန်"
+
+#: project/templates/reversion/object_history.html:17
+msgid "Comment"
+msgstr "မှတ်ချက်"
+
+#: project/templates/reversion/object_history.html:39
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this"
+" admin site."
+msgstr ""
+"ဤအကြောင်းအရာတွင် ယခင်ပြင်ဆင်ထားချက်မရှိပါ၊ ဤဒီအက်ဒမင်ဆိုဒ်မှ "
+"ထည့်သွင်းခဲ့ခြင်း မဖြစ်နိုင်လောက်ပါ။"
+
+#~ msgid "Age code"
+#~ msgstr "အသက်ကုဒ်"
+
+#~ msgid "02 - Medical Registrar"
+#~ msgstr "02- အခြားဖော်ပြပါ"
+
+#~ msgid "03 - Other Registered doctor not in attendance"
+#~ msgstr "03 - ဆရာဝန်(ကိုယ်တိုင်မကုသ)"
+
+#~ msgid "03 - Nursing Home "
+#~ msgstr "03 - သားဖွားခန်း"
+
+#~ msgid "06 - Elsewhere"
+#~ msgstr "06 - အရပ်ဒေသ တခုခု "
+
+#~ msgid "Sautlaw"
+#~ msgstr "ဆော့လော်"
+
+#~ msgid "Bamaw"
+#~ msgstr "ဗန်းမော်"
+
+#~ msgid "Kayh"
+#~ msgstr "ကယား"
+
+#~ msgid "Loikaw"
+#~ msgstr "လွိုင်ကော်"
+
+#~ msgid "Shartaw"
+#~ msgstr "ရှားတော"
+
+#~ msgid "Pha An"
+#~ msgstr "ဖားအံ"
+
+#~ msgid "Thandaungkyee"
+#~ msgstr "သံတောင်ကြီး"
+
+#~ msgid "Kawtkaraik"
+#~ msgstr "ကော့ကရိတ်"
+
+#~ msgid "Chin"
+#~ msgstr "ချင်း"
+
+#~ msgid "Phalan"
+#~ msgstr "ဖလမ်း"
+
+#~ msgid "Hakha"
+#~ msgstr "ဟားခါး"
+
+#~ msgid "Teetain"
+#~ msgstr "တီးတိန်"
+
+#~ msgid "Tunzan"
+#~ msgstr "တွန်းဇံ"
+
+#~ msgid "Mintatt"
+#~ msgstr "မင်းတပ်"
+
+#~ msgid "Yay Oo"
+#~ msgstr "ရေဦး"
+
+#~ msgid "Dipeiyin"
+#~ msgstr "ဒီပဲယင်း"
+
+#~ msgid "Tantsei"
+#~ msgstr "တန့်ဆည်"
+
+#~ msgid "Palei"
+#~ msgstr "ပုလဲ"
+
+#~ msgid "Hteechaink"
+#~ msgstr "ထီးချိုင့် "
+
+#~ msgid "Wuntho"
+#~ msgstr "ဝန်သို "
+
+#~ msgid "Minkin"
+#~ msgstr "မင်းကင်း"
+
+#~ msgid "Khantee"
+#~ msgstr "ခန္တီး  "
+
+#~ msgid "Layshee"
+#~ msgstr "လေရှီး"
+
+#~ msgid "Yayphyu"
+#~ msgstr "ရေဖြူ "
+
+#~ msgid "Pulaw"
+#~ msgstr "ပုလော "
+
+#~ msgid "Peinweikone*"
+#~ msgstr "ပဲနွယ်ကုန်း*"
+
+#~ msgid "Theikone"
+#~ msgstr "သဲကုန်း "
+
+#~ msgid "Oakpho"
+#~ msgstr "အုတ်ဖို"
+
+#~ msgid "Zeekone"
+#~ msgstr "ဇီးကုန်း "
+
+#~ msgid "Moenyo"
+#~ msgstr "မိုးညို "
+
+#~ msgid "Kyoetbinkaut"
+#~ msgstr "ကြို့ပင်ကောက် "
+
+#~ msgid "Yaytarshay"
+#~ msgstr "ရေတာရှည်"
+
+#~ msgid "Htandabin"
+#~ msgstr "ထန်းတပင်"
+
+#~ msgid "Saku*"
+#~ msgstr "စကု*"
+
+#~ msgid "Mintone"
+#~ msgstr "မင်းတုန်း"
+
+#~ msgid "Gantgaw"
+#~ msgstr "ဂန့်ဂေါ"
+
+#~ msgid "Hteelin"
+#~ msgstr "ထီးလင်း "
+
+#~ msgid "Pyigyeetakhun"
+#~ msgstr "ပြည်ကြီးတံခွန်"
+
+#~ msgid "Sintkuu"
+#~ msgstr "စဉ့်ကူး"
+
+#~ msgid "Moegauk"
+#~ msgstr "မိုးကုတ်"
+
+#~ msgid "Sintkai"
+#~ msgstr "စဉ့်ကိုင်"
+
+#~ msgid "Nahtoegyee"
+#~ msgstr "နွားထိုးကြီး "
+
+#~ msgid "Nganzun"
+#~ msgstr "ငါန်းဇွန် "
+
+#~ msgid "Tatkone"
+#~ msgstr "တပ်ကုန်း "
+
+#~ msgid "Leiway"
+#~ msgstr "လယ်ဝေး"
+
+#~ msgid "Tharzi"
+#~ msgstr "သာစည်"
+
+#~ msgid "Wantwin"
+#~ msgstr "ဝမ်းတွင်း "
+
+#~ msgid "Mon"
+#~ msgstr "မွန် "
+
+#~ msgid "Yay"
+#~ msgstr "ရေး"
+
+#~ msgid "Thahton"
+#~ msgstr "သထုံ "
+
+#~ msgid "Beelin"
+#~ msgstr "ဘီးလင်း "
+
+#~ msgid "Myaybon"
+#~ msgstr "မြေပုံ"
+
+#~ msgid "Man Aung"
+#~ msgstr "မာန်အောင် "
+
+#~ msgid "Ahshaytbine (East)"
+#~ msgstr "အရှေ့ပိုင်း"
+
+#~ msgid "Thingangyun Model Hospital"
+#~ msgstr "သင်္ကန်းကျွန်း စံပြဆေးရုံ "
+
+#~ msgid "Women and Children Hospital"
+#~ msgstr "အမျိုးသမီးနှင့် ကလေး ဆေးရုံ "
+
+#~ msgid "Myauk Okkalapa"
+#~ msgstr "မြောက်ဥက္ကလာပ"
+
+#~ msgid "Myauk Okklapa Hospital"
+#~ msgstr "မြောက်ဥက္ကလာပ ဆေးရုံ"
+
+#~ msgid "Myauk Okklapa Hospital for infectious diseases (Waibargi)"
+#~ msgstr "မြောက်ဥက္ကလာပ ကူးစက်ရောဂါဆေးရုံ(ဝေဘာဂီ)"
+
+#~ msgid "Tharketa"
+#~ msgstr "သာကေတ"
+
+#~ msgid "Tharketa township hospital"
+#~ msgstr "သာကေတ မြို့နယ်ဆေးရုံ"
+
+#~ msgid "Tarmwe"
+#~ msgstr "တာမွေ "
+
+#~ msgid "Hospital for eyes and optical"
+#~ msgstr "မျက်စိရောဂါဆေးရုံ"
+
+#~ msgid "Eastern Yangon General Hospital"
+#~ msgstr "ရန်ကုန် အရှေ့ပိုင်းဆေးရုံ"
+
+#~ msgid "Hospital for workers"
+#~ msgstr "အလုပ်သမားဆေးရုံ"
+
+#~ msgid "Ahnoutpine (West)"
+#~ msgstr "အနောက်ပိုင်း"
+
+#~ msgid "Central Women Hospital"
+#~ msgstr "ဗဟိုအမျိုးသမီးဆေးရုံ  "
+
+#~ msgid "Children Hospital"
+#~ msgstr "ကလေးဆေးရုံ"
+
+#~ msgid "Yangon General Hospital"
+#~ msgstr "ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး"
+
+#~ msgid "New Yangon General Hospital (Japan)"
+#~ msgstr "ရန်ကုန်ပြည်သူ့ဆေးရုံသစ်ကြီး(ဂျပန်)"
+
+#~ msgid "Western Yangon General Hospital"
+#~ msgstr "ရန်ကုန် အနောက်ပိုင်းဆေးရုံကြီး"
+
+#~ msgid "Ortho Hospital (Kyeemyindine)"
+#~ msgstr "အရိုးဆေးရုံ(ကြည့်မြင်တိုင်)"
+
+#~ msgid "Sanchaung"
+#~ msgstr "စမ်းချောင်း "
+
+#~ msgid "Hlaing"
+#~ msgstr "လှိုင် "
+
+#~ msgid "Psychiatric Hospital"
+#~ msgstr "စိတ်ရောဂါ အထူးကုဆေးရုံ"
+
+#~ msgid "No.2 Military Hospital (Dagon)"
+#~ msgstr "အမှတ်(၂) စစ်ဆေးရုံ(ဒဂုံ)"
+
+#~ msgid "Towerlane Women Hospital (Bahan)"
+#~ msgstr "တာဝါလိန်း အမျိုးသမီးဆေးရုံ(ဗဟန်း)"
+
+#~ msgid "Taungbine (South)"
+#~ msgstr "တောင်ပိုင်း"
+
+#~ msgid "Kauthmu"
+#~ msgstr "ကော့မှူး "
+
+#~ msgid "Seikkyee"
+#~ msgstr "ဆိပ်ကြီး"
+
+#~ msgid "Kokoe Island"
+#~ msgstr "ကိုကိုးကျွန်း "
+
+#~ msgid "Myaukpine (North)"
+#~ msgstr "မြောက်ပိုင်း "
+
+#~ msgid "Insein Railway Hospital"
+#~ msgstr "အင်းစိန်မီးရထားဆေးရုံ "
+
+#~ msgid "Aungsan Hospital for Lung Diseases"
+#~ msgstr "အောင်ဆန်းအဆုတ်ရောဂါကုဆေးရုံ"
+
+#~ msgid "No.1 Military Hospital (Mingalardon)"
+#~ msgstr "အမှတ်(၁) စစ်ဆေးရုံ(မင်္ဂလာဒုံ)"
+
+#~ msgid "Hlegu"
+#~ msgstr "လှည်းကူး "
+
+#~ msgid "Tiakkyee"
+#~ msgstr "တိုက်ကြီး "
+
+#~ msgid "Shan"
+#~ msgstr "ရှမ်း "
+
+#~ msgid "Sisaing"
+#~ msgstr "ဆီဆိုင် "
+
+#~ msgid "Ywarngan"
+#~ msgstr "ရွာငံ"
+
+#~ msgid "Moenei"
+#~ msgstr "မိုးနဲ "
+
+#~ msgid "Kyaythee"
+#~ msgstr "ကျေးသီး"
+
+#~ msgid "Lahsio"
+#~ msgstr "လားရှိုး "
+
+#~ msgid "Minephant"
+#~ msgstr "မိုင်းဖန့်"
+
+#~ msgid "Panyang"
+#~ msgstr "ပန်ယန်း "
+
+#~ msgid "Nantkhan"
+#~ msgstr "နမ့်ခမ်း "
+
+#~ msgid "Kutkhaing"
+#~ msgstr "ကွတ်ခိုင် "
+
+#~ msgid "Monkoe"
+#~ msgstr "မုံခိုး "
+
+#~ msgid "Kyukoak"
+#~ msgstr "ကြူကုတ်"
+
+#~ msgid "Thibaw"
+#~ msgstr "သီပေါ "
+
+#~ msgid "Moemaik"
+#~ msgstr "မိုးမိတ် "
+
+#~ msgid "Koankyan"
+#~ msgstr "ကုန်ကြမ်း"
+
+#~ msgid "Minekhat"
+#~ msgstr "မိုင်းခတ် "
+
+#~ msgid "Metman"
+#~ msgstr "မက်မန်း "
+
+#~ msgid "Yaykyi"
+#~ msgstr "ရေကြည်"
+
+#~ msgid "Myan Aung"
+#~ msgstr "မြန်အောင် "
+
+#~ msgid "Warkhema"
+#~ msgstr "ဝါးခယ်မ "
+
+#~ msgid "Ma U Bin"
+#~ msgstr "မအူပင်"
+
+#~ msgid "Danubyu"
+#~ msgstr "ဓနုဖြူ  "
+
+#~ msgid "NayPyiTaw"
+#~ msgstr "နေပြည်တော်"
+
+#~ msgid "V"
+#~ msgstr "V"
+
+#~ msgid "W"
+#~ msgstr "W"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "06 - Others"
+#~ msgstr "06 - အခြားသော"
+
+#~ msgid "01 - Not relevant"
+#~ msgstr "01 - မသက်ဆိုင်သော"
+
+#~ msgid "04 - Unknown"
+#~ msgstr "04 - မသိရှိသော"
+
+#~ msgid "Mother's state\\division"
+#~ msgstr "မိခင်၏ကိုးကွယ်သည့်ဘာသာ"
+
+#~ msgid "Mother's District"
+#~ msgstr "မိခင်၏လူမျိုး"
+
+#~ msgid "Mother's Township"
+#~ msgstr "မိခင်၏ နိုင်ငံသား"
+
+#~ msgid ""
+#~ "Enter serial No. direct into coding column. Watch carefully for sequence of "
+#~ "serial No.If it is not in sequence make query.<br/>Code actual serial No. in"
+#~ " full 4 digits. If serial No. is 1 to 99; Code 0001-0009, and 10-99 code "
+#~ "0010, 0011,………..0099, 0100 and over in full"
+#~ msgstr ""
+#~ "အမှတ်စဉ်ကို အညွှန်းကော်လံသို့ တိုက်ရိုက်ထည့်သွင်းပါ။ အမှတ်စဉ် အစဉ်လိုက်ရှိမရှိကို ဂရုစိုက်ကြည့်ပါ။ အကယ်၍ အစဉ်အတိုင်း မဟုတ်ပါက \"\n"
+#~ "\"စုံစမ်းပါ။<br/> မွေးစာရင်းမှတ်ပုံတင်အမှတ်သည် ဂဏန်း 5 လုံးရှိရမည်။ အကယ်၍ အမှတ်စဉ်သည် 1 မှ 99 ဖြစ်က၊ အညွှန်း \"\n"
+#~ "\"00001-00009 နှင့် 10-99 အစဉ်လိုက် 00010,00011 ........ 00099,00100 စသဖြင့် ရှိရမည်။"
+
+#~ msgid "Usually 1361 - 5000"
+#~ msgstr "အများအားဖြင့် 1361-5000"
+
+#~ msgid "Usually 15 - 50"
+#~ msgstr "အများအားဖြင့် 15 - 50"
+
+#~ msgid "Usually 28 - 42"
+#~ msgstr "အများအားဖြင့် 28 - 42"
+
+#~ msgid "Usually 0 - 12"
+#~ msgstr "အများအားဖြင့် 0 - 12"
+
+#~ msgid "Please enter date in format DDMMYYYY"
+#~ msgstr "DDMMYYYY ကဲ့သို့ရက်စွဲကိုရိုက်ထည့်ပါ"
+
+#~ msgid "Real-time monitoring and registration stats"
+#~ msgstr "မွေးစာရင်းအချိန်နှင့်တစ်ပြေးညီစောင့်ကြည့်ခြင်းနှင့်အခြေအနေ"
+
+#~ msgid "Help"
+#~ msgstr "အကူအညီရယူရန်"
+
+#~ msgid " Removed "
+#~ msgstr "ဖယ်ထုတ်လိုက်သည့် ပုံစံ ၁၀၁ များ"
+
+#~ msgid " forms "
+#~ msgstr "ပုံစံ ၁၀၁ များ"
+
+#~ msgid "Registration date - month"
+#~ msgstr "စာရင်းသွင်းသည့်နေ့ - လ"
+
+#~ msgid "(in full)"
+#~ msgstr "(အပြည့်အစုံဖြင့်)"
+
+#~ msgid ""
+#~ "\n"
+#~ "        <p class=\"lead\">\n"
+#~ "            The database is administered by the Central Statistical Organization and access is for authorised users\n"
+#~ "            only.\n"
+#~ "        </p>\n"
+#~ "        <p>\n"
+#~ "            Please log in using your assigned username and password.\n"
+#~ "        </p>\n"
+#~ "        <p>\n"
+#~ "            For information about birth registration and this database, please contact the Central Statistical\n"
+#~ "            Organization:\n"
+#~ "        </p>\n"
+#~ "        <blockquote>\n"
+#~ "            <p>Central Statistical Organization<br/>\n"
+#~ "                Building(32),Nay Pyi Taw,<br/>\n"
+#~ "                Myanmar <br/>\n"
+#~ "                Tel: 095-067-406325, 406328, 406326<br/>\n"
+#~ "                Fax: 095-067-406151<br/>\n"
+#~ "                Email: <a href=\"mailto:dg-cso@mptmail.com.mm\">dg-cso@mptmail.com.mm</a>\n"
+#~ "            </p>\n"
+#~ "        </blockquote>\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "<p class=\"lead\">\n"
+#~ "ဒီ အချက်အလက်များအားလုံးကို ဗဟိုအချက်အလက်များအဖွဲ့မှအုပ်ချုပ်ထားပြီး ခွင့်ပြုချက်ရှိသောသုံးစွဲသူများသာလျှင်သုံစွဲနိုင်ခွင့်ရှိသည်။\n"
+#~ "</p>\n"
+#~ "<p>\n"
+#~ "\n"
+#~ "ကျေးဇူးပြု၍ သင့်အတွက်သတ်မှတ်ထားသော အသုံးပြုသူအမည်နှင့် စကားဝှက်ကိုသုံး၍ဝင်ရောက်ပါ။\n"
+#~ "</p>\n"
+#~ "<p>\n"
+#~ "မွေးစားရင်းနှင့် ဒီအချက်အလက်များအကြောင်းပိုမိုသိလိုပါက ဗဟိုအချက်အလက်များအဖွဲ့ သို့ဆက်သွယ်နိုင်ပါသည်။\n"
+#~ "</p>\n"
+#~ "<blockquote>\n"
+#~ "<p>\n"
+#~ "<p>ဗဟိုစာရင်းအင်းအဖွဲ့<br/>\n"
+#~ "ရုံးအမှတ် (၃၂)၊ နေပြည်တော်၊<br/>\n"
+#~ "မြန်မာ<br/>\n"
+#~ "ဖုန်း - ၀၉၅-၀၆၇-၄၀၆၃၂၅၊ ၄၀၆၃၂၈၊ ၄၀၆၃၂၆<br/>\n"
+#~ "ဖက်စ် - ၀၉၅-၀၆၇-၄၀၆၁၅၁<br/>\n"
+#~ "အီးမေးလ် - <a href=\"mailto:dg-cso@mptmail.com.mm\">dg-cso@mptmail.com.mm</a>\n"
+#~ "</p>\n"
+#~ "</blockquote>"
+
+#~ msgid ""
+#~ "\n"
+#~ "        <p class=\"lead\">\n"
+#~ "            Myanmar Civil Registration Information Management System appears to be offline\n"
+#~ "        </p>\n"
+#~ "        <p>\n"
+#~ "        Please check your internet connection. You can save registration forms locally while offline.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "<p class=\"lead\">\n"
+#~ "မြန်မာအရပ်သားစာရင်းသွင်းခြင်းသတင်းအချက်အလက်စီစဉ်မှုစနစ်သည် ချိတ်ဆက်မရနိုင်ဟုထင်ရသည်။\n"
+#~ "</p>\n"
+#~ "<p>\n"
+#~ "ကျေးဇူးပြု၍သင်၏အင်တာနက်ကွန်နက်ရှင်ကိုစစ်ဆေးပါ။ အင်တာနက်မရှိသည့်အချိန်တွင် သင်သည်စာရင်းသွင်းသည့်ပုံစံကို စက်အတွင်းသို့သိမ်းထားနိုင်သည်"
+
+#~ msgid "Start"
+#~ msgstr "စမည်"
+
+#~ msgid "<h1>Sorry,</h1><p>something went wrong.</p>"
+#~ msgstr "<h1>စိတ်မကောင်းပါဘူး။</h1><p>တစ်ခုခုချို့ယွင်းသွားပါသည်</p>"
+
+#~ msgid "MVRS - Forms 101"
+#~ msgstr "MVRS - ပုံစံ ၁၀၁ များ"
+
+#~ msgid "09 - 2 Males"
+#~ msgstr "09 - ကျား 2"
+
+#~ msgid "09 - 1 male"
+#~ msgstr "09 - ကျား 1 ဦး"
+
+#~ msgid "You can not use this field for rural areas"
+#~ msgstr "ကျေးလက်ဒေသများအတွက်ဒီအကွက်ကို သင်သုံး၍မရပါ။"
+
+#~ msgid "We're busy updating the database"
+#~ msgstr "အချက်အလက်များကို မွမ်းမံနေပါသည်"
+
+#~ msgid "This field is required for urban areas"
+#~ msgstr "မြို့ပြဧရိယာအတွက် ဒီအကွက်ကိုလိုအပ်သည်"
+
+#~ msgid "Regional health center (rural areas)"
+#~ msgstr "ဒေသန္တရကျန်းမာရေးစင်တာ(ကျေးရွာဧရိယာများ)"
+
+#~ msgid "Usually 1361 - 4961"
+#~ msgstr "အများအားဖြင့် 1361 - 4961"
+
+#~ msgid "Day, month and year: <kbd>10/25/2006</kbd> or <kbd>10/25/06</kbd>"
+#~ msgstr "နေ့၊လ နှင့် နှစ်- <kbd>25102006</kbd>သို့မဟုတ်<kbd>251006</kbd>"
+
+#~ msgid ""
+#~ "For both live-born<ul><li>2 Females = 1</li><li>1 Male = 2</li><li>2 Males ="
+#~ " 3</li></ul>For 1 live-born<ul><li>2 Females = 4</li><li>1 live male = "
+#~ "5</li><li>1 live female = 6</li><li>2 Males = 7</li></ul>For (still-born) 0 "
+#~ "live-born<ul><li>2 Females = 8</li><li>1 Male = 9</li></ul>"
+#~ msgstr ""
+#~ "\"နှစ်ဦးလုံး အရှင်မွေး<ul><li> မ ၂ = ၁</li><li>ကျား ၁ = ၂</li><li>ကျား ၂ = ၃</li></\"\n"
+#~ "\"ul>တစ်ဦးသာ အရှင်မွေး<ul><li>မ ၂ = ၄</li><li>အရှင်မွေး ကျား ၁ = ၅</li><li>အရှင်မွေး မ ၁ = ၆</li><li>အရှင်မွေး မ ၂ = ၇</li></ul>အသေမွေး ရှင်သူမရှိ<ul><li>မ ၂= ၈ဝ</li><li>ကျား ၁ = ၉</li></ul>\""
+
+#~ msgid "Triplets"
+#~ msgstr "သုံးမြွှာပူးများ"
+
+#~ msgid "Triplets above"
+#~ msgstr "သုံးမြွှာပူး အထက် မွေး"
+
+#~ msgid ""
+#~ "Particulars of sex and whether live or still-born to be written out. eg. "
+#~ "<kbd>2 LM, 1 LF, 1 SF</kbd>"
+#~ msgstr ""
+#~ "အသေမွေး၊ အရှင်မွေး ကျားနှင့် မ ကို အသေးစိတ်ရေး ရမည်။ ဥပမာ <kbd> ရှင် ကျား ၂ "
+#~ "၊ ရှင် မ ၁ ၊ သေ မ ၁ </kbd>"
+
+#~ msgid "Civil registration database"
+#~ msgstr "အရပ်ဘက် မှတ်ပုံတင်ခြင်း အချက်အလက်စုဆောင်းမှု"
+
+#~ msgid "Code 2 digits according to coding instruction"
+#~ msgstr "အညွှန်းထည့်ခြင်း သတ်မှတ်ချက်အရ ဂဏန်း ၂ လုံးဖြင့် အညွှန်းပြုရမည်"
+
+#~ msgid "Birth"
+#~ msgstr "မွေးဖွားခြင်း"
+
+#~ msgid "For (still-born) 0 live-born"
+#~ msgstr "အသေမွေး (အရှင်မွေး သုည)"
+
+#~ msgid "For 3 live-born"
+#~ msgstr "သုံးမွှာပူး ၃ ဦးလုံး အရှင်မွေး"
+
+#~ msgid "For 0 live-born (3 still-born)"
+#~ msgstr "For 0 live-born (3 still-born)"
+
+#~ msgid "What is the reason of this change?"
+#~ msgstr "အပြောင်းအလဲ ပြုလုပ်ခြင်းအတွက် အကျိုးအကြောင်းကို ပြောပါ။"
+
+#~ msgid "Project name"
+#~ msgstr "Test"

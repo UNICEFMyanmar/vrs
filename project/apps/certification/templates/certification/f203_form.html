@@ -1,0 +1,12 @@
+{% extends "certification/f103_form.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "New Form 203" %}{% endblock %}
+
+{% block cancel_button %}
+    {% if form.f201.value %}
+        <a href="{% url "F201Detail" pk=form.f201.value %}" class="btn btn-default navbar-btn">
+            {% trans "Cancel" %}
+        </a>
+    {% endif %}
+{% endblock %}

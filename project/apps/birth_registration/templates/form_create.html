@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% load bootstrap3 %}
+{% load static %}
+{% load tags %}
+
+
+{% block content %}
+    <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                    {% block title %}
+                        {% trans "Add new form" %} {{ form|name }}
+                    {% endblock %}
+                </a>
+
+            </li>
+            <li role="presentation">
+                <a href="#saved" aria-controls="saved" role="tab" data-toggle="tab">
+                    {% trans "Locally saved forms" %} <span class="badge"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="col-lg-8">
+                <form id="f{{ form|name }}_form" method="post" enctype="multipart/form-data">
+                    {% include "form.html" %}
+                    {% bootstrap_form_errors form %}
+                    {% buttons %}
+                        {% block buttons %}
+                            <button type="submit" class="btn btn-primary navbar-btn" name="continue" value="continue">
+                                {% bootstrap_icon "plus-sign" %} {% trans "Add and continue" %}
+                            </button>
+                            <button type="submit" class="btn btn-primary navbar-btn" name="go_to_form" value="go_to_form">
+                                {% bootstrap_icon "file" %} {% trans "Add and open" %}
+                            </button>
+                            <button type="submit" class="btn btn-primary navbar-btn">
+                                {% bootstrap_icon "list" %} {% trans "Add" %}
+                            </button>
+
+
+                        {% include "button_form_create_save_local.html" %}
+                        {% endblock %}
+                    {% endbuttons %}
+                </form>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="saved">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>{% trans "Serial number" %}</th>
+                    <th>{% trans "Preview" %}</th>
+                    <th class="right">{% trans "Date" %}</th>
+                    <th>{% trans "User" %}</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {% include "inlcude_form_logic.html" %}
+
+    {#  offline mode start #}
+
+    <script type="text/template" id="item-template">
+        <td><a style="cursor: pointer">{% bootstrap_icon "cloud-upload" %}</a></td>
+        {% verbatim %}
+        <td><% if (serial) {print(serial) } else {print("---")} %></td>
+        <td><% if (description) {print(description) } else {print("---")} %></td>
+        <td class="right">
+            <span title="<% print(moment(date)); %>"><% print(moment().to(date)); %></span>
+        </td>
+        <td><% if (user) {print(user) } else {print("---")} %></td>
+        {% endverbatim %}
+        <td><a style="cursor: pointer">{% bootstrap_icon "remove" %}</a></td>
+    </script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/moment/locale/my.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/underscore.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/backbone.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/backbone.localStorage.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}vendor/jquery.stickytabs.js"></script>
+
+    <script type="text/javascript">
+        window.FORM_ID = "f{{ form|name }}_form";
+
+        {% if form|name == "101" %}
+            window.SERIAL_ID = "id_NR_SNO";
+        {% elif form|name == "201" %}
+            window.SERIAL_ID = "id_SNER";
+        {% endif %}
+
+            window.DJANGO_USER = "{{ user.get_username }}";
+
+        $('.nav-tabs').stickyTabs();
+        moment.locale("{{ LANGUAGE_CODE }}");
+
+    </script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/app.js"></script>
+    {#  offline end #}
+{% endblock %}

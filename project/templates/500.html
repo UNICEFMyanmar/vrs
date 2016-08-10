@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+  {% trans "Home" %}
+{% endblock %}
+
+{% block content %}
+    {% trans "<h1>Sorry,</h1><p>An Internal error has occurred, the error was logged and will be examined</p>" %}
+    {% if request.sentry.id %}
+        <p>{% trans "If you need assistance, you may reference this error as" %}
+            <strong>{{ request.sentry.id }}</strong>.
+        </p>
+    {% endif %}
+{% endblock %}

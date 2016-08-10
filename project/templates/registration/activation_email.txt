@@ -1,0 +1,10 @@
+{% trans "You are receiving this email because you have signed up for an account at" %} {{ site.name }}.
+
+{% trans "To activate your account, please visit the following page:" %}
+
+http://{{ site.domain }}{% url 'registration_activate' activation_key %}
+
+{% trans "This page will expire in" %}  {{ expiration_days }} day{{ expiration_days|pluralize }}.
+
+{% trans "If you did not sign up for this account you do not need to take any further" %}
+{% trans "action -- you can simply delete this email." %}

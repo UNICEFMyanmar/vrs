@@ -1,0 +1,33 @@
+{% load i18n %}
+{% load static %}
+
+<div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="submit" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                {% trans "Are you sure?" %}
+            </div>
+            <div class="modal-body">
+                {% trans "Are you sure you want to submit this form? It looks like you may have some issues here" %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Cancel" %}</button>
+                <button type="button" class="btn btn-danger danger" id="submit_button">{% trans "Submit" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% url 'js_info_dict' %}"></script>
+<script src="{% static "vendor/jquery.validate.js" %}"></script>
+
+<script>
+    var ANY_HOSPITAL_CODE = {{ ANY_HOSPITAL_CODE }};
+    var YANGON_STATE_DIVISION_CODE = {{ YANGON_STATE_DIVISION_CODE }};
+    var YANGON_HOSPITAL_NOT_MENTIONED_CODE = {{ YANGON_HOSPITAL_NOT_MENTIONED_CODE }};
+    var SEX_MALE = {{ SEX_MALE }};
+    var SEX_FEMALE = {{ SEX_FEMALE }};
+    var PRE_DELI_NOT_RELEVANT = "";
+</script>
+
+<script src="{% static "js/form_validation.js" %}"></script>

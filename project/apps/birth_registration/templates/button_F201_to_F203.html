@@ -1,0 +1,12 @@
+{% if cert %}
+    <div class="btn-group">
+        <a href="{% url "F203DetailView" pk=cert %}" type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
+        <a href="{% url "F203PrintView" pk=cert %}" type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a>
+    </div>
+{% endif %}
+{% if count > 1 %}
+    <a href="{% url "F203ListView" %}?f201={{ id }}" type="button" class="btn btn-default btn-xs">
+        <span class="badge">{{ count }}</span>
+        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+    </a>
+{% endif %}

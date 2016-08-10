@@ -1,0 +1,11 @@
+{% load bootstrap3 %}
+{% load i18n %}
+<form class="navbar-form navbar-right"
+      method="post"
+      action="{% url 'django.contrib.auth.views.login' %}">
+    {% csrf_token %}
+    {% bootstrap_field form.username show_label=False %}
+    {% bootstrap_field form.password show_label=False %}
+    <input type="hidden" name="next" value="{% url 'home' %}"/>
+    <button type="submit" class="btn btn-success">{% trans "Sign in" %}</button>
+</form>

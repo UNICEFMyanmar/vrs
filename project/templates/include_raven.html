@@ -1,0 +1,19 @@
+{% load raven %}
+{% load static %}
+<script src="{% static "vendor/raven.min.js" %}"></script>
+<script>
+    Raven.config(
+            "{% sentry_public_dsn %}"{% if REVISION %},
+            {
+                release: '{{ REVISION }}',
+                tags: {
+                    git_commit: '{{ REVISION }}'
+                }
+            }
+            {% endif %}
+    ).install();
+    Raven.setUserContext({
+        id: "{{ user.id }}",
+        username: "{{ user.username }}"
+    });
+</script>

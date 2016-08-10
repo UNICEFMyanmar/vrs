@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-23 03:57-0500\n"
+"PO-Revision-Date: 2015-12-03 11:31+0625\n"
+"Last-Translator: Pyae Sone <gipsyhnh@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.7.4\n"
+
+#: project/apps/birth_registration/static/js/form_validation.js:216
+msgid "Usually 1361 - 5000"
+msgstr "ပုံမှန်အားဖြင့် 1361 - 5000"
+
+#: project/apps/birth_registration/static/js/form_validation.js:217
+msgid "Usually 15 - 50"
+msgstr "ပုံမှန်အားဖြင့် 15 - 50"
+
+#: project/apps/birth_registration/static/js/form_validation.js:218
+msgid "Usually 28 - 42"
+msgstr "ပုံမှန်အားဖြင့် 28 - 42"
+
+#: project/apps/birth_registration/static/js/form_validation.js:219
+#: project/apps/birth_registration/static/js/form_validation.js:220
+msgid "Usually 0 - 12"
+msgstr "ပုံမှန်အားဖြင့် 0 - 12"
+
+#: project/apps/birth_registration/static/js/form_validation.js:221
+#: project/apps/birth_registration/static/js/form_validation.js:222
+#: project/apps/birth_registration/static/js/form_validation.js:295
+#: project/apps/birth_registration/static/js/form_validation.js:296
+msgid "Please enter date in format DDMMYYYY"
+msgstr "ရက်စွဲကို DDMMYYYY ပုံစံဖြင့်ထည့်သွင်းပါ"
+
+#: project/apps/birth_registration/static/js/form_validation.js:294
+msgid "Bounds are: 1 - 99999"
+msgstr "Bounds များသည်  1 - 99999"
+
+#: project/apps/birth_registration/static/js/form_validation.js:297
+#: project/apps/birth_registration/static/js/form_validation.js:298
+msgid "Please check this field value or \"SEX\" field value above"
+msgstr ""
+"ဒီဖြည့်ရန်နေရာကိုစစ်ဆေးပါ သို့မဟုတ် အထက်ပါ ကျား၊မ "
+"ဆိုသောနေရာတွင်စစ်ဆေးကြည့်ပါ"
+
+#: project/apps/map/static/js/maps.js:40
+msgid "for the last 24 hours"
+msgstr "လွန်ခဲ့သော၂၄ နာရီအတွက်"
+
+#: project/apps/map/static/js/maps.js:41
+msgid "for the last week"
+msgstr "လွန်ခဲ့သောအပတ်အတွက်"
+
+#: project/apps/map/static/js/maps.js:42
+msgid "for the last month"
+msgstr "လွန်ခဲ့သောလအတွက်"
+
+#: project/apps/map/static/js/maps.js:43
+msgid "for the last year"
+msgstr "လွန်ခဲ့သောနှစ်အတွက်"
+
+#: project/apps/map/static/js/maps.js:47
+msgid "Birth registrations"
+msgstr "မွေးစာရင်းသွင်းမှုများ"
+
+#: project/apps/map/static/js/maps.js:365
+msgid "Last registration:"
+msgstr "နောက်ဆုံးစာရင်းသွင်းမှု-"
+
+#: project/apps/map/static/js/maps.js:367
+msgid "Hover over a marker"
+msgstr "ပုံများပေါ်တွင် ထောက်ကြည့်နိုင်သည်"

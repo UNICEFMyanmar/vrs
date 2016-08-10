@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load i18n %}
+{% load webdesign %}
+
+{% block nav_user %}
+    {% if user.is_authenticated %}
+        {{ block.super }}
+    {% else %}
+        {% include "navbar-form-login.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <h1 xmlns="http://www.w3.org/1999/html">
+        {% block title %}{% trans "License" %}{% endblock %}
+    </h1>
+    <div class="col-lg-8">
+        <pre>
+Copyright (c) 2014-2015, UNICEF Myanmar
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of test nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+
+
+        {% comment %}
+            todo: update the link
+        {% endcomment %}
+        <pre>Sources: <a href="https://github.com/kostik/Civil-registration">https://github.com/kostik/Civil-registration</a>
+{% if REVISION %}<strong><a href="https://github.com/kostik/Civil-registration/commit/{{ REVISION }}">{{ REVISION }}</a></strong>{% endif %}</pre>
+
+        <ul class="list-inline">
+        <li>
+            <a href="http://www.djangoproject.com/">
+                <img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0"
+                    alt="Made with Django." title="Made with Django."/>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.ubuntu.com/"><img src="{{ STATIC_URL }}/600px-Ubuntu_logo.svg.png" height="25"></a>
+        </li>
+    </ul>
+    </div>
+{% endblock %}

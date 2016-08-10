@@ -1,0 +1,197 @@
+{% extends "certification/f103_print.html" %}
+{% load i18n %}
+{% load tags %}
+{% load bootstrap3 %}
+
+{% block buttons %}
+
+    <a href="{% url 'F203DetailView' pk=object.pk %}" class="btn btn-default">
+        {% bootstrap_icon "file" %}
+        {% trans "Form" %}
+    </a>
+
+    <a href="{% url 'F203ListView' %}" class="btn btn-default">
+        {% bootstrap_icon "list" %}
+        {% trans "Browse" %}
+    </a>
+{% endblock %}
+
+{% block title %}{% trans "DEATH CERTIFICATE #" %}{{ object.SNER }}{% endblock %}
+
+{% block table %}
+    <table>
+        <tr>
+            <td style="vertical-align: top; padding-right: 1em" width="20%">
+                <p><strong
+                        style="white-space: nowrap">{% trans "Death Certificate Counterfoil" %}</strong><br/>{% trans "V.R. Form 203" %}
+                </p>
+                <ul class="list-unstyled" style="white-space: nowrap">
+                    <li>{% trans "Book number:" %} {{ " "|ljust_n }}</li>
+                    <li>{% trans "Page number:" %} {{ " "|ljust_n }}</li>
+                    <li>{% trans "Entry number:" %} {{ object.SNER | num_to_mm|ljust_n }}</li>
+                    <li>{% trans "Registration date:" %} {{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm|ljust_n }}</li>
+                </ul>
+
+                <ul class="list-unstyled">
+                    <li>{% trans "Name of deceased:" %} {{ object.Name|ljust_n }}</li>
+                    <li>{% trans "Signature of issuing person:" %} {{ " "|ljust_n }}</li>
+                    <li>{% trans "Name of issuing person:" %}<br/>{{ object.OPR.get_full_name|ljust_n }}</li>
+                    <li>{% trans "Date of issue:" %} {{ object.created_at | date:'d-m-Y' | num_to_mm|ljust_n }}</li>
+                </ul>
+
+
+            </td>
+            <td style="border-left: thin dashed; vertical-align: top;padding-left: 1em;">
+                <p align="center"><strong>{% trans "DEATH CERTIFICATE" %} </strong></p>
+                    <p>{% trans "V.R. Form 203" %}</p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <ul class="list-unstyled">
+                            <li>{% trans "State Division:" %} {{ object.get_NNRT_display | strip_before_delimiter | ljust_n }}</li>
+                            <li>{% trans "District:" %} {{ object.get_NNRT1_display | strip_before_delimiter|ljust_n }}
+                                {% trans "Township" %} {{ object.get_NNST_display | strip_before_delimiter|ljust_n }}</li>
+                            <li>{% trans "Ward/Village tract:" %} {{ object.get_NNVD_display | strip_before_delimiter|ljust_n }} {{ object.RHC | strip_before_delimiter|ljust_n }}</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li>{% trans "Book number:" %}{{ " "|ljust_n }}</li>
+                            <li>{% trans "Page number:" %}{{ " "|ljust_n }}</li>
+                            <li>{% trans "Entry number:" %} {{ object.SNER | num_to_mm|ljust_n }}</li>
+                            <li>{% trans "Registration date:" %} {{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm|ljust_n }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <table id="data-table" class="table" style="border-spacing: 0; border-collapse: separate;width: 100%">
+                        <tr>
+
+                            <td colspan="2"
+                                style="border-top: solid; border-bottom: solid" align="center">{% trans "Particulars of Deceased" %}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;width: 50%">
+                                {% trans "1. Name:" %} {{ object.Name|ljust_n }}</td>
+                            <td style="border-bottom: dotted thin;">
+                                {% trans "7. Race:" %} {{ object.get_RACE_display | strip_before_delimiter|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">{% trans "2. Gender:" %} {{ object.get_SEX_display | strip_before_delimiter|ljust_n }}</td>
+                            <td style="border-bottom: dotted thin;">{% trans "8. Citizenship:" %} {{ object.get_CTIZ_display | strip_before_delimiter|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">
+                                {% trans "3. Date of death:" %} {{ object.Date_of_Death | date:'d-m-Y' | num_to_mm|ljust_n }}</td>
+                            <td style="border-bottom: dotted thin;">
+                                {% trans "9. Religion:" %} {{ object.get_REL_display | strip_before_delimiter|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">{% trans "4. Place of death:" %}
+                                {% if object.Hospital %}
+                                    {{ object.Hospital.name | ljust_n }}
+                                {% elif object.governmental_hospital %}
+                                    {{ object.governmental_hospital | ljust_n }}
+                                {% elif object.private_hospital %}
+                                    {{ object.private_hospital | ljust_n }}
+                                {% else %}
+                                    {{ object.get_PLD_display | strip_before_delimiter|ljust_n }}
+                                {% endif %}
+                            </td>
+                            <td style="border-bottom: dotted thin;">{% trans "10. Permanent address:" %} {{ object.RCIR|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: dotted thin;">{% trans "5. Age:" %} {{ object.get_AGE_GROUP_display | strip_before_delimiter | num_to_mm|ljust_n }}</td>
+                            <td style="border-bottom: dotted thin;">{% trans "11. Name of Father of the deceased:" %} {{ object.Father_name|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: solid;">{% trans "5. Occupation:" %}
+                                {% if object.Occupation %}{{ object.Occupation|ljust_n }}{% else %}
+                                    {{ object.get_OCCU_display | strip_before_delimiter|ljust_n }}{% endif %}</td>
+                            <td style="border-bottom: solid;">{% trans "11. Name of Mother of the deceased:" %} {{ object.Mother_name|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"
+                                style="border-bottom: solid;">{% trans "13. Cause of Death:" %} {{ object.E_CODE|ljust_n }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"
+                                style="border-bottom: solid;">{% trans "14. Informant's name, address, relationship to deceased and signature: " %} {{ object.Informant_name|ljust_n }}<br/><br/>{{ " "|ljust_n }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: solid;">{% trans "15. Cause of death certifier's" %}</td>
+                            <td style="border-bottom: solid;">
+                                <div style="width: 80%">
+                                    <div class="row">
+                                        <div class="signature_label">
+                                            {% trans "Signature:" %}
+                                        </div>
+                                        <div class="signature">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="signature_label">
+                                            {% trans "Name:" %}
+                                        </div>
+                                        <div class="signature">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="signature_label">
+                                            {% trans "Designation:" %}
+                                        </div>
+                                        <div class="signature">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <p class="small"  style="margin-left: 1.67em">
+                        {% blocktrans %}
+                            I, the undersigned, do hereby certify that the mentioned above deceased was dead at' the
+                            time and place mentioned above
+                        {% endblocktrans %}
+                        <br/>
+                        {% blocktrans %}
+                            and registered with the Entry No.
+                        {% endblocktrans %}
+                        {{ object.SNER | num_to_mm|ljust_n }}
+                        {% blocktrans %}
+                            in the Death Register and that such Register Book is now legally in my custody.
+                        {% endblocktrans %}
+                        <br/>
+                        {% blocktrans %}
+                            Any person who (1) falsifies any of the particulars on this certificate or (2)
+                            uses it as true, knowing it to be false is liable to prosecution.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="pull-right">
+                        <table>
+                            <tr>
+                                <td style="padding-right: 1em; vertical-align: middle;">{% trans "Registration Officer's" %}</td>
+                                <td style="padding-left: 1em; border-left: solid thin;">
+                                    <ul class="list-unstyled">
+                                        <li>{% trans "Signature:" %} {{ " "|ljust_n }}</li>
+                                        <li>{% trans "Name:" %} {{ object.OPR.get_full_name|ljust_n }}</li>
+                                        <li>{% trans "Designation:" %} {{ object.OPR.profile.position|ljust_n }}</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <p class="small"  style="margin-left: 1.67em">
+                       {{ object.Date_of_Registration | date:'d-m-Y' | num_to_mm | ljust_n }}
+                    </p>
+            </td>
+        </tr>
+    </table>
+
+{% endblock %}

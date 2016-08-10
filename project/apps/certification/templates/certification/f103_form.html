@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+
+{% block content %}
+    <h1>{% block title %}{% trans "New Form 103" %}{% endblock %}</h1>
+    <style>
+    .col-md-2 {
+        width:33.3%
+    }
+    .col-md-4 {
+        width:66.6%
+    }
+    </style>
+    <div class="col-lg-10">
+        <form method="post" enctype="multipart/form-data">
+
+
+            {% bootstrap_form form layout='horizontal' %}
+            {% csrf_token %}
+            {% buttons %}
+                    <button type="submit" class="btn btn-primary navbar-btn" name="print" value="print">
+                        {% bootstrap_icon "plus-sign" %} {% trans "Add and print" %}
+                    </button>
+
+                    <button type="submit" class="btn btn-primary navbar-btn">
+                        {% bootstrap_icon "list" %} {% trans "Add" %}
+                    </button>
+
+                    {% block cancel_button %}
+                        {% if form.f101.value %}
+                            <a href="{% url "F101Detail" pk=form.f101.value %}" class="btn btn-default navbar-btn">
+                                {% trans "Cancel" %}
+                            </a>
+                        {% endif %}
+                    {% endblock %}
+            {% endbuttons %}
+        </form>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

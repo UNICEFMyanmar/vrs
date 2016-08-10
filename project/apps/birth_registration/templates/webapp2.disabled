@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# v. 1.27
+
+CACHE:
+#
+
+NETWORK:
+*
+
+FALLBACK:
+#

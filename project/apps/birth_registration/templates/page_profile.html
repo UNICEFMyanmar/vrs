@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load admin_urls %}
+{% load bootstrap3 %}
+
+{% block content %}
+
+    <style>
+        .col-lg-6:not(:only-child) {
+            border-left: 1px dashed #ccc;
+        }
+    </style>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3>{% block title %}{% trans "Your username:" %} {{ user.get_username }}{% endblock %}</h3>
+                <h4>{{ user.get_full_name }}</h4>
+            <dl class="dl-horizontal">
+                <dt>{% trans "Authority:" %}</dt>
+                <dd>{{ user.profile.authority }}</dd>
+                <dt>{% trans "Position:" %}</dt>
+                <dd>{{ user.profile.position }}</dd>
+                <dt>{% trans "Phone:" %}</dt>
+                <dd>{{ user.profile.phone }}</dd>
+            </dl>
+            <p>
+                <a class="btn btn-default" href="{% url 'django.contrib.auth.views.password_change' %}">
+                    {% trans "Change password" %}
+                </a>
+            </p>
+            <p>
+                <a name="offline" class="btn btn-default" href="#" id="offline_mode_enabled_element"></a>
+            </p>
+        </div>
+        <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>{% trans "You can access forms<br/> within the following areas:" %}</h3>
+                    <table class="table table-condensed table-striped">
+                        {% for location in locations %}
+                            <tr>
+                                <th class="text-right">{{ location|first }}</th>
+                                <td>{{ location|last }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    {% regroup permissions by model as models %}
+                    <h3>{% trans "You can:" %}</h3>
+
+                    <dl class="dl-horizontal">
+                        {% for model in models %}
+                            <dt>{{ model.grouper }}:</dt>
+                            <dd></dd>
+                            {% for m in model.list|dictsort:"verb" %}
+                                <dt></dt>
+                                <dd>{{ m.verb }}</dd>
+                            {% endfor %}
+                        {% endfor %}
+                    </dl>
+                </div>
+            </div>
+            <p class="bg-info text-center">{% trans "Please contact VR DB administrator if you need your profile detail or your access level changed" %}</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        (function check_if_offline_mode_enabled() {
+            var enabled_message = "{% trans "Offline mode is <strong>enabled</strong>. Click here to disable" %}";
+            var disabled_message =  "{% trans "Offline mode is <strong>disabled</strong>. Click here to enable" %}";
+            var value = Cookies.get("offline_mode_enabled");
+
+            if (value && value.indexOf("enable") != -1) {
+                $("#offline_mode_enabled_element").html(enabled_message);
+                $("#offline_mode_enabled_element").removeClass( "btn-default" ).addClass( "btn-warning" );
+                $("#offline_mode_enabled_element").on("click", function () {
+                    Cookies.set("offline_mode_enabled", "disable");
+                    window.location.reload(true);
+                })
+            } else {
+                $("#offline_mode_enabled_element").html(disabled_message);
+                $("#offline_mode_enabled_element").removeClass( "btn-warning" ).addClass( "btn-default" );
+                $("#offline_mode_enabled_element").on("click", function () {
+                    Cookies.set("offline_mode_enabled", "enable");
+                    window.location.reload(true);
+                })
+            }
+        })();
+
+    </script>
+{% endblock %}

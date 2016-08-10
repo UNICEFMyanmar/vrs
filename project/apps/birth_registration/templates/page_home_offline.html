@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load i18n %}
+{% load webdesign %}
+{% load tags %}
+
+{% block nav_user %}
+{% endblock %}
+
+{% block navbar-nav %}
+    {% include "navbar_offline.html" %}
+{% endblock %}
+
+{% block navbar-right %}
+{% endblock %}
+
+{% block content %}
+    <h1>
+        {% block title %}
+            {% trans "Offline mode" %}
+        {% endblock %}
+    </h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <p class="lead">
+                {% blocktrans %}Myanmar Vital Registration Database appears to be
+                    offline{% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %} Please check your internet connection.<br/>You can still save registration forms locally
+                    while offline, but locally saved forms have to be submitted to VR DB when you back
+                    online.{% endblocktrans %}
+
+                {% buttons %}
+                    <a href="{% url 'F101CreateOffline' %}" class="btn btn-default">
+                        {% trans "Save new F101 locally" %}
+                    </a>
+                    <a href="{% url 'F201CreateOffline' %}" class="btn btn-default">
+                        {% trans "Save new F201 locally" %}
+                    </a>
+                {% endbuttons %}
+            </p>
+        </div>
+        <div class="col-lg-6">
+            {% include "include_cso_info.html" %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ STATIC_URL }}online.js"></script>
+{% endblock %}

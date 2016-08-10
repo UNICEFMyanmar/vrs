@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load render_table from django_tables2 %}
+{% load bootstrap3 %}
+
+{% block content %}
+    <h1>{% block title %}{% trans "Forms 103" %}{% endblock %}</h1>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-tables2.css"/>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        {% trans "Filter" %}:
+                        {% for fields in filter.form %}
+                            {% with fields as field %}
+                                {% if field.value != '' and  field.value != None %}
+                                    {{ field.label }}:{{ field.value }}
+                                {% endif %}
+                            {% endwith %}
+                        {% endfor %}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-lg-6">
+                        <form id="f{{ form_name }}_form" method="get">
+                            <input type="hidden" name="sort" value="{{ request.GET.sort }}">
+                            {% bootstrap_form filter.form%}
+                            {% buttons %}
+                                <button type="submit" class="btn btn-primary">
+                                    {% bootstrap_icon "filter" %} {% trans "Filter" %}
+                                </button>
+                                </form>
+                            {% endbuttons %}
+                        <hr/>
+                        <form id="f{{ form_name }}_form" method="get">
+                            {% buttons %}
+                                <input type="hidden" name="sort" value="{{ request.GET.sort }}">
+                                <button id="reset" class="btn btn-default" type="submit">
+                                    {% trans "Reset" %}
+                                </button>
+                            {% endbuttons %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% render_table table "table.html" %}
+
+{% endblock %}
